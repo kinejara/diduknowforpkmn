@@ -15,7 +15,10 @@
 		EE387E0E1A3AC571009C366B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE387E0C1A3AC571009C366B /* LaunchScreen.xib */; };
 		EE387E1A1A3AC571009C366B /* DidYouKnowForPokemon8Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE387E191A3AC571009C366B /* DidYouKnowForPokemon8Tests.m */; };
 		EE387E251A3AC695009C366B /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE387E241A3AC695009C366B /* TableViewController.m */; };
-		EE73AC601A4158B000F276B4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE73AC5F1A4158B000F276B4 /* Localizable.strings */; };
+		EE73AC601A4158B000F276B4 /* Localizables.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE73AC5F1A4158B000F276B4 /* Localizables.strings */; };
+		EE73AC631A415D9500F276B4 /* Pharases.m in Sources */ = {isa = PBXBuildFile; fileRef = EE73AC611A415D9500F276B4 /* Pharases.m */; };
+		EE73AC651A41668600F276B4 /* Localizables.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE73AC641A41668600F276B4 /* Localizables.strings */; };
+		EE73AC691A41670A00F276B4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE73AC681A41670A00F276B4 /* Localizable.strings */; };
 		EEAD0FB21A3BFAAF00703CC4 /* pokeBg.png in Resources */ = {isa = PBXBuildFile; fileRef = EEAD0FB11A3BFAAF00703CC4 /* pokeBg.png */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +48,11 @@
 		EE387E191A3AC571009C366B /* DidYouKnowForPokemon8Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DidYouKnowForPokemon8Tests.m; sourceTree = "<group>"; };
 		EE387E231A3AC695009C366B /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		EE387E241A3AC695009C366B /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
-		EE73AC5F1A4158B000F276B4 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		EE73AC5F1A4158B000F276B4 /* Localizables.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizables.strings; sourceTree = "<group>"; };
+		EE73AC611A415D9500F276B4 /* Pharases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pharases.m; sourceTree = "<group>"; };
+		EE73AC621A415D9500F276B4 /* Pharases.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pharases.h; sourceTree = "<group>"; };
+		EE73AC641A41668600F276B4 /* Localizables.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizables.strings; path = ../Localizables.strings; sourceTree = "<group>"; };
+		EE73AC681A41670A00F276B4 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		EEAD0FB11A3BFAAF00703CC4 /* pokeBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pokeBg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +77,7 @@
 		EE387DF11A3AC571009C366B = {
 			isa = PBXGroup;
 			children = (
+				EE73AC681A41670A00F276B4 /* Localizable.strings */,
 				EE387DFC1A3AC571009C366B /* DidYouKnowForPokemon8 */,
 				EE387E161A3AC571009C366B /* DidYouKnowForPokemon8Tests */,
 				EE387DFB1A3AC571009C366B /* Products */,
@@ -88,7 +96,8 @@
 		EE387DFC1A3AC571009C366B /* DidYouKnowForPokemon8 */ = {
 			isa = PBXGroup;
 			children = (
-				EE73AC5F1A4158B000F276B4 /* Localizable.strings */,
+				EE73AC621A415D9500F276B4 /* Pharases.h */,
+				EE73AC611A415D9500F276B4 /* Pharases.m */,
 				EEAD0FB31A3BFACF00703CC4 /* Resources */,
 				EE387E011A3AC571009C366B /* AppDelegate.h */,
 				EE387E021A3AC571009C366B /* AppDelegate.m */,
@@ -107,6 +116,8 @@
 		EE387DFD1A3AC571009C366B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EE73AC5F1A4158B000F276B4 /* Localizables.strings */,
+				EE73AC641A41668600F276B4 /* Localizables.strings */,
 				EE387DFE1A3AC571009C366B /* Info.plist */,
 				EE387DFF1A3AC571009C366B /* main.m */,
 			);
@@ -218,8 +229,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE73AC601A4158B000F276B4 /* Localizable.strings in Resources */,
+				EE73AC601A4158B000F276B4 /* Localizables.strings in Resources */,
+				EE73AC651A41668600F276B4 /* Localizables.strings in Resources */,
 				EE387E091A3AC571009C366B /* Main.storyboard in Resources */,
+				EE73AC691A41670A00F276B4 /* Localizable.strings in Resources */,
 				EEAD0FB21A3BFAAF00703CC4 /* pokeBg.png in Resources */,
 				EE387E0E1A3AC571009C366B /* LaunchScreen.xib in Resources */,
 				EE387E0B1A3AC571009C366B /* Images.xcassets in Resources */,
@@ -240,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE73AC631A415D9500F276B4 /* Pharases.m in Sources */,
 				EE387E061A3AC571009C366B /* DNPMainViewController.m in Sources */,
 				EE387E031A3AC571009C366B /* AppDelegate.m in Sources */,
 				EE387E001A3AC571009C366B /* main.m in Sources */,

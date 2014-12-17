@@ -7,6 +7,7 @@
 //
 
 #import "DNPMainViewController.h"
+#import "Pharases.h"
 
 @interface DNPMainViewController ()
 
@@ -28,10 +29,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.pokeFacts = @[@"1",@"2",@"3"];
     
+    NSArray *gens = @[@"all"];
+    Pharases *pokeFacts = [Pharases new];
+    self.pokeFacts = [pokeFacts createArrayOfPokePhrasesWithGenerations:gens];
+    
+    [self performSelector:@selector(loadPokeFacts) withObject:nil afterDelay:3.0];
     self.view.backgroundColor = [UIColor redColor];
     [self configureTableView];
+    
+    //NSLog(@"print front localize %@",NSLocalizedString(@"0", @""));
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,6 +49,10 @@
 - (void)configureTableView {
     UIColor *clearColor = [UIColor clearColor];
     self.tableView.backgroundColor = clearColor;
+}
+
+- (void)loadPokeFacts {
+    [self.tableView reloadData];
 }
 
 #pragma mark - Table view data source
