@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
@@ -16,8 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="a0Y-4a-jnL">
-                                <rect key="frame" x="0.0" y="127" width="600" height="390"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokeBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="0EW-0b-SPc">
+                                <rect key="frame" x="0.0" y="0.0" width="611" height="600"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="a0Y-4a-jnL">
+                                <rect key="frame" x="41" y="171" width="465" height="321"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="pokeCell" id="Obe-Sj-QWO">
@@ -35,6 +39,16 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="a0Y-4a-jnL" secondAttribute="trailing" constant="78" id="2lW-ln-I62"/>
+                            <constraint firstItem="0EW-0b-SPc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="Fvq-0r-9B7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0EW-0b-SPc" secondAttribute="bottom" id="Yzv-NP-GdB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="a0Y-4a-jnL" secondAttribute="bottom" constant="108" id="lGT-r5-BHW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0EW-0b-SPc" secondAttribute="trailing" constant="-27" id="lQW-O3-7ca"/>
+                            <constraint firstItem="0EW-0b-SPc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="pCN-AQ-2jY"/>
+                            <constraint firstItem="a0Y-4a-jnL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="41" id="vvN-XM-NcK"/>
+                            <constraint firstItem="a0Y-4a-jnL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="151" id="wi2-N0-sZc"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="a0Y-4a-jnL" id="MZ5-Hg-RSe"/>
@@ -44,4 +58,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="pokeBg.png" width="448" height="600"/>
+    </resources>
 </document>

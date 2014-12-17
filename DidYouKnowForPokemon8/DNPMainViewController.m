@@ -29,12 +29,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.pokeFacts = @[@"1",@"2",@"3"];
+    
+    self.view.backgroundColor = [UIColor redColor];
+    [self configureTableView];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
+- (void)configureTableView {
+    UIColor *clearColor = [UIColor clearColor];
+    self.tableView.backgroundColor = clearColor;
+}
 
 #pragma mark - Table view data source
 
@@ -49,6 +56,8 @@
  - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
      UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"pokeCell" forIndexPath:indexPath];
+     
+     cell.contentView.backgroundColor = [UIColor clearColor];
      
      cell.textLabel.text = self.pokeFacts[indexPath.row];
  

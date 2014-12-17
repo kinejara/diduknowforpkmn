@@ -15,6 +15,8 @@
 		EE387E0E1A3AC571009C366B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE387E0C1A3AC571009C366B /* LaunchScreen.xib */; };
 		EE387E1A1A3AC571009C366B /* DidYouKnowForPokemon8Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE387E191A3AC571009C366B /* DidYouKnowForPokemon8Tests.m */; };
 		EE387E251A3AC695009C366B /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE387E241A3AC695009C366B /* TableViewController.m */; };
+		EE73AC601A4158B000F276B4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE73AC5F1A4158B000F276B4 /* Localizable.strings */; };
+		EEAD0FB21A3BFAAF00703CC4 /* pokeBg.png in Resources */ = {isa = PBXBuildFile; fileRef = EEAD0FB11A3BFAAF00703CC4 /* pokeBg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		EE387E191A3AC571009C366B /* DidYouKnowForPokemon8Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DidYouKnowForPokemon8Tests.m; sourceTree = "<group>"; };
 		EE387E231A3AC695009C366B /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		EE387E241A3AC695009C366B /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		EE73AC5F1A4158B000F276B4 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		EEAD0FB11A3BFAAF00703CC4 /* pokeBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pokeBg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 		EE387DFC1A3AC571009C366B /* DidYouKnowForPokemon8 */ = {
 			isa = PBXGroup;
 			children = (
+				EE73AC5F1A4158B000F276B4 /* Localizable.strings */,
+				EEAD0FB31A3BFACF00703CC4 /* Resources */,
 				EE387E011A3AC571009C366B /* AppDelegate.h */,
 				EE387E021A3AC571009C366B /* AppDelegate.m */,
 				EE387E041A3AC571009C366B /* DNPMainViewController.h */,
@@ -122,6 +128,14 @@
 				EE387E181A3AC571009C366B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EEAD0FB31A3BFACF00703CC4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EEAD0FB11A3BFAAF00703CC4 /* pokeBg.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,7 +218,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE73AC601A4158B000F276B4 /* Localizable.strings in Resources */,
 				EE387E091A3AC571009C366B /* Main.storyboard in Resources */,
+				EEAD0FB21A3BFAAF00703CC4 /* pokeBg.png in Resources */,
 				EE387E0E1A3AC571009C366B /* LaunchScreen.xib in Resources */,
 				EE387E0B1A3AC571009C366B /* Images.xcassets in Resources */,
 			);
@@ -352,6 +368,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DidYouKnowForPokemon8/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -362,6 +379,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DidYouKnowForPokemon8/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -420,6 +438,7 @@
 				EE387E1F1A3AC571009C366B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE387E201A3AC571009C366B /* Build configuration list for PBXNativeTarget "DidYouKnowForPokemon8Tests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +447,7 @@
 				EE387E221A3AC571009C366B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
