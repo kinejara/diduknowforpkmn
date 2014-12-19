@@ -30,7 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSArray *gens = @[@"all"];
+    NSArray *gens = @[@"first", @"all"];
     Pharases *pokeFacts = [Pharases new];
     self.pokeFacts = [pokeFacts createArrayOfPokePhrasesWithGenerations:gens];
     

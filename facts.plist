@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>anime</key>
+	<array>
+		<string>In the anime, the inside of Charizard&apos;s wings are colored green, but in the games, they are colored with more of a blue tint.</string>
+		<string>In Super Smash Brothers Melee, Ditto can be summoned from a Pokeball via hacking, but he disappears the second he comes out.</string>
+		<string>In the anime, Seaking is the only Pokemon Ash and Misty both owned, but they were both caught and released in the same episode.</string>
+		<string>In Japanese versions of Pokemon,&apos;Save&apos; is labeled レポート (Report), and you submit a ポケモンレポート (Pokemon Report).</string>
+		<string>In Pokemon Rumble, Transform isn&apos;t a move, so Ditto can only know Struggle. Ditto is also the only character that can use it.</string>
+		<string>Anime Giovanni&apos;s Persian is most likely Shiny; the fur seems normal, but the inside of its ears are pink instead of tan.</string>
+		<string>There has never been a bug-type Pokemon that can learn Fly or Surf.</string>
+		<string>Acid is the ONLY Poison type move that can not Poison you, and is the only Poison move that lowers a stat.</string>
+		<string>Poison-types can&apos;t be poisoned. The same goes for Steel-types.</string>
+		<string>Charizard is the only Pokemon in the Super Smash Bros games that transitioned from a Poke Ball Pokemon to a playable character.</string>
+		<string>Nintendo made 6 Pokemon-themed GBA systems. They also manufactured 7 GBA SP models, and one special GB Micro model.</string>
+		<string>In the DS games, hacking the camera to force it into its 3D mode reveals that some indoor objects are actually full 3D models.</string>
+		<string>The English version of &apos;Mewtwo Strikes Back&apos; portrays Mewtwo as a cold villain. The Japanese version portrayed him as confused.</string>
+		<string>Pokemon Rumble is the only game where one of the starting characters is a Ratata.</string>
+		<string>Most of the Pokemon Mini games emulated in Pokemon Channel are heavily edited from Party, the free Mini pack-in game.</string>
+		<string>In the US, preordering Colosseum got you a bonus disc. It contained the transferable Jirachi from other region&apos;s Channel games.</string>
+		<string>In 2006, Square-Enix developed a Pokemon title for cellphones in Japan. It allowed you to chat using various Pokemon for avatars.</string>
+		<string>12 Pokemon in Kanto didn&apos;t participate in evolution, while Johto had 19, 28 in Hoenn, and 19 in Sinnoh.</string>
+		<string>In the game Ditto cannot transform into a Ditto that already transformed into another Pokemon.</string>
+		<string>In Super Smash Bros. Melee, all seven starters could appear in fights in some form except for Totodile (Not counting Trophies).</string>
+		<string>The maximum amount of points you can receive in Pokemon Snap is 17,378,000.</string>
+		<string>There are 38 non-legendary Pokemon that do not evolve or have a pre-evolution. (until V gen)</string>
+		<string>In the game No other rods have been invented other than the Old, Good and Super Rods.</string>
+		<string>In the game There is no attack that increases a Pokemon&apos;s accuracy (not counting Acupressure; it raises a random stat).</string>
+		<string>A Pokemon&apos;s cry changes slightly when its HP is low or when it is about to faint.</string>
+		<string>If you deposit 999 pokemon in Pokemon Ranch, you can trade an egg for a Mew.</string>
+		<string>Until V gen 10 legendary Pokemon have been level 50 when found (Articuno, Zapdos, Moltres, Cresselia, Mesprit, Uxie, Azelf, Raikou, Entei, Suicune).</string>
+		<string>There are 5 Pokemon that can become pure flying type in certain conditions: Kecleon, Porygon, Porygon-2, Porygon-Z, and Arceus.</string>
+		<string>Almos every ancient Pokemon is part rock type.</string>
+		<string>If your speed was higher than the opponent in stadium, you could Wrap your way into victory with little to no effort.</string>
+		<string>In the Japanesse version of Colosseum, there was a bonus disc that allowed you to catch Celibi.</string>
+		<string>Fighting is the only type that has never been paired with Flying, until VI gen. </string>
+		<string>Stadium2&apos;s Lt. Surge had a Surfing Raichu with Reversal. That&apos;s impossible to get because Reversal is a GSC egg move and Surf is Yellow only.</string>
+		<string>A genderless parent that can breed with Ditto acts as both the male AND the female in the breeding pair as does Ditto.</string>
+		<string>Dragon Pokemon are the only type to be featured in every Generation&apos;s Pokemon League.</string>
+		<string>Nintendo once got sued from a magician for naming Pokemon Abra, Kadabra, and Alakazam. Nintendo won, of course.</string>
+		<string>Brock once caught a Tauros. But it was in one of the infamous &apos;banned&apos; episodes, so it was never mentioned even once after said episode.</string>
+		<string>In the Japanese original version of the game, the protagonist was named Satoshi. This was in tribute to Satoshi Tajiri, the Pokemon creator.</string>
+		<string>When the show was first being planned, Ash was originally going to be given a Clefairy. It was switched out at the last minute with Pikachu.</string>
+		<string>Did you know Ditto is a failed Mew clone?</string>
+		<string>That Flash is the first HM to become a TM up to Generation IV?</string>
+		<string>That Misty&apos;s Togepi was actually supposed to be Ash&apos;s?</string>
+		<string>That Charizard is not a Dragon-Type? It is Fire/Flying?</string>
+		<string>That Ash has caught all of the Grass-Type starters?</string>
+		<string>That when a new generation starts (with the exception of the first), Pikachu gets overloaded?</string>
+		<string>That there was originally 15 types and that Dark and Steel was added in Johto? and Fairy type in 6 gen.</string>
+		<string>That when pikachus meet, instead of shaking hands or rubbing noses, they interlock their tails.</string>
+		<string>That Pokemon episode number 35, &apos;The Ledgendary Dratini&apos;, got banned in the U.S. because too many guns were shown in the episode?</string>
+		<string>That Eevee is the only Pokemon that is given to you by an NPC in all four generations until gen VI where appear in the wild.</string>
+		<string>Lugia is first legendary Pokémon to appear in three consecutive normal episodes of the anime, with Meloetta being the second.</string>
+		<string>Pikachu and Eevee are the only main series starter Pokémon not to be Grass-, Fire-, or Water-type.</string>
+		<string>According to A Sneak Peek at Pokémon, Pikachu can deliver a constant current of 1000 amperes.</string>
+		<string>Niue released a one-dollar coin featuring Pikachu as part of a commemorative promotion for the Pokémon franchise, with Pikachu on one side and the nation&apos;s coat of arms on the other.</string>
+		<string>In each region, there is a two-stage Normal-type Pokémon encountered early in the region. Rattata is the Kanto variation on this theme, while Sentret, Zigzagoon, Bidoof, and Patrat are those of other regions.</string>
+		<string>In Pokémon Pinball, the Poké Balls serve as the balls in the machine; they can be used to capture Pokémon and are upgraded depending on the multiplier bonus at the time.</string>
+		<string>The Premier Ball is the only variety of Poké Ball so far whose name approaches the character limit for item names.</string>
+		<string>Due to Poké Balls being in the sunken ship in EP095, it seems that Poké Balls were first made at least 300 years ago.</string>
+		<string>There is a math formula to calculate catch rate.</string>
+		<string>That the Pokemon comic book outsells any other comic book, including X-Men? This feat has been acomplished by selling the comic at toy and video stores.</string>
+		<string>That after Pokemon was released, sales of Nintendo&apos;s GameBoy system jumped 249%!</string>
+		<string>Even though Jessie and James act like they&apos;re all cool and old, they&apos;re both actually only 17 years old! They can&apos;t even get into a bar!</string>
+		<string>A large chunk of the 3D Pokemon models in Battle Revolution were actually reused from previous games on both the N64 and Gamecube.</string>
+		<string>in the movie POKEMON4EVER there are 2 Prof. Oaks. he has an old and young character.</string>
+		<string>There are 18 pokemon that can&apos;t not learn any TM or HM move.</string>
+		<string>First episode of Pokémon Anime: Ash sees Ho-oh. What is eternal happiness for Ash? To forever be on a Pokémon journey. That&apos;s why he is forever 10.</string>
+		<string>Trainers were not originally given names. Instead of &apos;Hiker John wants to battle!&apos;, it was,&apos;THE HIKER wants to fight!</string>
+		<string>Each generation has introduced at least one Psychic-type legendary Pokémon and one Flying-type legendary Pokémon, though the only Flying-type legendary Pokémon in Generation IV, Shaymin, is only Flying-type in its Sky Forme, which was not introduced until Pokémon Platinum.</string>
+		<string>Genderless legendary Pokémon who appear in the anime are usually given a voice that is either identifiably male or female, if able to converse with humans. One exception is Arceus in the original Japanese, who was voiced by Akihiro Miwa (a female impersonator) in order to give it an androgynous-sounding voice.</string>
+		<string>The number of stripes on Electabuzz&apos;s tail changes on the official and sprite artwork between generations.</string>
+		<string>Fire is the only starter type where its respective starter Pokémon lines have not been of the same color category each generation. The Charmander, Torchic, and Tepig lines are in the Red color category, however the Cyndaquil line is in the Yellow color category.</string>
+		<string>Fire types are rare, with only 26 fully-evolved Pokémon among the total amount of 48, of which there are six legendary Pokémon and five starter Pokémon.</string>
+		<string>In Pokémon Pinball, the Poké Balls serve as the balls in the machine; they can be used to capture Pokémon and are upgraded depending on the multiplier bonus at the time.</string>
+		<string>Poké Balls are inspired by the capsules for gashapon machines, which contain small, handheld toys.</string>
+		<string>While most Poké Balls cannot capture Pokémon that have already been caught, there are some types that can easily catch a Pokémon that already is owned. These are usually rare or use-restricted balls.</string>
+		<string>Although the Hyper Ball was renamed the Ultra Ball in the English versions of the games, its design still incorporates a stylized H on the top half.</string>
+		<string>There are 26 different PokeBalls Types</string>
+		<string>The Fire type is the only type that has not been paired with the Water type.</string>
+		<string>The three types that Fire is weak to (Ground, Rock, and Water) all share a weakness to Grass-type attacks.</string>
+		<string>Mew was the only Pokémon of the first 151 to be left out of the original version of the Pokérap.</string>
+		<string>In the games, lost scientific reports state that Mew was found in the forests of Guyana.</string>
+		<string>Mew has shown up in six opening sequences, more than any other Legendary.</string>
+		<string>Mew is the only genderless Pokémon able to learn Captivate, and the only genderless Pokémon besides Cryogonal to learn Attract; however, when used by genderless Pokémon, these moves will always fail.</string>
+		<string>Mew shares the move Transform with Ditto, along with also sharing the same Shiny coloration and the same weight.</string>
+		<string>Mew was voted the most popular Legendary Pokémon in the Pokémon Power Bracket.</string>
+		<string>Every generation has introduced Water-type Pokémon whose names begin with S.</string>
+		<string>The Water type has the most Gym Leaders of its type, with a total of six.</string>
+		<string>Water-type moves are tied with the Dragon type for having the most held items that boost their power: Sea Incense, Wave Incense, Splash Plate, Mystic Water, Water Gem, and the Lustrous Orb.</string>
+		<string>Magikarp takes the shortest time to hatch out of all Pokémon that can be legitimately hatched, with six Egg cycles.</string>
+		<string>Magikarp was the first Pokémon featured in Professor Oak&apos;s lecture.</string>
+		<string>Magikarp and its evolution&apos;s Egg Group combination (Water 2 and Dragon) is unique.</string>
+		<string>Magikarp is one of fourteen Pokémon that one could collect foreign Pokédex entries for in Pokémon Diamond and Pearl.</string>
+		<string>All six of Ash&apos;s Pokédexes have been red, as are all of the Pokédexes for male player characters in the games.</string>
+		<string>The only Pokédex Ash has never owned is the Pokédex introduced in HeartGold and SoulSilver.</string>
+		<string>Numerous toy Pokédexes have been manufactured by companies like Tiger Electronics and Jakks Pacific.</string>
+		<string>The Pokédex entries in Pokémon Black and White Versions for Pokémon not native to Unova are the same as those from Pokémon Platinum Version.</string>
+		<string>There are currently four pokemons with palindrome names, eevee,Ho-oH,Girafing and alomomola</string>
+		<string>Brock has open his eyes three times in the anime </string>
+		<string>Nearly of 1/4 of the generation I pokemon are poison type</string>
+		<string>The Eggs of Elekid and Magby are the only Eggs whose designs depict those of the Pokémon&apos;s evolved form, rather than the Pokémon it directly hatches into.</string>
+		<string>Aside from Manaphy, which is legendary, no anime Pokémon that has been seen hatching from an Egg is a Pokémon that is unable to evolve.</string>
+	</array>
+	<key>firstGen</key>
+	<array>
+		<string>One of Parasect&apos;s Pokedex entries says its spores are used as medicine in China, which is a rare reference to the real world.</string>
+		<string>Red and Blue only use 37 completely unique sound clips for cries. The sounds are played back in different ways for each Pokemon.</string>
+		<string>Kabuto&apos;s name in some game prototypes is &apos;Att&apos;. This might be short for Atlantis.</string>
+		<string>Wartortle&apos;s official coloring is inconsistent; its ear color often alternates between white or blue in various official art.</string>
+		<string>In Red and Blue, you were able to use a fishing rod on the Rhydon statues. However, nothing was found unless you used an Old Rod.</string>
+		<string>Zapdos is the only legendary bird to never be seen on its feet in a sprite: all of its sprite artwork depicts it airborne.</string>
+		<string>Ninetales&apos;s name was originally spelled as &apos;Nine Tales&apos; (two words instead of one) in some early copies of Red and Blue.</string>
+		<string>Some Pokedex entries say that Raichu can discharge up to 100,000 volts. However, its Pokemon Stadium entry only says 10,000 volts.</string>
+		<string>In Red/Blue, Koffing&apos;s crossbones pattern was above its face, but in the Japanese Red/Green, it&apos;s below.</string>
+		<string>Rhydon is tied with Lairon in weight, with both of them weighing exactly 264.6 lbs.</string>
+		<string>Rhydon appears first in the game&apos;s Pokemon index data in Red/Blue. This is why most glitch Pokemon &apos;evolve&apos; into him.</string>
+		<string>Eevee is the only Pokemon that is given to you by an NPC in the first four generations</string>
+		<string>Hitmonchan and Hitmonlee are the only Pokemon that weren&apos;t previously related, then later gained a shared pre-evolution</string>
+		<string>Mew can learn Attract and Captivate despite being genderless. However, it always fails unless the opponent is also genderless.</string>
+		<string>Mew was the only Pokemon of the first 151 to be left out of the original version of the Pokerap.</string>
+		<string>All official Koffing art shows it smiling. However, all official Weezing art depicts it frowning.</string>
+		<string>In Generation 1, catching a Mew that transformed results in a glitch where the caught Mew turns into a Ditto.</string>
+		<string>Golbat and Chansey are the only evolved Pokemon that can evolve to a third form via happiness.</string>
+		<string>If Kanto&apos;s landscape were made to fit that of modern-day Japan, Saffron City occupies the space where Tokyo should be.</string>
+		<string>Some pieces of Japanese art for Slowpoke shows that they have the same striped bellies that Slowbro and Slowking do.</string>
+		<string>Giovanni is the only criminal boss not to endanger a legendary pokemon with his exploits.</string>
+		<string>Porygon (as well as its evolutions) have never appearead again in the Anime after the infamous &apos;seizure episode&apos;.</string>
+		<string>In the 1st gen, High Jump Kick only did 1 damage in recoil when it missed due to a bug.</string>
+		<string>In R/B, it was possible to make your pokemon use a move with 0 PP in certain situations, rolling it&apos;s current PP over to 63.</string>
+		<string>The names of the Soul Badge and the Marsh Badge were originally supposed to be the other way around.</string>
+		<string>In R/B/Y, it was possible to legally get 255 EVs in all stats on a Pokemon.</string>
+		<string>There are two unused Pokemon types in R/B; ??? type and BIRD type (Yes, it&apos;s in all caps).</string>
+		<string>Lorelei was the only Elite 4 member in R/B/Y to not have two of the same Pokemon.</string>
+		<string>In R/B/Y and G/S/C, besides rivals, Gym Leaders, and the E4, the only trainer with 6 Pokemon is a fisherman with all Magikarps.</string>
+		<string>If you attempt to import Missingno into Pokemon Stadium, it comes out as a substitute doll.</string>
+		<string>Back in R/B/Y, Hyper Beam didn&apos;t recharge if you fainted a Pokemon with it.</string>
+		<string>Shiny Pokemon actually existed in R/B/Y, but they just wouldn&apos;t appear to be shiny until you transferred them to GSC.</string>
+		<string>In Yellow, you could make your Pikachu very happy by offering him potions again and again, even if he didn&apos;t need them.</string>
+		<string>In R/B, encountering Missingno would increase the quantity of the 6th item in your bag to 255.</string>
+		<string>Gastly and Haunter weigh the least out of any Pokemon at 0.02 pounds. To compare, Gengar weighs 89.3 pounds.</string>
+		<string>The names of the three legendary birds each end with the first three Spanish numbers. ArticUNO, ZapDOS, MolTRES.</string>
+		<string>In R/S, May/Brendan would never battle you with a fully evolved starter.</string>
+		<string>Mewtwo is a clone of the Pokémon Mew, yet it comes before Mew in the Pokédex.</string>
+		<string>Blue/Red’s only trainers you could rematch were the Elite 4 and the Champion.</string>
+		<string>Bulbasaur is the only starter to begin with two types.</string>
+		<string>Yellow was NOT the only game in which Jesse and James appeared in. They also appeared in Pokemon Puzzle League.</string>
+		<string>In B/R/Y, Pokemon did not heal when placed in the PC unlike in all the other games.</string>
+		<string>In RBY, Brock gives you the Boulder Badge while still in the battle, whereas every gym leader after that gives it to you on the field screen.</string>
+		<string>Electabuzz spelled backwards has zubat in it.</string>
+		<string>here were only 8 overworld Pokemon sprites in RBY (bird, clefairy, rhydon, seal, plant, bug, pokeball and Ponyta).</string>
+		<string>Red and Blue collectively are the best selling (non-bundled) game of all time.</string>
+		<string>Charizard and Rhyhorn have the same cry.</string>
+		<string>Back in R/B/Y, it was impossible to get a non-nicknamed Jynx by its real name. A guy in Cerulean trades it to you, but he nicknamed it Zynx.</string>
+		<string>Snorlax was the heaviest Pokemon until Generation 3. It&apos;s now ranked 6th, losing to Metagross, Groudon, Dialga, and both Giratina forms.</string>
+		<string>Missingno doesn&apos;t exist in Pokemon Green. Only Red and Blue.</string>
+		<string>Did you know Ditto is a failed Mew clone?</string>
+		<string>That Articuno and Zapdos were the only ones with their Type until Delibird from Generation II and Emolga from Generation V came along?</string>
+		<string>That Charizard is not a Dragon-Type? It is Fire/Flying?</string>
+		<string>That when a new generation starts (with the exception of the first), Pikachu gets overloaded?</string>
+		<string>That Caterpie and Goldeen have the same cry?</string>
+		<string>Pikachu and Eevee are the only main series starter Pokémon not to be Grass-, Fire-, or Water-type.</string>
+		<string>Pikachu is the first Pokémon by National Dex order to be related to a Pokémon from another generation: Pichu.</string>
+		<string>According to A Sneak Peek at Pokémon, Pikachu can deliver a constant current of 1000 amperes.</string>
+		<string>Pikachu is one of fourteen Pokémon that one can collect foreign Pokédex entries for in Pokémon Diamond and Pearl.</string>
+		<string>Pikachu and Raichu share the same species name with Rattata, Raticate, Sandshrew, and Sandslash. They are all known as Mouse Pokémon.</string>
+		<string>Pikachu is the first Electric type in the National Dex.</string>
+		<string>Pikachu is the first Pokémon by National Dex order who evolves via evolutionary stone.</string>
+		<string>Rattata and its evolution comprise the first two-stage evolutionary family in National Pokédex order.</string>
+		<string>Rattata is the first pure Normal-type in National Pokédex order.</string>
+		<string>Some of Slowbro&apos;s Pokedex entries state that if the Shellder is removed, it reverts to Slowpoke. In other words, it de-evolves.</string>
+		<string>Butterfree was originally Venonat&apos;s evo and Venomoth Was originally Metapod&apos;s evo.</string>
+		<string>Ninetails may have been based off a Japanese legend character called Kitsune, who could transform into a fox with nine tails.</string>
+		<string>Arbok is Kobra spelled backwards, aswell as its first eveloution, Ekans, is Snake spelled backwards.</string>
+		<string>Weedle is the only poke on that can&apos;t learn a normal type move.</string>
+		<string>Hitmonchan is based on Jackie Chan! Hitmonlee is based on Bruce Lee! They are play on words. Hitmonchan= Jackie Chan, Hitmonlee= Bruce Lee.</string>
+		<string>Ditto can breed with all breed-able Pokemon but their own species (Ditto).</string>
+		<string>Farfetch&apos;d is the first Normal/Flying type Pokemon and it is the First Bird Pokemon not to evolve on the Pokedex.</string>
+		<string>Snorlax was said to be the Fatest Pokemon in existence but was disproved in 2004.</string>
+		<string>Rhydon was the first Pokémon created.</string>
+		<string>Prototype versions of Pokémon Red and Green contain a surfboard item. It&apos;s actually usable, and lets you surf without a surfing pokémon.</string>
+		<string>Cubone is said to be wearing the skull of its deceased mother, so baby kangaskahn&apos;s mother died and it put on its mothers skull and became cubone.</string>
+		<string>in Red/Green Beta, Venomoth was originally Metapod&apos;s evolved form, and Butterfree was originally Venonat&apos;s evolved form!</string>
+		<string>In Red/Green Beta, Eevee&apos;s original name was Eon, explaining the suffix on it&apos;s evolutions.</string>
+		<string>Tentacruel&apos;s prototype name was &apos;Man O War&apos;.</string>
+		<string>Cubone&apos;s prototype name was &apos;Orphon&apos;, which explains why its called &apos;The Lonely Pokemon&apos;</string>
+		<string>Pikachu is the only main series starter Pokémon that does not have a 7:1 male to female gender ratio.</string>
+		<string>The American staff in charge of localizing the games tried to change the Pokémon designs, however, Tsunekaz Ishihara refused the proposal. in pokemon R/B</string>
+		<string>Some of Slowbro&apos;s Pokedex entries state that if the Shellder is removed, it reverts to Slowpoke. In other words, it de-evolves.</string>
+		<string>Some beta versions of Red and Blue list Machamp&apos;s original name as &apos;Ju-Doh&apos;.</string>
+		<string>In Red and Blue, you were able to use a fishing rod on the Rhydon statues. However, nothing was found unless you used an Old Rod.</string>
+		<string>Butterfree was originally Venonat&apos;s evo and Venomoth Was originally Metapod&apos;s evo.</string>
+		<string>Ninetails may have been based off a Japanese legend character called Kitsune, who could transform into a fox with nine tails.</string>
+		<string>In Red/Green Beta, Eevee&apos;s original name was Eon, explaining the suffix on it&apos;s evolutions.</string>
+		<string>Pikachu is the only main series starter Pokémon that does not have a 7:1 male to female gender ratio.</string>
+		<string>Eevee is the only main series starter Pokémon to have a branched evolution.</string>
+		<string>Yellow is the only main series game where the player cannot choose their own starter Pokémon.</string>
+		<string>Charmeleon, Charizard, Flareon, Moltres, and Infernape are all known as the Flame Pokémon.</string>
+		<string>Charizard was unable to learn Fly through HM02 in Red and Blue. This was changed starting with Yellow, making it possible to still get a Charizard with Fly in the original games by trading one from a later version.</string>
+		<string>Bulbasaur is the only unevolved dual type starter Pokémon.</string>
+		<string>Generation I introduced the most moves to the series, with 165.</string>
+		<string>Excluding FireRed and LeafGreen (as they are remakes), Generation I is the only generation so far whose mascots are non-legendary Pokémon.</string>
+		<string>Generation I has the most extra space in the Pokémon Storage System if the player captures one of each Pokémon, with 240 spots available for 151 Pokémon, leaving 89 extra spots.</string>
+		<string>Generation I is the only generation not to feature the paired versions&apos; mascots on the title screen, but instead includes the first evolution stage of two starter Pokémon.</string>
+		<string>Generation I is the only generation without a playable female character, although evidence of an intended female player character has been discovered.</string>
+		<string>Generation I is the only generation that indexes its Pokémon in order of creation instead of by Pokédex number.</string>
+	</array>
+	<key>fiveGen</key>
+	<array>
+		<string>The Japanese logo of the Pokémon games was redesigned once again for Generation V&apos;s releases; the first logo was used in Generation I and Generation II, and the second during Generation III and Generation IV.</string>
+		<string>Generation V introduced the most new Pokémon to the series, with 156 (five more than Generation I introduced).</string>
+		<string>Generation V introduced the most Gym Leaders, with 14.</string>
+		<string>Generation V is the first generation since Generation I not to introduce any baby Pokémon or cross-generational relatives.</string>
+		<string>Generation V is the only generation in which:There is only one fishing rod—the Super Rod—as the Old Rod and Good Rod have been removed.</string>
+		<string>Generation V is the only generation in which:The primary paired versions were released in Europe before in North America.</string>
+		<string>Generation V is the only generation in which:A single-type Pokémon of every type is introduced.</string>
+		<string>Generation V is the only generation in which:The main professor is female.</string>
+		<string>Generation V is the only generation in which:Pikachu is not available without trading.</string>
+		<string>Generation V is also the only generation that did not introduce:A solitary core series game.</string>
+		<string>Generation V is also the only generation that did not introduce:A Bug/Flying Pokémon.</string>
+		<string>Pokémon Black and White each have a mascot of the color of their counterpart version.</string>
+		<string>Game Freak spent about one-and-a-half years developing the story and characters in Black and White.</string>
+		<string>Pokémon Black and White are the only core series games to require the version mascot to be specifically caught; if the battle ends by any other means (such as causing ReshiramB or ZekromW to faint), the story will not proceed, and the player will have to try again.</string>
+		<string>Korean versions of Black and White, unlike all Korean Generation IV games, can communicate with international versions without any issues.</string>
+		<string>Black 2 and White 2 were the final core series games released for the Nintendo DS system and its redesigned models, the Nintendo DS Lite, the Nintendo DSi and the Nintendo DSi XL.</string>
+		<string>Black 2 and White 2 are the first core series Pokémon games to have a sort of achievement system, via the Medal Box.</string>
+		<string>Unova is the first main series region to be based on a real-world region outside of Japan.</string>
+		<string>Unova is the only region without:a Bicycle Shop </string>
+		<string>Unova is the only region without:a Safari Zone</string>
+		<string>Unova is the only region without:an actual or former Rock-type Gym</string>
+		<string>Unova is the only region without:a regional Pokédex that starts with a Grass-type starter Pokémon (although the Grass-type starter Pokémon is still entry #001, its Pokédex starts with Victini as #000).</string>
+		<string>Unova is the only region without:the evolution families of Pikachu, Abra, Machop, Tentacool, Geodude, Goldeen, and Magikarp in its regional Pokédex.</string>
+		<string>Unova is the only main series region which does not use a romanization of the Japanese name as its English name, and the only region whose name is different among all translations of the games.</string>
+		<string>Unova is also the only main series region not to have an &apos;O&apos; sound in its Japanese name.</string>
+		<string>In some UK pre-release material, Unova was referred to as Alleos.</string>
+		<string>Unova is the region with the most Gym Leaders, with 14 in total.</string>
+		<string>Unova has the most Gyms in cities, with all eleven of them. Sinnoh also has all of its Gyms in cities, but only has eight Gyms.</string>
+		<string>Unova is the only main series region where none of its cities and towns share the same background music.</string>
+		<string>In Black and White, the only differences between Drayden and Iris&apos;s teams are the genders of their Pokémon and their Druddigon&apos;s Ability: Drayden has an all-male team and his Druddigon has Rough Skin, while Iris has an all-female team and her Druddigon has Sheer Force.</string>
+		<string>Victini&apos;s Unova Pokédex number is 000, making it the first Pokémon to legitimately have the number 000 in any Pokédex listing.</string>
+		<string>Although Victini has a Shiny sprite, Pokémon Black and White are programmed so that a Shiny Victini cannot be encountered. It shares this trait with Reshiram and Zekrom.</string>
+		<string>According to an IGN interview, Victini is Junichi Masuda&apos;s favorite Generation V Pokémon.</string>
+		<string>In Black 2 and White 2, if Victini is taken to Liberty Garden, it will come out of its Poké Ball and dance around happily.</string>
+		<string>Emboar is the only fully evolved Unova starter Pokémon that has a secondary type.</string>
+		<string>Emboar is the only starter Pokémon that has a different Hidden Ability from its evolutionary relatives.</string>
+		<string>Emboar, Samurott and Serperior all share the same base stat total of 528.</string>
+		<string>Pansage was first seen, together with Axew, as a toy featured in two images seen July 2010, but it wasn&apos;t named and nothing was known about it. In the beginning of August a fake leak of the September issue of CoroCoro showed its own version of this Pokémon. Pansage was officially revealed August 22, 2010 by Pokémon Sunday.</string>
+		<string>Liepard is the only Pokémon that has a base stat total of 446.</string>
+		<string>Simipour represents February in the Unova horoscope.</string>
+		<string>Conkeldurr has the highest Attack base stat of all Fighting-type Pokémon.</string>
+		<string>Scolipede is the tallest and heaviest of all Bug-type Pokémon, as well as being the heaviest Poison-type Pokémon.</string>
+		<string>In Generation V, Scolipede and its evolutionary relatives have Quick Feet instead of Speed Boost as their Hidden Ability. If a Scolipede with Quick Feet is transferred from Generation V to Generation VI using the Poké Transporter, its Ability will become Speed Boost.</string>
+		<string>Darmanitan&apos;s Standard Mode has the highest base Attack of all Fire-type Pokémon.</string>
+		<string>Darmanitan&apos;s Zen Mode has the highest base Special Attack of all non-legendary Psychic-type Pokémon.</string>
+		<string>Though evolving from Zorua at level 30, pre-release information from CoroCoro suggested it would evolve from Zorua by a method different from known evolution methods. What this method might have been if it was true is unknown.</string>
+		<string>The Poké Toy item is based on Minccino&apos;s tail.</string>
+		<string>Genesect is the only Bug-type Legendary Pokémon, excluding Arceus holding the Insect Plate.</string>
+		<string>Genesect is the only Pokémon whose Pokédex entry names a villainous team, in this case, Team Plasma.</string>
+		<string>Generation VI introduced the fewest new Pokémon, with 70; new moves, with 51; and new Abilities, with 26.</string>
+	</array>
+	<key>fourthGen</key>
+	<array>
+		<string>That Flash is the first HM to become a TM up to Generation IV?</string>
+		<string>Each generation has introduced at least one Psychic-type legendary Pokémon and one Flying-type legendary Pokémon, though the only Flying-type legendary Pokémon in Generation IV, Shaymin, is only Flying-type in its Sky Forme, which was not introduced until Pokémon Platinum.</string>
+		<string>Generation IV introduced the most Dragon-type moves of any generation, with five, and Generation I introduced the least Dragon-type moves, with only one.</string>
+		<string>Its English motto before Generation IV was &apos;The highest Pokémon authority!&apos;</string>
+		<string>Indigo Plateau and Route 26 are the only places that can be flown to from both Kanto and Johto in Generation IV.</string>
+		<string>Every player character in all Generation IV games has a Wii in his/her room, referencing its status as the current Nintendo console during the generation.</string>
+		<string>Generation IV is the only generation in which two core series game names have the same first initial in English (Pearl and Platinum). However, other languages have had the same initial in their game names, with Spanish Azul and Amarillo for Blue and Yellow, and German Saphir and Smaragd for Sapphire and Emerald.</string>
+		<string>Generation IV is the first generation in which level 1 Pokémon are legitimately obtainable in the core series.</string>
+		<string>Generation IV is the only generation to have all its games released in the spring in North America, and in the fall in Japan.</string>
+		<string>Generation IV is the longest Pokémon generation in Japan, falling only 10 days short of being four years long.</string>
+		<string>Generation IV is tied with Generation III for the largest number of core series games, with five each.</string>
+		<string>Generation IV introduced the largest number of evolutions for Pokémon of previous generations, at 29.</string>
+		<string>Generation IV introduced the largest number of legendary Pokémon, with 13*.</string>
+		<string>Generation IV is the only generation that did not introduce a Water/Rock-type Pokémon.</string>
+		<string>Diamond and Pearl are the first games where: The rival&apos;s starter Pokémon is not at level 5 during the first rival battle.</string>
+		<string>Diamond and Pearl are the first games where:The lab of the region&apos;s Pokémon Professor is not in the player&apos;s hometown.</string>
+		<string>Diamond and Pearl are the first games where:All three starter Pokémon gain a second type through evolution and are utilized in the storyline.</string>
+		<string>Pokémon Diamond and Pearl contain many references to Internet memes and chatspeak. This is possibly because the lead translator, Nob Ogasawara, is a member of the Something Awful Forums.</string>
+		<string>The leaders and Elite Four of Sinnoh do not always use Pokémon of their specialized type. This problem was fixed in Platinum with an expansion added to the Pokédex.</string>
+		<string>Diamond and Pearl are the first core series Pokémon games that require their saved data to be deleted before saving a new game. However, the first in the series to have such requirement were Pokémon Mystery Dungeon: Red Rescue Team and Blue Rescue Team.</string>
+		<string>Diamond and Pearl are also the first two games in which baby Pokémon previously available only through breeding can be found in the wild, if one doesn&apos;t count catching Wynaut on Mirage Island in the Hoenn-based games.</string>
+		<string>Diamond and Pearl, along with the Japanese version of Platinum, are the most compatible Pokémon games, as they can connect with nineteen other games: all core series games of Generation III, IV, and V; the Pokémon Ranger games; Pokémon Battle Revolution; and My Pokémon Ranch.</string>
+		<string>Palkia is tied with Kyogre for the highest Special Attack base stat of all Water-type Pokémon.</string>
+		<string>Palkia has the highest base stat total of all Water-type Pokémon.</string>
+		<string>The gems on Palkia&apos;s shoulders resemble Pale Spheres.</string>
+		<string>Palkia and Dialga are the first legendary Pokémon to be met at a level that is not divisible by 5, appearing at level 47.</string>
+		<string>Palkia is in the highest IQ group. It takes this position in IQ group J and is the only Pokémon in IQ group J.</string>
+		<string>No other Pokémon shares the same type combination as Dialga.</string>
+		<string>Dialga is the tallest Generation IV Pokémon.</string>
+		<string>Dialga is the first legendary Pokémon to have a role in three different movies.</string>
+		<string>According to Junichi Masuda&apos;s blog, the Spanish translation team suggested changing the name Dialga because of its similarity to the word alga, seaweed.</string>
+		<string>Dialga has the highest base stat total of all Steel-type Pokémon.</string>
+		<string>Dialga is the only Dragon-type that is not weak to Dragon-type moves.</string>
+		<string>Sinnoh is the only region of the main series games that has more than five letters in its name, having six.</string>
+		<string>Sinnoh is also the only area traveled through where all the Gym Leaders that have been featured have appeared in an episode before Ash battled them.</string>
+		<string>Sinnoh has been shown to have more Shiny Pokémon inhabiting it than any other region featured in the anime with a total of seven; Dustox, Metagross, Ditto, Raikou, Entei, Suicune, and Ariados.</string>
+		<string>Azelf appears to be a pixie or a fairy, although its Japanese name suggests that it&apos;s a gnome. Azelf and the rest of the trio could possibly have originated from the Imperial Regalia of Japan, which are also called the Three Sacred Treasures. Azelf would be the Kusanagi, which embodies valor.</string>
+		<string>Snowpoint is geographically the northernmost city in the known Pokémon world.</string>
+		<string>Turtwig is the heaviest of the basic forms of all of the starter Pokémon.</string>
+		<string>Torterra shares the same species type with Groudon. Both of them are known as the Continent Pokémon.</string>
+		<string>Torterra has the lowest Speed base stat of all fully evolved starter Pokémon.</string>
+		<string>Torterra is the heaviest Grass-type Pokémon.</string>
+		<string>Infernape is the only final form Sinnoh starter Pokémon not to have an immunity, since Empoleon is immune to Poison-type attacks and Torterra is immune to Electric-type attacks.</string>
+		<string>Infernape is the shortest fully evolved starter.</string>
+		<string>Empoleon can learn seven HM moves, the most of any starter Pokémon. The only HM move it cannot learn is Fly.</string>
+		<string>Empoleon is roughly the same height as its namesake Napoleon Bonaparte.</string>
+		<string>Floatzel is based on an otter, which is in the same family as weasels, however it resembles weasels a little more closely than it does otters. Floatzel also appears to be loosely based on the Kamaitachi.</string>
+		<string>Mismagius does not appear in Johto&apos;s Pokédex in HeartGold and SoulSilver Versions, despite Misdreavus being available before the Elite Four and the Dusk Stone being available as a Pokéathlon prize. This is also the case for Honchkrow.</string>
+		<string>If the Oval Stone is counted as an evolutionary stone, then Happiny is the only Pokémon that evolves with a stone that can evolve further.</string>
+		<string>Happiny, along with Chansey, has the lowest base stat for both Attack and Defense in the games.</string>
+	</array>
+	<key>secondGen</key>
+	<array>
+		<string>Despite being Generation II Pokémon, Houndour, Murkrow, and Slugma are actually native to Kanto in Pokémon Gold, Silver, and Crystal.</string>
+		<string>The second generation is the only generation to have all three starters a single type when they fully evolve.</string>
+		<string>That Articuno and Zapdos were the only ones with their Type until Delibird from Generation II and Emolga from Generation V came along?</string>
+		<string>In Generation II, after catching a Pokémon, the Poké Ball&apos;s color palette changes to that of the Pokémon that was just caught. It then changes back to normal thereafter.</string>
+		<string>Ho-Oh is the only Generation II legendary Pokémon which hasn&apos;t appeared in a movie, only appearing in anime appearances, opening sequences, and in a cameo in Lucario and the Mystery of Mew, only to be Mew in disguise.</string>
+		<string>Pikachu is the first Pokémon by National Dex order to be related to a Pokémon from another generation: Pichu.</string>
+		<string>2 legendary Pokemon have been level 60 when found (Lugia and Ho-Oh in Crystal).</string>
+		<string>Pokémon Crystal could communicate with cell phones in Japan.</string>
+		<string>Pokemon Crystal is the last main series game to use the slogan Gotta catch &apos;em all!.</string>
+		<string>Although Pokémon Gold and Silver are compatible with all Game Boy models (original up to the Game Boy Advance SP), Crystal will not work on models prior to the Game Boy Color. This is due to the cartridges being of different models.</string>
+		<string>Gold and Silver only have 30 unique sound clips used for Pokemon cries in addition to the previous 37 from Red and Blue.</string>
+		<string>If you plugged in Gold or Silver, the backgrounds were made just for Stadium; they won&apos;t appear in a real Super Game Boy.</string>
+		<string>Prior to Gold and Silver coming out, many websites incorrectly referred to Marill as &apos;Pikablu&apos;.</string>
+		<string>Gold and Silver contain unfinished Safari Zone data. It&apos;s one small map with no encounters, but it has 4 types of land inside.</string>
+		<string>The Pokémon Gold/Silver time-keeping battery lasted on an average of about 7 years.</string>
+		<string>The move waterfall was first introduced as an HM in G/S/C, but it was naturally learnable by Goldeen in R/B/Y.</string>
+		<string>In G/S/C, if you use the radio inside the Unown Temples you could pick up an extra station and hear them making eerie sounds.</string>
+		<string>New Bark Town in G/S/C is the only starting town where you don&apos;t head north from to leave at the beginning of the game (You go west instead).</string>
+		<string>G/S/C are the only games where the starters begin with hold items.</string>
+		<string>In G/S, Full maps exist for the Cinnabar Island Lab, indicating it was to be playable at some point.</string>
+		<string>Azurill can change genders when it evolves.</string>
+		<string>G/S debut in japan was November 21, 1999</string>
+		<string>G/S debut in US was October 15, 2000</string>
+		<string>Generation II is the smallest generation so far with only seven games and three core series games.</string>
+		<string>In terms of release dates, Generation II is the shortest generation in Japan, with exactly three years between the release of Gold and Silver and Ruby and Sapphire.</string>
+		<string>Generation II leaves the least extra space for Pokémon in the Storage System if one of every species is caught. Only 280 Pokémon may be obtained at once; there are 251 different Pokémon species available in this generation.</string>
+		<string>Generation II features the first main series game, Crystal, whose Japanese title is in katakana only and that uses an English word, rather than using the Japanese counterpart word in kanji. No game since has been named in kanji.</string>
+		<string>Unlike other Generations, should player use a cheat in Generation II game to get into tall grass without a Pokémon, the fight will instantly end (and be treated as victory in case of Trainers), instead of sending a glitch Pokémon.</string>
+		<string>Crystal was originally known as &apos;Pokémon X&apos; prior to its release. Another core series Pokémon game would later go on to use this title.</string>
+		<string>230</string>
+		<string>People buying a Game Boy Color during the release of this game were given the option of buying a Game Boy Advance that came with Pokémon Crystal in the package.</string>
+		<string>Due to the female character not being in Gold or Silver, the sprite of the character will automatically change to the male character&apos;s sprite when trading or battling with another game.</string>
+		<string>Pokémon Crystal is the only version in Japanese to have the term &apos;Version&apos; in its name.</string>
+		<string>Pokemon Crystal release date in japan was December 14, 2000</string>
+		<string>G/S games started the trends of having legendary Pokémon as mascots and the use of precious stones or metals as title names.</string>
+		<string>Pokémon Gold and Silver are the only paired versions where Pokémon sprite designs differ between the two games.</string>
+		<string>Gold and Silver, as well as their remakes, have the most types that have been specialized in by Gym Leaders, adding up to 15.</string>
+		<string>Pokémon Gold and Silver are the only core series games that have not had an official soundtrack album released.</string>
+		<string>Due to a possible oversight in the international versions, the Japanese quotation marks are used in certain parts of the dialogue, like in radio stations. This was corrected in Crystal.</string>
+		<string>pinarak can be seen as a parallel to Ledyba. Both of them are Bug-type Generation II Pokémon. Spinarak is exclusive to Pokémon Gold and HeartGold, while Ledyba is exclusive to Silver and SoulSilver.</string>
+		<string>Teddiursa is one of fourteen Pokémon that one can collect foreign Pokédex entries for in Pokémon Diamond and Pearl.</string>
+		<string>Teddiursa and Phanpy, along with their evolutions, are the only Pokémon to swap version-exclusive status between localizations.</string>
+		<string>Mantine is tied with Kyogre for having the highest Special Defense base stat out of all Water-type Pokémon. Mantine also has the highest Special Defense base stat out of all non-legendary Flying types.</string>
+		<string>Despite the fact that Mantine evolve from Mantyke in the presence of a Remoraid, Remoraid is not present on any of Mantine&apos;s sprites in the generation the evolution method was introduced nor in the newer generation.</string>
+		<string>No other Pokémon has the same type combination as Skarmory.</string>
+		<string>Skarmory has the highest base Defense of all Flying-type Pokémon.</string>
+		<string>Skarmory&apos;s number in the Johto Pokédex and New Unova Pokédex are the same: 203.</string>
+		<string>No other Pokémon has the same type combination as Houndoom and its pre-evolution.</string>
+		<string>Kingdra is the only Dragon-type Pokémon that was introduced in Generation II.</string>
+		<string>ingdra shares its species name with Horsea, Seadra, Dratini, its evolutions, Salamence, and Goodra. They are all known as the Dragon Pokémon.</string>
+	</array>
+	<key>sixGen</key>
+	<array>
+		<string>Generation VI is the only generation that did not introduce:A Water/Flying Pokémon.</string>
+		<string>Generation VI is the only generation that did not introduce:A Bug/Poison Pokémon.</string>
+		<string>Generation VI is the only generation that did not introduce:A Gym Leader or Elite Four member specializing in Ghost-type Pokémon.</string>
+		<string>Generation VI is the only generation that did not introduce:A new type of Poké Ball.</string>
+		<string>Generation VI is the only generation that did not introduce:A department store.</string>
+		<string>Generation VI is the only generation which contains games (excluding remakes) in which some Gym Leaders hand out TMs containing moves from older generations.</string>
+		<string>Generation VI leaves the most extra room in the PC if one captures exactly one of each species of Pokémon, with there being 930 spaces and 719 Pokémon.</string>
+		<string>Chesnaught has the highest base Defense of all fully evolved starter Pokémon as well as of all non-Legendary Fighting types.</string>
+		<string>Greninja shares the same species name as Ninjask. They are both known as the Ninja Pokémon.</string>
+		<string>Talonflame is the first Pokémon to have more than five katakana characters in its Japanese name.</string>
+		<string>Vivillon and its evolutionary relatives are the only Bug-type Pokémon introduced in Generation VI.</string>
+		<string>Vivillon is the only fully-evolved Pokémon to have the Ability Friend Guard.</string>
+		<string>No other Pokémon has the same type combination as Pyroar and its pre-evolution.</string>
+		<string>Gen VI introduce the fairy-type pokemon.</string>
+		<string>n pre-release footage shown in the E3 developer roundtable, a Shiny Gogoat was shown. However, in the final release, its Shiny colors were changed drastically.</string>
+		<string>Meowstic is the only Pokémon to have separate movesets for each gender.</string>
+		<string>Furfrou&apos;s different trims are not counted in the Pokédex as separate forms, similarly to the different types of Arceus and Genesect with differing Drives.</string>
+		<string>No other Pokémon has the same type combination as Aegislash and its evolutionary relatives.</string>
+		<string>Aegislash is the only non-legendary Pokémon whose alternate forms use the spelling Forme in the Pokédex.</string>
+		<string>Slurpuff and Aromatisse can be seen as parallels to each other; both are version exclusive pure Fairy types, with Slurpuff being exclusive to X, and Aromatisse to Y, both have Abilities exclusive to them that affect themselves as well as their allies, and both are evolved from their previous forms by being traded while holding certain items.</string>
+		<string>Not only is Inkay&apos;s method of evolution into Malamar unique to it, but it would have been impossible to perform in any of the previous core series Pokémon games. However, some other games, such as Kirby Tilt &apos;n&apos; Tumble, included special equipment that made them capable of detecting the cartridge&apos;s motion.</string>
+		<string>No other Pokémon has the same type combination as Malamar and its pre-evolution, Inkay.</string>
+		<string>No other Pokémon has the same type combination as Dragalge.</string>
+		<string>Tyrantrum has the highest Defense of all non-legendary Dragon-type Pokémon.</string>
+		<string>No other Pokémon has the same type combination as Hawlucha.</string>
+		<string>Sylveon is the only cross-generational evolutionary relative introduced in Generation VI.</string>
+		<string>Zygarde is currently the last Pokémon in alphabetical order.</string>
+		<string>Yveltal has the same stat distribution as Xerneas.</string>
+		<string>Xerneas is the only version mascot whose signature move is a status move.</string>
+		<string>Gen VI introduce 24 new Abilities</string>
+		<string>The English names of cities and towns in Kalos are derived from various ingredients used in fragrances. Likewise, the names in the European versions are derived from various terminologies related to art.</string>
+		<string>Kalos has more locations to which the player can Fly than any other region, with 19.</string>
+		<string>Kalos ties with Hoenn for the the largest amount of towns and cities of the six main regions, at 16.</string>
+		<string>The word &apos;Kalosian&apos;, as seen in Kiloude City&apos;s description, is the adjectival form of Kalos.</string>
+		<string>Kalos is the only core series region that does not have a department store.</string>
+		<string>Kalos is the only core series region that does not have a notable Ghost-type specialist at any point.</string>
+		<string>Avalugg has the highest Defense of all Ice-type Pokémon.</string>
+		<string>Pokemon X and Y was the first poke games to have worldwide release date in octuber 12,2012.</string>
+		<string>Pokemon X and Y introduce Sky Battles</string>
+		<string>Pokemon X and Y introduce 70 new Pokémon were introduced for X and Y, bringing the known total from 649 to 719.</string>
+		<string>Pokemon X and Y introduce 28 Mega-Evolutions</string>
+		<string>It also appears that the Pokémon found within the Friend Safari have got two IVs of 31.</string>
+		<string>It also appears that the Pokémon found within the Friend Safari can be found with his hidden ability</string>
+		<string>A Mega Ring (Japanese: メガリング Mega Ring) is a device that acts as a medium between a Pokémon Trainer and a Pokémon holding a Mega Stone in order to make them Mega Evolve. </string>
+		<string>Kangaskhan is the only Normal-type Pokémon capable of Mega Evolving.</string>
+		<string>All the first starters has a Mega-Evolution</string>
+		<string>Mega Venusaur has the highest base stat total of all Grass-type and Poison-type Pokémon.</string>
+		<string>Charizard&apos;s Mega Evolutions have the highest base stat total of all final evolved starters, as well as the highest base stat total of all non-legendary Fire-types.</string>
+		<string>Mega Charizard Y has the highest base stat total of all non-legendary Flying-type Pokémon.</string>
+		<string>In Gen VI you can&apos;t inflict status changes if the pokemon target its the same type of the status inflict move, excluding sleep and confusion.</string>
+	</array>
+	<key>thirdGen</key>
+	<array>
+		<string>In Generation III, Pokemart roofs were originally going to be colored red. They were most likely changed to avoid confusion with a Pokemon Center.</string>
+		<string>In Generation III, all Dragon-type moves were Cool moves.</string>
+		<string>In Generation III, all fifteen Fire-type moves were Beauty moves.</string>
+		<string>Generation III introduced the most Abilities to the series, with 77.</string>
+		<string>Generation III was the first generation to Include both a mother and father for the main character and the rival.</string>
+		<string>Generation III was the first generation to Introduce two legendary trios.</string>
+		<string>Generation III was the first generation to Introduce two pseudo-legendaries.</string>
+		<string>Generation III was the first generation to Introduce two pseudo-legendaries.</string>
+		<string>Generation III was the first generation to Not introduce any new evolutions for Eevee.</string>
+		<string>Generation III was the first generation to Introduce a pure Steel-type and pure Ice-type Pokémon.</string>
+		<string>Generation III was the first generation to Not allow the customization of a rival character&apos;s name.</string>
+		<string>Generation III was the first generation to have multiple paired versions, one set of which is a set of remakes.</string>
+		<string>Generation III introduced the most Pokémon that are unable to evolve, with a total of 21 at the time.</string>
+		<string>Generation III does not introduce any evolved forms of Pokémon from previous generations (a trait shared with Generation V), with the only cross-generational relatives being baby Pokémon Azurill and Wynaut.</string>
+		<string>Generation III has the largest number of total games, with fifteen. It is tied with Generation IV for the largest number of main series games, with five each.</string>
+		<string>Starting with Generation III, Ken Sugimori&apos;s art style shows noticeable differences from that of Generation I and II. This can be seen when comparing the artwork for Red, Ethan, and Generation I and II Pokémon from their original games to that of those games&apos; remakes.</string>
+		<string>Most of the Generation III Pokémon that are not in the Sinnoh Pokédex have only one sprite in the Generation IV games. Generation IV Pokémon received sprite updates in Pokémon Platinum, while Generation I and II Pokémon received updates in Pokémon HeartGold and SoulSilver.</string>
+		<string>Almost all the backsprites of non-Generation III Pokémon are revamps of the backsprites in the Generation II games.</string>
+		<string>Generation III is the longest generation in North America, lasting slightly over four years.</string>
+		<string>Generation III is the only generation not able to communicate with games from the previous generation.</string>
+		<string>S/R were introduce in November 21, 2002 japan.</string>
+		<string>Hoenn has the most routes of any region, with 34.</string>
+		<string>Hoenn ties with Kalos for the the largest amount of cities and towns of the six main regions, at 16.</string>
+		<string>Not counting the player&apos;s hometown, Hoenn has the most towns and cities that do not have Gyms—Oldale Town, Slateport City, Lilycove City, Verdanturf Town, Fallarbor Town, Pacifidlog Town, and Ever Grande City.</string>
+		<string>Unlike other regions, several of the smaller islands off Hoenn&apos;s southeastern coast are unreachable by any means.</string>
+		<string>Hoenn is the only core series region to not be seen in a day-night cycle at least once, and the only region not to be rendered in 3D.</string>
+		<string>Hoenn is the only region in the handheld games to have more than one villainous team, with both Team Aqua and Team Magma calling the region home. Only Orre matches this, with Team Snagem and Cipher, though Orre has not appeared outside of GameCube games.</string>
+		<string>Hoenn has the fewest gates of any region. It features only two, both located within the Seaside Cycling Road.</string>
+		<string>Hoenn is the only core series region which has both a Game Corner and department store which are not in the same city, since Hoenn&apos;s Game Corner is in Mauville City whereas its department store is in Lilycove City.</string>
+		<string>Hoenn is the only region in which all Badges have the same English and Japanese names—at least one Badge has a different name in all five other regions.</string>
+		<string>Hoenn is the only region with two lighthouses—one in Slateport City and the other in Lilycove City.</string>
+		<string>Hoenn starts a running theme that the player gets their starting Pokémon not in a lab.</string>
+		<string>The routes on the Sevii Islands are not numbered, unlike the other regions. This is likely to prevent confusion as to their relation to the others, as continuing where Johto left off (at Route 46, at the time the highest-numbered Johto route) would seemingly imply that Johto is accessible in the games.</string>
+		<string>Sceptile has the highest Speed base stat of all non-legendary Grass types.</string>
+		<string>Sceptile is the only fully evolved single type Hoenn starter.</string>
+		<string>Blaziken is the only fully evolved Hoenn starter to appear in PokéPark Wii: Pikachu&apos;s Adventure.</string>
+		<string>Swampert and its pre-evolution Marshtomp are the only starter Pokémon to have a 4× weakness against another starter type.</string>
+		<string>Poochyena has the lowest base stat total of all Dark-type Pokémon.</string>
+		<string>Wailord has the highest HP base stat of all Water-type Pokémon.</string>
+		<string>Wailord and its pre-evolution&apos;s Egg Groups (Field and Water 2) are unique.</string>
+		<string>The ruby, sapphire and emerald on Sableye&apos;s body may be a reference to the three games of the generation it debuted in.</string>
+		<string>Sableye shares the same species name with Murkrow. They are both known as the Darkness Pokémon.</string>
+		<string>Mawile&apos;s Ruby Pokédex entry erroneously has its name spelled &apos;Mawhile&apos;. This mistake is only present in the American versions and was corrected for the English versions available in other regions.</string>
+		<string>Metagross&apos;s number in the Hoenn Pokédex and the Fiore Browser are the same: 192.</string>
+		<string>Metagross has the highest Defense base stat of all non-legendary Psychic types.</string>
+		<string>Metagross and its evolutionary relatives are the only non-legendary Pokémon with a catch rate of 3.</string>
+		<string>Regirock, Regice, and Registeel are the only Pokémon with Explosion as a starting move.</string>
+		<string>In Ruby, Sapphire, and Emerald, there is an unobtainable Registeel Doll programmed into the game. It may have been intended to be obtained with the e-Reader.</string>
+		<string>Registeel is the only legendary golem that learns both Iron Defense and Amnesia at level 41.</string>
+		<string>Chimecho&apos;s National Pokédex number and the number of the episode in which it first appeared are the same: 358.</string>
+	</array>
+</dict>
+</plist>

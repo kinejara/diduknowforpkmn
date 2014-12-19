@@ -11,144 +11,40 @@
 @implementation Pharases
 
 -(NSArray *)createArrayOfPokePhrasesWithGenerations:(NSArray *)generations {
-
-    NSMutableArray *arrayOfFacts = [NSMutableArray new];
     
-    for(NSString *gen in generations) {
-        NSInteger numberOfFacts = [self pickNumberOfPhraseswithGeneration:gen];
- 
-        for (int i = 0; i <=numberOfFacts; i ++) {
-            NSString *PokeFact = [NSString stringWithFormat:@"%i",i];
-            [arrayOfFacts addObject:NSLocalizedString(PokeFact, @"")];
-        }
+    NSMutableArray *facts = [NSMutableArray new];
+    
+    NSDictionary *factsInPlist = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"facts" ofType:@"plist"]];
+   
+    if ([generations containsObject:@"all"]) {
+        [facts addObjectsFromArray:factsInPlist[@"anime"]];
+        [facts addObjectsFromArray:factsInPlist[@"firstGen"]];
+        [facts addObjectsFromArray:factsInPlist[@"secondGen"]];
+        [facts addObjectsFromArray:factsInPlist[@"thirdGen"]];
+        [facts addObjectsFromArray:factsInPlist[@"fourthGen"]];
+        [facts addObjectsFromArray:factsInPlist[@"fiveGen"]];
+        [facts addObjectsFromArray:factsInPlist[@"sixGen"]];
+        
+        return facts;
+        
+    } else if ([generations containsObject:@"anime"]) {
+        [facts addObjectsFromArray:factsInPlist[@"anime"]];
+    } else if ([generations containsObject:@"first"]) {
+        [facts addObjectsFromArray:factsInPlist[@"firstGen"]];
+    } else if ([generations containsObject:@"second"]) {
+        [facts addObjectsFromArray:factsInPlist[@"secondGen"]];
+    } else if ([generations containsObject:@"third"]) {
+        [facts addObjectsFromArray:factsInPlist[@"thirdGen"]];
+    } else if ([generations containsObject:@"fourth"]) {
+        [facts addObjectsFromArray:factsInPlist[@"fourthGen"]];
+    } else if ([generations containsObject:@"fiveGen"]) {
+        [facts addObjectsFromArray:factsInPlist[@"fiveGen"]];
+    } else if ([generations containsObject:@"six"]) {
+        [facts addObjectsFromArray:factsInPlist[@"sixGen"]];
     }
     
-    return arrayOfFacts;
+    return facts;
 }
 
-- (NSInteger)pickNumberOfPhraseswithGeneration:(NSString *)generation {
-    
-    if ([generation isEqualToString:NSLocalizedString(@"all", @"")]) {
-        return 453;
-    } else if ([generation isEqualToString:NSLocalizedString(@"anime", @"")]) {
-    
-    } else if ([generation isEqualToString:NSLocalizedString(@"firstGen", @"")]) {
-        
-    } else if ([generation isEqualToString:NSLocalizedString(@"secondGen", @"")]) {
-        
-    } else if ([generation isEqualToString:NSLocalizedString(@"thirdGen", @"")]) {
-        
-    } else if ([generation isEqualToString:NSLocalizedString(@"fourthGen", @"")]) {
-        
-    } else if ([generation isEqualToString:NSLocalizedString(@"fiveGen", @"")]) {
-        
-    } else if ([generation isEqualToString:NSLocalizedString(@"sixGen", @"")]) {
-        
-    }
-    
-    return 453;
-}
-
-
--(NSArray*)createArray:(NSArray *)factmodes
-{
-    
-    NSMutableArray * arrayOfPhrases = [NSMutableArray new];
-    //NSLog(@"selection2 %@",[factmodes description]);
-    
-    for(NSString * s in factmodes) {
-        
-        if([s isEqualToString:NSLocalizedString(@"all", @"")]) {
-            for(int i =0; i <=453; i ++) {
-                NSString * s = [NSString stringWithFormat:@"%i",i];
-                [arrayOfPhrases addObject:NSLocalizedString(s, @"")];
-            }
-        }
-        if([s isEqualToString:NSLocalizedString(@"anime", @"")])
-        {
-            for(int i =0; i <=100; i ++)
-            {
-                NSString * s = [NSString stringWithFormat:@"%i",i];
-                [arrayOfPhrases addObject:NSLocalizedString(s, @"")];
-            }
-            
-        }
-        
-        if([s isEqualToString:NSLocalizedString(@"firstGen", @"")])
-        {
-            for(int i =101; i <=200; i ++)
-            {
-                NSString * s = [NSString stringWithFormat:@"%i",i];
-                [arrayOfPhrases addObject:NSLocalizedString(s, @"")];
-            }
-        }
-        
-        if([s isEqualToString:NSLocalizedString(@"secondGen", @"")])
-        {
-            for(int i =201; i <=250; i ++)
-            {
-                NSString * s = [NSString stringWithFormat:@"%i",i];
-                [arrayOfPhrases addObject:NSLocalizedString(s, @"")];
-            }
-        }
-        
-        if([s isEqualToString:NSLocalizedString(@"thirdGen", @"")])
-        {
-            for(int i =251; i <=300; i ++)
-            {
-                NSString * s = [NSString stringWithFormat:@"%i",i];
-                [arrayOfPhrases addObject:NSLocalizedString(s, @"")];
-            }
-        }
-        
-        if([s isEqualToString:NSLocalizedString(@"fourthGen", @"")])
-        {
-            for(int i =301; i <=350; i ++)
-            {
-                NSString * s = [NSString stringWithFormat:@"%i",i];
-                [arrayOfPhrases addObject:NSLocalizedString(s, @"")];
-            }
-        }
-        
-        if([s isEqualToString:NSLocalizedString(@"fiveGen", @"")])
-        {
-            for(int i =351; i <=400; i ++)
-            {
-                NSString * s = [NSString stringWithFormat:@"%i",i];
-                [arrayOfPhrases addObject:NSLocalizedString(s, @"")];
-            }
-        }
-        
-        if([s isEqualToString:NSLocalizedString(@"sixGen", @"")])
-        {
-            for(int i =401; i <=451; i ++)
-            {
-                NSString * s = [NSString stringWithFormat:@"%i",i];
-                [arrayOfPhrases addObject:NSLocalizedString(s, @"")];
-            }
-        }
-        /*
-         NSLocalizedString(@"all", @""),
-         NSLocalizedString(@"firstGen", @""),
-         NSLocalizedString(@"secondGen", @""),
-         NSLocalizedString(@"thirdGen", @""),
-         NSLocalizedString(@"fourthGen", @""),
-         NSLocalizedString(@"fiveGen", @""),
-         NSLocalizedString(@"sixGen", @""),
-         */
-
-        
-        /*
-        if([s isEqualToString:NSLocalizedString(@"firstGen", @"")] || [s isEqualToString:NSLocalizedString(@"all", @"")])
-        {
-            [arrayOfPhrases addObject:NSLocalizedString(@"genOne1", @"")];
-            [arrayOfPhrases addObject:NSLocalizedString(@"genOne2", @"")];
-            [arrayOfPhrases addObject:NSLocalizedString(@"genOne3", @"")];
-        }
-        */
-    }
-    return arrayOfPhrases;
-    
-}
 
 @end
