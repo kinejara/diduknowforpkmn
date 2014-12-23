@@ -16,7 +16,11 @@
 		EE387E1A1A3AC571009C366B /* DidYouKnowForPokemon8Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE387E191A3AC571009C366B /* DidYouKnowForPokemon8Tests.m */; };
 		EE387E251A3AC695009C366B /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE387E241A3AC695009C366B /* TableViewController.m */; };
 		EE73AC631A415D9500F276B4 /* Pharases.m in Sources */ = {isa = PBXBuildFile; fileRef = EE73AC611A415D9500F276B4 /* Pharases.m */; };
-		EEAD0FB21A3BFAAF00703CC4 /* pokeBg.png in Resources */ = {isa = PBXBuildFile; fileRef = EEAD0FB11A3BFAAF00703CC4 /* pokeBg.png */; };
+		EED11F031A48F3B60020BB32 /* PokeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EED11F011A48F3B60020BB32 /* PokeTableViewCell.m */; };
+		EED11F041A48F3B60020BB32 /* PokeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EED11F021A48F3B60020BB32 /* PokeTableViewCell.xib */; };
+		EED11F081A492F4A0020BB32 /* pokedex_header.png in Resources */ = {isa = PBXBuildFile; fileRef = EED11F071A492F4A0020BB32 /* pokedex_header.png */; };
+		EED11F0A1A4930330020BB32 /* pokedex_footer.png in Resources */ = {isa = PBXBuildFile; fileRef = EED11F091A4930330020BB32 /* pokedex_footer.png */; };
+		EED11F0E1A4932D60020BB32 /* UIColor+DidYouKnowAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EED11F0D1A4932D60020BB32 /* UIColor+DidYouKnowAdditions.m */; };
 		EEE9005D1A43D69500BE0D47 /* facts.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEE9005B1A43D69500BE0D47 /* facts.plist */; };
 		EEE9005E1A43D69500BE0D47 /* hechos.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEE9005C1A43D69500BE0D47 /* hechos.plist */; };
 /* End PBXBuildFile section */
@@ -49,7 +53,13 @@
 		EE387E241A3AC695009C366B /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		EE73AC611A415D9500F276B4 /* Pharases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pharases.m; sourceTree = "<group>"; };
 		EE73AC621A415D9500F276B4 /* Pharases.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pharases.h; sourceTree = "<group>"; };
-		EEAD0FB11A3BFAAF00703CC4 /* pokeBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pokeBg.png; sourceTree = "<group>"; };
+		EED11F001A48F3B60020BB32 /* PokeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokeTableViewCell.h; sourceTree = "<group>"; };
+		EED11F011A48F3B60020BB32 /* PokeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokeTableViewCell.m; sourceTree = "<group>"; };
+		EED11F021A48F3B60020BB32 /* PokeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PokeTableViewCell.xib; sourceTree = "<group>"; };
+		EED11F071A492F4A0020BB32 /* pokedex_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pokedex_header.png; sourceTree = "<group>"; };
+		EED11F091A4930330020BB32 /* pokedex_footer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pokedex_footer.png; sourceTree = "<group>"; };
+		EED11F0C1A4932D60020BB32 /* UIColor+DidYouKnowAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DidYouKnowAdditions.h"; sourceTree = "<group>"; };
+		EED11F0D1A4932D60020BB32 /* UIColor+DidYouKnowAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DidYouKnowAdditions.m"; sourceTree = "<group>"; };
 		EEE9005B1A43D69500BE0D47 /* facts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = facts.plist; sourceTree = "<group>"; };
 		EEE9005C1A43D69500BE0D47 /* hechos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hechos.plist; sourceTree = "<group>"; };
 		EEF0FB131A43CD0000B52B9D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -97,6 +107,8 @@
 		EE387DFC1A3AC571009C366B /* DidYouKnowForPokemon8 */ = {
 			isa = PBXGroup;
 			children = (
+				EED11F0B1A4932440020BB32 /* Categories */,
+				EED11EFF1A48F37D0020BB32 /* pokeCell */,
 				EE73AC621A415D9500F276B4 /* Pharases.h */,
 				EE73AC611A415D9500F276B4 /* Pharases.m */,
 				EEAD0FB31A3BFACF00703CC4 /* Resources */,
@@ -143,9 +155,29 @@
 		EEAD0FB31A3BFACF00703CC4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				EEAD0FB11A3BFAAF00703CC4 /* pokeBg.png */,
+				EED11F091A4930330020BB32 /* pokedex_footer.png */,
+				EED11F071A492F4A0020BB32 /* pokedex_header.png */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		EED11EFF1A48F37D0020BB32 /* pokeCell */ = {
+			isa = PBXGroup;
+			children = (
+				EED11F001A48F3B60020BB32 /* PokeTableViewCell.h */,
+				EED11F011A48F3B60020BB32 /* PokeTableViewCell.m */,
+				EED11F021A48F3B60020BB32 /* PokeTableViewCell.xib */,
+			);
+			name = pokeCell;
+			sourceTree = "<group>";
+		};
+		EED11F0B1A4932440020BB32 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EED11F0C1A4932D60020BB32 /* UIColor+DidYouKnowAdditions.h */,
+				EED11F0D1A4932D60020BB32 /* UIColor+DidYouKnowAdditions.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +264,10 @@
 				EEE9005D1A43D69500BE0D47 /* facts.plist in Resources */,
 				EE387E091A3AC571009C366B /* Main.storyboard in Resources */,
 				EEE9005E1A43D69500BE0D47 /* hechos.plist in Resources */,
-				EEAD0FB21A3BFAAF00703CC4 /* pokeBg.png in Resources */,
+				EED11F0A1A4930330020BB32 /* pokedex_footer.png in Resources */,
+				EED11F041A48F3B60020BB32 /* PokeTableViewCell.xib in Resources */,
 				EE387E0E1A3AC571009C366B /* LaunchScreen.xib in Resources */,
+				EED11F081A492F4A0020BB32 /* pokedex_header.png in Resources */,
 				EE387E0B1A3AC571009C366B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,9 +287,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE73AC631A415D9500F276B4 /* Pharases.m in Sources */,
+				EED11F0E1A4932D60020BB32 /* UIColor+DidYouKnowAdditions.m in Sources */,
 				EE387E061A3AC571009C366B /* DNPMainViewController.m in Sources */,
 				EE387E031A3AC571009C366B /* AppDelegate.m in Sources */,
 				EE387E001A3AC571009C366B /* main.m in Sources */,
+				EED11F031A48F3B60020BB32 /* PokeTableViewCell.m in Sources */,
 				EE387E251A3AC695009C366B /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

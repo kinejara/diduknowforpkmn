@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PokeTableViewCell" rowHeight="157" id="KGk-i7-Jjw" customClass="PokeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokedex_cell.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Ca-t5-F6b">
+                        <rect key="frame" x="0.0" y="-8" width="30" height="119"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0y0-y7-6wd">
+                        <rect key="frame" x="38" y="20" width="266" height="65"/>
+                        <string key="text">Along with Bulbasaur and Charmander, Squirtle is the only starter Pokémon which is found in more than oneregional Pokédex, being found in both Kanto's and Johto's.</string>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0y0-y7-6wd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="12" id="8p8-2v-bVJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="0y0-y7-6wd" secondAttribute="trailing" constant="8" id="Kgd-9d-sX6"/>
+                    <constraint firstItem="4Ca-t5-F6b" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-16" id="RYE-gl-B14"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="0y0-y7-6wd" secondAttribute="bottom" constant="7" id="Y2L-1y-qx5"/>
+                    <constraint firstItem="4Ca-t5-F6b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="ZEx-a7-bDf"/>
+                    <constraint firstItem="0y0-y7-6wd" firstAttribute="leading" secondItem="4Ca-t5-F6b" secondAttribute="trailing" constant="8" id="ZJe-ax-CZ5"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="4Ca-t5-F6b" secondAttribute="bottom" constant="-19" id="ZaH-4d-OeI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="factLabel" destination="0y0-y7-6wd" id="CUU-5O-Jer"/>
+                <outlet property="imgBar" destination="4Ca-t5-F6b" id="ymt-52-e32"/>
+            </connections>
+            <point key="canvasLocation" x="359" y="329.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pokedex_cell.png" width="30" height="31"/>
+    </resources>
+</document>

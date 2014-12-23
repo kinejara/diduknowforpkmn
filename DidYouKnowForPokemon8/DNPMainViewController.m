@@ -8,6 +8,8 @@
 
 #import "DNPMainViewController.h"
 #import "Pharases.h"
+#import "UIColor+DidYouKnowAdditions.h"
+#import "PokeTableViewCell.h"
 
 @interface DNPMainViewController ()
 
@@ -30,16 +32,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor pkmn_systemRedColor];
+
     NSArray *gens = @[@"first", @"all"];
     Pharases *pokeFacts = [Pharases new];
     self.pokeFacts = [pokeFacts createArrayOfPokePhrasesWithGenerations:gens];
     
     [self performSelector:@selector(loadPokeFacts) withObject:nil afterDelay:3.0];
-    self.view.backgroundColor = [UIColor redColor];
     [self configureTableView];
-    
-    //NSLog(@"print front localize %@",NSLocalizedString(@"0", @""));
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,6 +57,32 @@
 
 #pragma mark - Table view data source
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    
+    return 120;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    
+    return 160;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    
+    UIImage *headerImg = [UIImage imageNamed:@"pokedex_header"];
+    UIImageView *headerImgView = [[UIImageView alloc] initWithImage:headerImg];
+    
+    return headerImgView;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    
+    UIImage *footerImg = [UIImage imageNamed:@"pokedex_footer"];
+    UIImageView *footerImgView = [[UIImageView alloc] initWithImage:footerImg];
+    
+    return footerImgView;
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
@@ -67,11 +93,11 @@
 
  - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"pokeCell" forIndexPath:indexPath];
+     PokeTableViewCell *cell = (PokeTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"pokeCell"];
      
-     cell.contentView.backgroundColor = [UIColor clearColor];
-     
+     cell.backgroundColor = [UIColor pkmn_systemBlueColor];
      cell.textLabel.text = self.pokeFacts[indexPath.row];
+     cell.textLabel.numberOfLines = 6;
  
      return cell;
 }
