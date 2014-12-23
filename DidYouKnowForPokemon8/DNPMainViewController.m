@@ -40,6 +40,10 @@
     
     [self performSelector:@selector(loadPokeFacts) withObject:nil afterDelay:3.0];
     [self configureTableView];
+    
+    //self.tableView.estimatedRowHeight = 102.0;
+    self.tableView.rowHeight = 220;
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -93,12 +97,20 @@
 
  - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-     PokeTableViewCell *cell = (PokeTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"pokeCell"];
+     static NSString *simpleTableIdentifier = @"pokeCell";
+     
+     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+     
+     if (cell == nil) {
+         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+     }
      
      cell.backgroundColor = [UIColor pkmn_systemBlueColor];
+     cell.textLabel.textAlignment = NSTextAlignmentCenter;
+     cell.textLabel.font = [UIFont fontWithName:@"pokemonGB" size:14.0];
      cell.textLabel.text = self.pokeFacts[indexPath.row];
-     cell.textLabel.numberOfLines = 6;
- 
+     cell.textLabel.numberOfLines = 12;
+     
      return cell;
 }
 
