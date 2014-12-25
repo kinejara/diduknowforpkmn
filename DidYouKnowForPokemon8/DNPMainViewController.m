@@ -41,9 +41,7 @@
     [self performSelector:@selector(loadPokeFacts) withObject:nil afterDelay:3.0];
     [self configureTableView];
     
-    //self.tableView.estimatedRowHeight = 102.0;
-    self.tableView.rowHeight = 220;
-
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -53,6 +51,7 @@
 - (void)configureTableView {
     UIColor *clearColor = [UIColor clearColor];
     self.tableView.backgroundColor = clearColor;
+    self.tableView.rowHeight = 220;
 }
 
 - (void)loadPokeFacts {
@@ -83,6 +82,16 @@
     
     UIImage *footerImg = [UIImage imageNamed:@"pokedex_footer"];
     UIImageView *footerImgView = [[UIImageView alloc] initWithImage:footerImg];
+    
+    
+    
+    UIButton *option = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    option.frame = CGRectMake(0, 0, 160.0, 40.0);
+    
+    [option setImage:[UIImage imageNamed:@"action_icon@2x.png"] forState:UIControlStateNormal];
+    [option addTarget:self action:@selector(aMethod:) forControlEvents:UIControlEventTouchUpInside];
+   
+    [footerImgView addSubview:option];
     
     return footerImgView;
 }

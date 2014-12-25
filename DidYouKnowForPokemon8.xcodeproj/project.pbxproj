@@ -22,6 +22,13 @@
 		EED11F0A1A4930330020BB32 /* pokedex_footer.png in Resources */ = {isa = PBXBuildFile; fileRef = EED11F091A4930330020BB32 /* pokedex_footer.png */; };
 		EED11F0E1A4932D60020BB32 /* UIColor+DidYouKnowAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EED11F0D1A4932D60020BB32 /* UIColor+DidYouKnowAdditions.m */; };
 		EED11F101A4935540020BB32 /* PokemonGB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EED11F0F1A4935540020BB32 /* PokemonGB.ttf */; };
+		EED11F181A493AE10020BB32 /* action_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EED11F111A493AE10020BB32 /* action_icon@2x.png */; };
+		EED11F191A493AE10020BB32 /* reload@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EED11F121A493AE10020BB32 /* reload@2x.png */; };
+		EED11F1A1A493AE10020BB32 /* action2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EED11F131A493AE10020BB32 /* action2@2x.png */; };
+		EED11F1B1A493AE10020BB32 /* download@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EED11F141A493AE10020BB32 /* download@2x.png */; };
+		EED11F1C1A493AE10020BB32 /* facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EED11F151A493AE10020BB32 /* facebook@2x.png */; };
+		EED11F1D1A493AE10020BB32 /* gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EED11F161A493AE10020BB32 /* gear@2x.png */; };
+		EED11F1E1A493AE10020BB32 /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EED11F171A493AE10020BB32 /* star@2x.png */; };
 		EEE9005D1A43D69500BE0D47 /* facts.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEE9005B1A43D69500BE0D47 /* facts.plist */; };
 		EEE9005E1A43D69500BE0D47 /* hechos.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEE9005C1A43D69500BE0D47 /* hechos.plist */; };
 /* End PBXBuildFile section */
@@ -62,6 +69,13 @@
 		EED11F0C1A4932D60020BB32 /* UIColor+DidYouKnowAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DidYouKnowAdditions.h"; sourceTree = "<group>"; };
 		EED11F0D1A4932D60020BB32 /* UIColor+DidYouKnowAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DidYouKnowAdditions.m"; sourceTree = "<group>"; };
 		EED11F0F1A4935540020BB32 /* PokemonGB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PokemonGB.ttf; sourceTree = "<group>"; };
+		EED11F111A493AE10020BB32 /* action_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action_icon@2x.png"; sourceTree = "<group>"; };
+		EED11F121A493AE10020BB32 /* reload@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reload@2x.png"; sourceTree = "<group>"; };
+		EED11F131A493AE10020BB32 /* action2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action2@2x.png"; sourceTree = "<group>"; };
+		EED11F141A493AE10020BB32 /* download@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "download@2x.png"; sourceTree = "<group>"; };
+		EED11F151A493AE10020BB32 /* facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook@2x.png"; sourceTree = "<group>"; };
+		EED11F161A493AE10020BB32 /* gear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gear@2x.png"; sourceTree = "<group>"; };
+		EED11F171A493AE10020BB32 /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
 		EEE9005B1A43D69500BE0D47 /* facts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = facts.plist; sourceTree = "<group>"; };
 		EEE9005C1A43D69500BE0D47 /* hechos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hechos.plist; sourceTree = "<group>"; };
 		EEF0FB131A43CD0000B52B9D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -157,6 +171,13 @@
 		EEAD0FB31A3BFACF00703CC4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EED11F111A493AE10020BB32 /* action_icon@2x.png */,
+				EED11F121A493AE10020BB32 /* reload@2x.png */,
+				EED11F131A493AE10020BB32 /* action2@2x.png */,
+				EED11F141A493AE10020BB32 /* download@2x.png */,
+				EED11F151A493AE10020BB32 /* facebook@2x.png */,
+				EED11F161A493AE10020BB32 /* gear@2x.png */,
+				EED11F171A493AE10020BB32 /* star@2x.png */,
 				EED11F0F1A4935540020BB32 /* PokemonGB.ttf */,
 				EED11F091A4930330020BB32 /* pokedex_footer.png */,
 				EED11F071A492F4A0020BB32 /* pokedex_header.png */,
@@ -265,13 +286,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEE9005D1A43D69500BE0D47 /* facts.plist in Resources */,
+				EED11F191A493AE10020BB32 /* reload@2x.png in Resources */,
+				EED11F1E1A493AE10020BB32 /* star@2x.png in Resources */,
+				EED11F1C1A493AE10020BB32 /* facebook@2x.png in Resources */,
 				EE387E091A3AC571009C366B /* Main.storyboard in Resources */,
 				EEE9005E1A43D69500BE0D47 /* hechos.plist in Resources */,
+				EED11F1B1A493AE10020BB32 /* download@2x.png in Resources */,
 				EED11F0A1A4930330020BB32 /* pokedex_footer.png in Resources */,
 				EED11F041A48F3B60020BB32 /* PokeTableViewCell.xib in Resources */,
 				EE387E0E1A3AC571009C366B /* LaunchScreen.xib in Resources */,
+				EED11F1A1A493AE10020BB32 /* action2@2x.png in Resources */,
 				EED11F081A492F4A0020BB32 /* pokedex_header.png in Resources */,
+				EED11F181A493AE10020BB32 /* action_icon@2x.png in Resources */,
 				EE387E0B1A3AC571009C366B /* Images.xcassets in Resources */,
+				EED11F1D1A493AE10020BB32 /* gear@2x.png in Resources */,
 				EED11F101A4935540020BB32 /* PokemonGB.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
