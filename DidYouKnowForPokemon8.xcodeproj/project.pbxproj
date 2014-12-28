@@ -123,17 +123,14 @@
 		EE387DFC1A3AC571009C366B /* DidYouKnowForPokemon8 */ = {
 			isa = PBXGroup;
 			children = (
+				EE54356F1A4FB5D5005BED14 /* ThirdParty */,
+				EE54356E1A4FB5AF005BED14 /* Views */,
+				EE54356D1A4FB5A2005BED14 /* Models */,
 				EED11F0B1A4932440020BB32 /* Categories */,
 				EED11EFF1A48F37D0020BB32 /* pokeCell */,
-				EE73AC621A415D9500F276B4 /* Pharases.h */,
-				EE73AC611A415D9500F276B4 /* Pharases.m */,
-				EEAD0FB31A3BFACF00703CC4 /* Resources */,
 				EE387E011A3AC571009C366B /* AppDelegate.h */,
 				EE387E021A3AC571009C366B /* AppDelegate.m */,
-				EE387E041A3AC571009C366B /* DNPMainViewController.h */,
-				EE387E051A3AC571009C366B /* DNPMainViewController.m */,
 				EE387E071A3AC571009C366B /* Main.storyboard */,
-				EE387E0A1A3AC571009C366B /* Images.xcassets */,
 				EE387E0C1A3AC571009C366B /* LaunchScreen.xib */,
 				EE387DFD1A3AC571009C366B /* Supporting Files */,
 				EE387E231A3AC695009C366B /* TableViewController.h */,
@@ -145,6 +142,8 @@
 		EE387DFD1A3AC571009C366B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EE387E0A1A3AC571009C366B /* Images.xcassets */,
+				EEAD0FB31A3BFACF00703CC4 /* Resources */,
 				EE387DFE1A3AC571009C366B /* Info.plist */,
 				EE387DFF1A3AC571009C366B /* main.m */,
 			);
@@ -166,6 +165,31 @@
 				EE387E181A3AC571009C366B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE54356D1A4FB5A2005BED14 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE73AC621A415D9500F276B4 /* Pharases.h */,
+				EE73AC611A415D9500F276B4 /* Pharases.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		EE54356E1A4FB5AF005BED14 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE387E041A3AC571009C366B /* DNPMainViewController.h */,
+				EE387E051A3AC571009C366B /* DNPMainViewController.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		EE54356F1A4FB5D5005BED14 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ThirdParty;
 			sourceTree = "<group>";
 		};
 		EEAD0FB31A3BFACF00703CC4 /* Resources */ = {

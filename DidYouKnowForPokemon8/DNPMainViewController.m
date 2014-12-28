@@ -5,15 +5,15 @@
 //  Created by Jorge Kinejara on 12/12/14.
 //  Copyright (c) 2014 kine. All rights reserved.
 //
-
-#import "DNPMainViewController.h"
 #import "Pharases.h"
 #import "UIColor+DidYouKnowAdditions.h"
+#import "DNPMainViewController.h"
 #import "PokeTableViewCell.h"
 
 @interface DNPMainViewController ()
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) UIView *footerView;
 @property (nonatomic, strong) NSArray *pokeFacts;
 
 @end
@@ -41,11 +41,14 @@
     [self performSelector:@selector(loadPokeFacts) withObject:nil afterDelay:3.0];
     [self configureTableView];
     
-    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
 }
 
 - (void)configureTableView {
@@ -56,6 +59,14 @@
 
 - (void)loadPokeFacts {
     [self.tableView reloadData];
+}
+
+- (void)didTapMenu:(UIButton *)sender {
+    //CGRect rect = CGRectMake(90, 400, 160.0, 40.0);
+}
+
+- (void)goToSettings {
+    //TODO:go to settings
 }
 
 #pragma mark - Table view data source
@@ -70,6 +81,7 @@
     return 160;
 }
 
+
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     
     UIImage *headerImg = [UIImage imageNamed:@"pokedex_header"];
@@ -80,20 +92,22 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
     
-    UIImage *footerImg = [UIImage imageNamed:@"pokedex_footer"];
-    UIImageView *footerImgView = [[UIImageView alloc] initWithImage:footerImg];
+    UIImage *image = [[UIImage imageNamed:@"pokedex_footer"]
+                      stretchableImageWithLeftCapWidth:8 topCapHeight:8];
     
+    UIView *footerView  = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 160)];
     
+    footerView.backgroundColor = [UIColor colorWithPatternImage:image];
     
-    UIButton *option = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    option.frame = CGRectMake(0, 0, 160.0, 40.0);
+    UIButton *optionButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    optionButton.frame = CGRectMake(94, 10, 160.0, 40.0);
     
-    [option setImage:[UIImage imageNamed:@"action_icon@2x.png"] forState:UIControlStateNormal];
-    [option addTarget:self action:@selector(aMethod:) forControlEvents:UIControlEventTouchUpInside];
-   
-    [footerImgView addSubview:option];
+    [optionButton setImage:[UIImage imageNamed:@"action_icon@2x.png"] forState:UIControlStateNormal];
+    [optionButton addTarget:self action:@selector(didTapMenu:) forControlEvents:UIControlEventTouchUpInside];
     
-    return footerImgView;
+    [footerView addSubview:optionButton];
+  
+    return footerView;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
