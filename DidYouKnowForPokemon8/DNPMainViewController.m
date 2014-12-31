@@ -16,6 +16,7 @@
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) UIView *footerView;
 @property (nonatomic, strong) NSMutableArray *pokeFacts;
+@property (nonatomic, strong) NSString *sharingText;
 
 @end
 
@@ -137,6 +138,72 @@
     [self performSegueWithIdentifier:@"goSettings" sender:self];
 }
 
+#pragma mark share methods
+
+- (void)didTapShare {
+    UIActivityViewController *shareViewController = [[UIActivityViewController alloc]initWithActivityItems:@[self, [UIImage imageNamed:@"icon_76"]] applicationActivities:nil];
+    
+    [shareViewController setCompletionWithItemsHandler:^(NSString *activityType, BOOL completed, NSArray *returnedItems, NSError *activityError) {
+        if(activityError) {
+            [self showErrorAlert];
+        }
+    }];
+    
+    [self presentViewController:shareViewController animated:YES completion:nil];
+}
+
+- (void)showErrorAlert {
+    UIAlertController *alert = [UIAlertController
+                                alertControllerWithTitle:@"Error"
+                                message:NSLocalizedString(@"errorPosting", @"")
+                                preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault
+                                                   handler:^(UIAlertAction * action) {
+                                                       
+                                                       [alert dismissViewControllerAnimated:YES completion:nil];
+                                                   }];
+    [alert addAction:cancel];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (id)activityViewControllerPlaceholderItem:(UIActivityViewController *)activityViewController
+{
+    return @"";
+}
+
+
+- (id)activityViewController:(UIActivityViewController *)activityViewController
+         itemForActivityType:(NSString *)activityType
+{
+    NSString *message = nil;
+    if ([activityType isEqualToString:UIActivityTypeMail]) {
+        
+        message = [NSString stringWithFormat:@"<html><body>%@</br></br></br> via <a href='https://itunes.apple.com/us/app/did-you-know-for-pokemon/id608028683?ls=1&mt=8'>Did you know Pokemon</a> </body></html>",self.sharingText];
+        
+    } else if ([activityType isEqualToString:UIActivityTypeMessage]) {
+        message = self.sharingText;
+    } else if ([activityType isEqualToString:UIActivityTypePostToFacebook]) {
+        
+        message = [NSString stringWithFormat:@"%@ via %@",self.sharingText,[NSURL URLWithString:@"https://itunes.apple.com/us/app/did-you-know-for-pokemon/id608028683?ls=1&mt=8"]];
+        
+    } else if ([activityType isEqualToString:UIActivityTypePostToTwitter]) {
+        message = self.sharingText;
+    } else {
+        message = self.sharingText;
+    }
+    return message;
+}
+
+
+- (NSString *)activityViewController:(UIActivityViewController *)activityViewController
+              subjectForActivityType:(NSString *)activityType
+{
+    return @"";
+}
+
+
 #pragma mark - Table view data source
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
@@ -205,5 +272,12 @@
      return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    self.sharingText = cell.textLabel.text;
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self didTapShare];
+}
 
 @end

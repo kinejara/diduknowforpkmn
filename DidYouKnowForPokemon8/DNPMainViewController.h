@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DNPMainViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface DNPMainViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UIActivityItemSource>
 
 @end
 
