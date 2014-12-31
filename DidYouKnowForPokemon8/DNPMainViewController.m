@@ -35,9 +35,6 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor pkmn_systemRedColor];
-
-    [self loadPokeFacts];
-    
     [self configureTableView];
 }
 
@@ -47,6 +44,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    [self loadPokeFacts];
 }
 
 - (void)configureTableView {
@@ -59,7 +57,7 @@
 
 - (void)loadPokeFacts {
     
-    NSArray *gens = @[@"first", @"all"];
+    NSArray *gens = [self getStoreSettings];
     
     if (self.pokeFacts.count > 0) {
         [self.pokeFacts removeAllObjects];
@@ -72,6 +70,22 @@
     [self.tableView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:YES];
     
     [self.tableView reloadData];
+}
+
+- (NSArray *)getStoreSettings {
+    
+    NSArray *settings;
+    
+    if(![[NSUserDefaults standardUserDefaults] objectForKey:@"storeTeamsArray"]) {
+        
+        settings = [[NSArray alloc] initWithObjects:NSLocalizedString(@"all", @""), nil];
+        [[NSUserDefaults standardUserDefaults] setObject:settings forKey:@"storeTeamsArray"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    } else {
+        settings = [[NSUserDefaults standardUserDefaults] arrayForKey:@"storeTeamsArray"];
+    }
+    
+    return settings;
 }
 
 - (void)didTapMenu:(UIButton *)sender {

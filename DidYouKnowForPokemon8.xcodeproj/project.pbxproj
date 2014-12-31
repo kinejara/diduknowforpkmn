@@ -19,6 +19,7 @@
 		EEAB5A4A1A53813100AC1D09 /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAB5A491A53813100AC1D09 /* NSMutableArray+Shuffling.m */; };
 		EEAB5A501A538D4F00AC1D09 /* DNPSettingsTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAB5A4F1A538D4F00AC1D09 /* DNPSettingsTableTableViewController.m */; };
 		EEC31CFD1A53BB5700DC857B /* icon_76.png in Resources */ = {isa = PBXBuildFile; fileRef = EEC31CFC1A53BB5700DC857B /* icon_76.png */; };
+		EEC31D0E1A53C81B00DC857B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEC31D101A53C81B00DC857B /* Localizable.strings */; };
 		EED11F031A48F3B60020BB32 /* PokeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EED11F011A48F3B60020BB32 /* PokeTableViewCell.m */; };
 		EED11F041A48F3B60020BB32 /* PokeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EED11F021A48F3B60020BB32 /* PokeTableViewCell.xib */; };
 		EED11F081A492F4A0020BB32 /* pokedex_header.png in Resources */ = {isa = PBXBuildFile; fileRef = EED11F071A492F4A0020BB32 /* pokedex_header.png */; };
@@ -69,6 +70,13 @@
 		EEAB5A4E1A538D4F00AC1D09 /* DNPSettingsTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPSettingsTableTableViewController.h; sourceTree = "<group>"; };
 		EEAB5A4F1A538D4F00AC1D09 /* DNPSettingsTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNPSettingsTableTableViewController.m; sourceTree = "<group>"; };
 		EEC31CFC1A53BB5700DC857B /* icon_76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_76.png; sourceTree = "<group>"; };
+		EEC31D0F1A53C81B00DC857B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EEC31D111A53C82F00DC857B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		EEC31D121A53C82F00DC857B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		EEC31D131A53C82F00DC857B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EEC31D141A53C83D00DC857B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		EEC31D151A53C83D00DC857B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		EEC31D161A53C83D00DC857B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EED11F001A48F3B60020BB32 /* PokeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokeTableViewCell.h; sourceTree = "<group>"; };
 		EED11F011A48F3B60020BB32 /* PokeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokeTableViewCell.m; sourceTree = "<group>"; };
 		EED11F021A48F3B60020BB32 /* PokeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PokeTableViewCell.xib; sourceTree = "<group>"; };
@@ -86,8 +94,6 @@
 		EED11F171A493AE10020BB32 /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
 		EEE9005B1A43D69500BE0D47 /* facts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = facts.plist; sourceTree = "<group>"; };
 		EEE9005C1A43D69500BE0D47 /* hechos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hechos.plist; sourceTree = "<group>"; };
-		EEF0FB131A43CD0000B52B9D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		EEF0FB191A43CD8C00B52B9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,7 @@
 		EE387DF11A3AC571009C366B = {
 			isa = PBXGroup;
 			children = (
+				EEC31D101A53C81B00DC857B /* Localizable.strings */,
 				EEE9005B1A43D69500BE0D47 /* facts.plist */,
 				EEE9005C1A43D69500BE0D47 /* hechos.plist */,
 				EE387DFC1A3AC571009C366B /* DidYouKnowForPokemon8 */,
@@ -303,8 +310,9 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
+				es,
 			);
 			mainGroup = EE387DF11A3AC571009C366B;
 			productRefGroup = EE387DFB1A3AC571009C366B /* Products */;
@@ -335,6 +343,7 @@
 				EE387E0E1A3AC571009C366B /* LaunchScreen.xib in Resources */,
 				EED11F1A1A493AE10020BB32 /* action2@2x.png in Resources */,
 				EED11F081A492F4A0020BB32 /* pokedex_header.png in Resources */,
+				EEC31D0E1A53C81B00DC857B /* Localizable.strings in Resources */,
 				EED11F181A493AE10020BB32 /* action_icon@2x.png in Resources */,
 				EE387E0B1A3AC571009C366B /* Images.xcassets in Resources */,
 				EED11F1D1A493AE10020BB32 /* gear@2x.png in Resources */,
@@ -391,7 +400,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				EE387E081A3AC571009C366B /* Base */,
-				EEF0FB191A43CD8C00B52B9D /* en */,
+				EEC31D111A53C82F00DC857B /* en */,
+				EEC31D141A53C83D00DC857B /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -400,9 +410,20 @@
 			isa = PBXVariantGroup;
 			children = (
 				EE387E0D1A3AC571009C366B /* Base */,
-				EEF0FB131A43CD0000B52B9D /* es */,
+				EEC31D121A53C82F00DC857B /* en */,
+				EEC31D151A53C83D00DC857B /* es */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		EEC31D101A53C81B00DC857B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEC31D0F1A53C81B00DC857B /* Base */,
+				EEC31D131A53C82F00DC857B /* en */,
+				EEC31D161A53C83D00DC857B /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
