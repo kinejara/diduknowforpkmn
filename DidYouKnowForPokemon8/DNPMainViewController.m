@@ -52,6 +52,8 @@
     UIColor *clearColor = [UIColor clearColor];
     self.tableView.backgroundColor = clearColor;
     self.tableView.rowHeight = 220;
+    self.tableView.showsVerticalScrollIndicator = NO;
+    
 }
 
 - (void)loadPokeFacts {
@@ -119,7 +121,7 @@
                            style:UIAlertActionStyleDefault
                            handler:^(UIAlertAction * action)
                            {
-                               [alertController dismissViewControllerAnimated:YES completion:nil];
+                               [self goToSettings];
                            }];
     
     [alertController addAction:refresh];
@@ -132,7 +134,7 @@
 }
 
 - (void)goToSettings {
-    //TODO:go to settings
+    [self performSegueWithIdentifier:@"goSettings" sender:self];
 }
 
 #pragma mark - Table view data source

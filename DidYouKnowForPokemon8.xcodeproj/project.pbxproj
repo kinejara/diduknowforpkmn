@@ -17,6 +17,7 @@
 		EE387E251A3AC695009C366B /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE387E241A3AC695009C366B /* TableViewController.m */; };
 		EE73AC631A415D9500F276B4 /* Pharases.m in Sources */ = {isa = PBXBuildFile; fileRef = EE73AC611A415D9500F276B4 /* Pharases.m */; };
 		EEAB5A4A1A53813100AC1D09 /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAB5A491A53813100AC1D09 /* NSMutableArray+Shuffling.m */; };
+		EEAB5A501A538D4F00AC1D09 /* DNPSettingsTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAB5A4F1A538D4F00AC1D09 /* DNPSettingsTableTableViewController.m */; };
 		EED11F031A48F3B60020BB32 /* PokeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EED11F011A48F3B60020BB32 /* PokeTableViewCell.m */; };
 		EED11F041A48F3B60020BB32 /* PokeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EED11F021A48F3B60020BB32 /* PokeTableViewCell.xib */; };
 		EED11F081A492F4A0020BB32 /* pokedex_header.png in Resources */ = {isa = PBXBuildFile; fileRef = EED11F071A492F4A0020BB32 /* pokedex_header.png */; };
@@ -64,6 +65,8 @@
 		EE73AC621A415D9500F276B4 /* Pharases.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pharases.h; sourceTree = "<group>"; };
 		EEAB5A481A53813100AC1D09 /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
 		EEAB5A491A53813100AC1D09 /* NSMutableArray+Shuffling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Shuffling.m"; sourceTree = "<group>"; };
+		EEAB5A4E1A538D4F00AC1D09 /* DNPSettingsTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPSettingsTableTableViewController.h; sourceTree = "<group>"; };
+		EEAB5A4F1A538D4F00AC1D09 /* DNPSettingsTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNPSettingsTableTableViewController.m; sourceTree = "<group>"; };
 		EED11F001A48F3B60020BB32 /* PokeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokeTableViewCell.h; sourceTree = "<group>"; };
 		EED11F011A48F3B60020BB32 /* PokeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokeTableViewCell.m; sourceTree = "<group>"; };
 		EED11F021A48F3B60020BB32 /* PokeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PokeTableViewCell.xib; sourceTree = "<group>"; };
@@ -184,6 +187,8 @@
 			children = (
 				EE387E041A3AC571009C366B /* DNPMainViewController.h */,
 				EE387E051A3AC571009C366B /* DNPMainViewController.m */,
+				EEAB5A4E1A538D4F00AC1D09 /* DNPSettingsTableTableViewController.h */,
+				EEAB5A4F1A538D4F00AC1D09 /* DNPSettingsTableTableViewController.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -354,6 +359,7 @@
 				EE387E031A3AC571009C366B /* AppDelegate.m in Sources */,
 				EE387E001A3AC571009C366B /* main.m in Sources */,
 				EED11F031A48F3B60020BB32 /* PokeTableViewCell.m in Sources */,
+				EEAB5A501A538D4F00AC1D09 /* DNPSettingsTableTableViewController.m in Sources */,
 				EE387E251A3AC695009C366B /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
