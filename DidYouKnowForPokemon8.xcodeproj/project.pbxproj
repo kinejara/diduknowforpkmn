@@ -16,6 +16,7 @@
 		EE387E1A1A3AC571009C366B /* DidYouKnowForPokemon8Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE387E191A3AC571009C366B /* DidYouKnowForPokemon8Tests.m */; };
 		EE387E251A3AC695009C366B /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE387E241A3AC695009C366B /* TableViewController.m */; };
 		EE73AC631A415D9500F276B4 /* Pharases.m in Sources */ = {isa = PBXBuildFile; fileRef = EE73AC611A415D9500F276B4 /* Pharases.m */; };
+		EEAB5A4A1A53813100AC1D09 /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAB5A491A53813100AC1D09 /* NSMutableArray+Shuffling.m */; };
 		EED11F031A48F3B60020BB32 /* PokeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EED11F011A48F3B60020BB32 /* PokeTableViewCell.m */; };
 		EED11F041A48F3B60020BB32 /* PokeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EED11F021A48F3B60020BB32 /* PokeTableViewCell.xib */; };
 		EED11F081A492F4A0020BB32 /* pokedex_header.png in Resources */ = {isa = PBXBuildFile; fileRef = EED11F071A492F4A0020BB32 /* pokedex_header.png */; };
@@ -61,6 +62,8 @@
 		EE387E241A3AC695009C366B /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		EE73AC611A415D9500F276B4 /* Pharases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pharases.m; sourceTree = "<group>"; };
 		EE73AC621A415D9500F276B4 /* Pharases.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pharases.h; sourceTree = "<group>"; };
+		EEAB5A481A53813100AC1D09 /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
+		EEAB5A491A53813100AC1D09 /* NSMutableArray+Shuffling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Shuffling.m"; sourceTree = "<group>"; };
 		EED11F001A48F3B60020BB32 /* PokeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokeTableViewCell.h; sourceTree = "<group>"; };
 		EED11F011A48F3B60020BB32 /* PokeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokeTableViewCell.m; sourceTree = "<group>"; };
 		EED11F021A48F3B60020BB32 /* PokeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PokeTableViewCell.xib; sourceTree = "<group>"; };
@@ -224,6 +227,8 @@
 			children = (
 				EED11F0C1A4932D60020BB32 /* UIColor+DidYouKnowAdditions.h */,
 				EED11F0D1A4932D60020BB32 /* UIColor+DidYouKnowAdditions.m */,
+				EEAB5A481A53813100AC1D09 /* NSMutableArray+Shuffling.h */,
+				EEAB5A491A53813100AC1D09 /* NSMutableArray+Shuffling.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -342,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEAB5A4A1A53813100AC1D09 /* NSMutableArray+Shuffling.m in Sources */,
 				EE73AC631A415D9500F276B4 /* Pharases.m in Sources */,
 				EED11F0E1A4932D60020BB32 /* UIColor+DidYouKnowAdditions.m in Sources */,
 				EE387E061A3AC571009C366B /* DNPMainViewController.m in Sources */,

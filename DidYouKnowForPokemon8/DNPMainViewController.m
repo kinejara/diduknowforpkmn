@@ -7,6 +7,7 @@
 //
 #import "Pharases.h"
 #import "UIColor+DidYouKnowAdditions.h"
+#import "NSMutableArray+Shuffling.h"
 #import "DNPMainViewController.h"
 #import "PokeTableViewCell.h"
 
@@ -14,7 +15,7 @@
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) UIView *footerView;
-@property (nonatomic, strong) NSArray *pokeFacts;
+@property (nonatomic, strong) NSMutableArray *pokeFacts;
 
 @end
 
@@ -34,13 +35,9 @@
     
     self.view.backgroundColor = [UIColor pkmn_systemRedColor];
 
-    NSArray *gens = @[@"first", @"all"];
-    Pharases *pokeFacts = [Pharases new];
-    self.pokeFacts = [pokeFacts createArrayOfPokePhrasesWithGenerations:gens];
+    [self loadPokeFacts];
     
-    [self performSelector:@selector(loadPokeFacts) withObject:nil afterDelay:3.0];
     [self configureTableView];
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -58,11 +55,80 @@
 }
 
 - (void)loadPokeFacts {
+    
+    NSArray *gens = @[@"first", @"all"];
+    
+    if (self.pokeFacts.count > 0) {
+        [self.pokeFacts removeAllObjects];
+    }
+    
+    Pharases *pokeFacts = [Pharases new];
+    NSArray *pokeFactsArray = [pokeFacts createArrayOfPokePhrasesWithGenerations:gens];
+    
+    self.pokeFacts = [NSMutableArray shuffleArray:pokeFactsArray];
+    [self.tableView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:YES];
+    
     [self.tableView reloadData];
 }
 
 - (void)didTapMenu:(UIButton *)sender {
-    //CGRect rect = CGRectMake(90, 400, 160.0, 40.0);
+    
+    UIAlertController *alertController = [UIAlertController
+                                          alertControllerWithTitle:@"Options"
+                                          message:@""
+                                          preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    UIAlertAction *cancel = [UIAlertAction
+                         actionWithTitle:@"Cancel"
+                         style:UIAlertActionStyleCancel
+                         handler:^(UIAlertAction * action)
+                         {
+                             [alertController dismissViewControllerAnimated:YES completion:nil];
+                         }];
+    
+    UIAlertAction *refresh = [UIAlertAction
+                             actionWithTitle:@"Refresh Trivia"
+                             style:UIAlertActionStyleDefault
+                             handler:^(UIAlertAction * action)
+                             {
+                                 [self loadPokeFacts];
+                             }];
+    
+    UIAlertAction *visitFB = [UIAlertAction
+                           actionWithTitle:@"Go to FB page"
+                           style:UIAlertActionStyleDefault
+                           handler:^(UIAlertAction * action)
+                           {
+                               NSURL *url = [NSURL URLWithString:@"fb://profile/133666066840052"];
+                               [[UIApplication sharedApplication] openURL:url];
+                           }];
+    
+    UIAlertAction *rate = [UIAlertAction
+                           actionWithTitle:@"Rate"
+                           style:UIAlertActionStyleDefault
+                           handler:^(UIAlertAction * action)
+                           {
+                               NSString * urlString = [NSString stringWithFormat:@"https://itunes.apple.com/es/app/did-you-know-for-pokemon/id608028683?mt=8"];
+                               
+                               NSURL *url = [NSURL URLWithString:urlString];
+                               [[UIApplication sharedApplication] openURL:url];
+                           }];
+    
+    UIAlertAction *settings = [UIAlertAction
+                           actionWithTitle:@"Settings"
+                           style:UIAlertActionStyleDefault
+                           handler:^(UIAlertAction * action)
+                           {
+                               [alertController dismissViewControllerAnimated:YES completion:nil];
+                           }];
+    
+    [alertController addAction:refresh];
+    [alertController addAction:visitFB];
+    [alertController addAction:rate];
+    [alertController addAction:settings];
+    [alertController addAction:cancel];
+   
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 
 - (void)goToSettings {
