@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "Pharases.h"
+#import "NSMutableArray+Shuffling.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +18,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [[UIApplication sharedApplication] unregisterForRemoteNotifications];
+    [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
+    
+    if ([self areNotificationsEnabled]) {
+        [self setUpListOfNotifications];
+    }
+    
     return YES;
 }
 
@@ -39,6 +49,77 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)areNotificationsEnabled {
+    UIUserNotificationSettings *noticationSettings = [[UIApplication sharedApplication] currentUserNotificationSettings];
+    
+    if (!noticationSettings || (noticationSettings.types == UIUserNotificationTypeNone)) {
+        return NO;
+    }
+    return YES;
+}
+
+- (void)setUpListOfNotifications {
+    
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    
+    for (int i=0; i<31; i++) {
+     //   [self setNotificationWithDate:[[self nextNotificationDate] dateByAddingTimeInterval:30 *i]];
+    }
+}
+
+- (NSString *)getRandomFactForPushNotification {
+    
+    Pharases *pokeFact = [Pharases new];
+    NSArray *storeGenerations = [self getStoreGenerationFromSettings];
+    NSArray *arrayOfFacts = [pokeFact createArrayOfPokePhrasesWithGenerations:storeGenerations];
+    NSMutableArray *shuffleFacts = [NSMutableArray shuffleArray:arrayOfFacts];
+    
+    return shuffleFacts[0];
+}
+
+- (NSArray *)getStoreGenerationFromSettings {
+    
+    NSArray *storeGenerations = [NSArray array];
+    
+    if ([[NSUserDefaults standardUserDefaults] arrayForKey:@"storeTeamsArray"]) {
+        storeGenerations = [[NSUserDefaults standardUserDefaults] arrayForKey:@"storeTeamsArray"];
+    } else {
+        storeGenerations = @[NSLocalizedString(@"all", @"")];
+    }
+    
+    return storeGenerations;
+}
+
+- (void)setNotificationWithDate:(NSDate *)notificationFireDate {
+    
+    UILocalNotification *localNotification = [[UILocalNotification alloc] init];
+    localNotification.fireDate = notificationFireDate;
+    localNotification.alertBody = [self getRandomFactForPushNotification];
+    localNotification.soundName = UILocalNotificationDefaultSoundName;
+    localNotification.repeatInterval = NSCalendarUnitDay;
+    localNotification.applicationIconBadgeNumber = 0;
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+    
+}
+
+- (NSDate *)nextNotificationDate {
+    
+    NSDate *now = [NSDate date];
+   
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSDateComponents *components = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:now];
+    //TODO: this is just for test
+    [components setHour:0];
+    [components setMinute:46];
+    NSDate *next12pm = [calendar dateFromComponents:components];
+    if ([next12pm timeIntervalSinceNow] < 0) {
+        // If today's 12pm already occurred, add 24hours to get to tomorrow's
+        next12pm = [next12pm dateByAddingTimeInterval:60*60*24];
+    }
+    
+    return next12pm;
 }
 
 @end

@@ -1,0 +1,18 @@
+/*mainview*/
+"rate" = "Do you enjoy this app ? then give us your comments.";
+"downloadapp" = "Do you want to get more facts? then take a look to the FULL version.";
+"first" = "To get more Poke-Data just scroll down in the table.";
+"errorNoMoreData" = "Opps That was the last fact press refresh to get more";
+"errorPosting" = "Opps Something wrong happen, verify your internet connection.";
+"noFactToPost" = "First select a pokefact to be shared";
+"settingLeyend" = "Select your favorite kind of facts";
+
+/* settings */
+"all" = "All";
+"anime" = "Anime";
+"firstGen" = "First Generation";
+"secondGen" = "Second Generation";
+"thirdGen" = "Third Generation";
+"fourthGen" = "Fourth Generation";
+"fiveGen" = "Fifth Generation";
+"sixGen" = "Sixth Generation";
