@@ -8,11 +8,19 @@
 
 #import "DNPSettingsTableTableViewController.h"
 #import "UIColor+DidYouKnowAdditions.h"
+#import "AppDelegate.h"
 
 @interface DNPSettingsTableTableViewController ()
 
 @property (nonatomic, strong) NSArray *pokeFactsOptions;
 @property (nonatomic, strong) NSMutableArray *selectedIndex;
+@property (nonatomic, weak) IBOutlet UISwitch *notificationSwitch;
+
+typedef NS_ENUM(NSInteger, DNPSettingTableSections) {
+    sectionForPush = 0,
+    sectionForWidget,
+    sectionForGeneration
+};
 
 @end
 
@@ -33,8 +41,6 @@
                              NSLocalizedString(@"sixGen", @""),
                              nil];
     
-    
-    
     if([DNPStoreSettings objectForKey:@"storeTeamsArray"]) {
         NSArray *storeArray = [DNPStoreSettings objectForKey:@"storeTeamsArray"];
         self.selectedIndex = [[NSMutableArray alloc] initWithArray:storeArray];
@@ -43,6 +49,7 @@
         self.selectedIndex = [[NSMutableArray alloc] init];
     }
 }
+
 
 - (void)customizingNavigationBar {
     self.navigationController.navigationBar.barTintColor = [UIColor pkmn_systemBlueColor];
@@ -66,7 +73,7 @@
 
 - (void)didTapSave {
     
-    if(self.selectedIndex.count <= 0) {
+    if (self.selectedIndex.count <= 0) {
         [self showErrorAlert];
     } else {
         [DNPStoreSettings setObject:self.selectedIndex forKey:@"storeTeamsArray"];
@@ -96,7 +103,7 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 3;
+    return 1;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
@@ -107,19 +114,15 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
     UITableViewCell *cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
-    NSUInteger section = [indexPath section];
     
-    if (section == 2) {
-        cell.textLabel.text = [NSString stringWithFormat:@"%@",[self.pokeFactsOptions objectAtIndex:indexPath.row]];
-        cell.textLabel.font = [UIFont fontWithName:@"PokemonGB" size:14.0f];
-        
-        for(NSString * n in self.selectedIndex) {
-            if([cell.textLabel.text isEqualToString:n]) {
-                cell.accessoryType = UITableViewCellAccessoryCheckmark;
-            }
+    cell.textLabel.text = [NSString stringWithFormat:@"%@",[self.pokeFactsOptions objectAtIndex:indexPath.row]];
+    cell.textLabel.font = [UIFont fontWithName:@"PokemonGB" size:14.0f];
+    
+    for(NSString * n in self.selectedIndex) {
+        if([cell.textLabel.text isEqualToString:n]) {
+            cell.accessoryType = UITableViewCellAccessoryCheckmark;
         }
     }
-    
     return cell;
 }
 
@@ -127,7 +130,7 @@
     
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     
-    if(indexPath.section == 2 && indexPath.row == 0) {
+    if(indexPath.row == 0) {
         
         for(int i = 0; i < self.pokeFactsOptions.count; i++) {
             NSIndexPath * indexOne = [NSIndexPath indexPathForItem:i inSection:2];
@@ -140,23 +143,22 @@
         [self.selectedIndex addObject:[self.pokeFactsOptions objectAtIndex:0]];
         
     } else {
-        
-        NSIndexPath * indexOne = [NSIndexPath indexPathForItem:0 inSection:2];
-        UITableViewCell *cellOne = [tableView cellForRowAtIndexPath:indexOne];
-        
-        if(cellOne.accessoryType == UITableViewCellAccessoryCheckmark) {
-            cellOne.accessoryType = UITableViewCellAccessoryNone;
-            [self.selectedIndex removeObject:[self.pokeFactsOptions objectAtIndex:0]];
-        }
-        //index for all section
-        if(cell.accessoryType == UITableViewCellAccessoryCheckmark) {
-            cell.accessoryType = UITableViewCellAccessoryNone;
-            [self.selectedIndex removeObject:[self.pokeFactsOptions objectAtIndex:indexPath.row]];
-        }
-        else {
-            cell.accessoryType = UITableViewCellAccessoryCheckmark;
-            [self.selectedIndex addObject:[self.pokeFactsOptions objectAtIndex:indexPath.row]];
-        }
+            NSIndexPath * indexOne = [NSIndexPath indexPathForItem:0 inSection:2];
+            UITableViewCell *cellOne = [tableView cellForRowAtIndexPath:indexOne];
+            
+            if(cellOne.accessoryType == UITableViewCellAccessoryCheckmark) {
+                cellOne.accessoryType = UITableViewCellAccessoryNone;
+                [self.selectedIndex removeObject:[self.pokeFactsOptions objectAtIndex:0]];
+            }
+            //index for all section
+            if(cell.accessoryType == UITableViewCellAccessoryCheckmark) {
+                cell.accessoryType = UITableViewCellAccessoryNone;
+                [self.selectedIndex removeObject:[self.pokeFactsOptions objectAtIndex:indexPath.row]];
+            }
+            else {
+                cell.accessoryType = UITableViewCellAccessoryCheckmark;
+                [self.selectedIndex addObject:[self.pokeFactsOptions objectAtIndex:indexPath.row]];
+            }
     }
     
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
