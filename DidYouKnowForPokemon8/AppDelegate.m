@@ -26,6 +26,11 @@
         [self setUpListOfNotifications];
     }
     
+    //Display error is there is no URL
+    if (![launchOptions objectForKey:UIApplicationLaunchOptionsURLKey]) {
+        NSLog(@"NO URL SCHEME");
+    }
+    
     return YES;
 }
 

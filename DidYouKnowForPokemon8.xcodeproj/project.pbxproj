@@ -16,7 +16,6 @@
 		EE387E0B1A3AC571009C366B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE387E0A1A3AC571009C366B /* Images.xcassets */; };
 		EE387E0E1A3AC571009C366B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE387E0C1A3AC571009C366B /* LaunchScreen.xib */; };
 		EE387E1A1A3AC571009C366B /* DidYouKnowForPokemon8Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE387E191A3AC571009C366B /* DidYouKnowForPokemon8Tests.m */; };
-		EE387E251A3AC695009C366B /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE387E241A3AC695009C366B /* TableViewController.m */; };
 		EE61A6D21A574936004611CA /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE61A6D11A574936004611CA /* NotificationCenter.framework */; };
 		EE61A6D81A574936004611CA /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE61A6D71A574936004611CA /* TodayViewController.m */; };
 		EE61A6DA1A574936004611CA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE61A6D91A574936004611CA /* MainInterface.storyboard */; };
@@ -98,8 +97,6 @@
 		EE387E131A3AC571009C366B /* DidYouKnowForPokemon8Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DidYouKnowForPokemon8Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE387E181A3AC571009C366B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE387E191A3AC571009C366B /* DidYouKnowForPokemon8Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DidYouKnowForPokemon8Tests.m; sourceTree = "<group>"; };
-		EE387E231A3AC695009C366B /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
-		EE387E241A3AC695009C366B /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		EE61A6CF1A574936004611CA /* DidYouKnowForPokemonWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DidYouKnowForPokemonWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE61A6D11A574936004611CA /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		EE61A6D51A574936004611CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -208,8 +205,6 @@
 				EE387E071A3AC571009C366B /* Main.storyboard */,
 				EE387E0C1A3AC571009C366B /* LaunchScreen.xib */,
 				EE387DFD1A3AC571009C366B /* Supporting Files */,
-				EE387E231A3AC695009C366B /* TableViewController.h */,
-				EE387E241A3AC695009C366B /* TableViewController.m */,
 			);
 			path = DidYouKnowForPokemon8;
 			sourceTree = "<group>";
@@ -521,7 +516,6 @@
 				EE387E001A3AC571009C366B /* main.m in Sources */,
 				EED11F031A48F3B60020BB32 /* PokeTableViewCell.m in Sources */,
 				EEAB5A501A538D4F00AC1D09 /* DNPSettingsTableTableViewController.m in Sources */,
-				EE387E251A3AC695009C366B /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
