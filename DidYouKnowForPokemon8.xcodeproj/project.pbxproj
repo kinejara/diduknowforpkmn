@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE0E44A11A58D1720066581D /* pokeLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = EE0E44A01A58D1720066581D /* pokeLabel.png */; };
+		EE0E44A21A58DBCF0066581D /* PokemonGB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EED11F0F1A4935540020BB32 /* PokemonGB.ttf */; };
 		EE387E001A3AC571009C366B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE387DFF1A3AC571009C366B /* main.m */; };
 		EE387E031A3AC571009C366B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE387E021A3AC571009C366B /* AppDelegate.m */; };
 		EE387E061A3AC571009C366B /* DNPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE387E051A3AC571009C366B /* DNPMainViewController.m */; };
@@ -82,6 +84,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EE0E44A01A58D1720066581D /* pokeLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pokeLabel.png; sourceTree = "<group>"; };
 		EE387DFA1A3AC571009C366B /* DidYouKnowForPokemon8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DidYouKnowForPokemon8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE387DFE1A3AC571009C366B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE387DFF1A3AC571009C366B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -279,6 +282,7 @@
 		EE61A6D31A574936004611CA /* DidYouKnowForPokemonWidget */ = {
 			isa = PBXGroup;
 			children = (
+				EE0E44A01A58D1720066581D /* pokeLabel.png */,
 				EE61A6E61A576A6E004611CA /* DidYouKnowForPokemonWidget.entitlements */,
 				EE61A6D61A574936004611CA /* TodayViewController.h */,
 				EE61A6D71A574936004611CA /* TodayViewController.m */,
@@ -492,10 +496,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE0E44A21A58DBCF0066581D /* PokemonGB.ttf in Resources */,
 				EE61A6EF1A58ADF0004611CA /* facts.plist in Resources */,
 				EE61A6F01A58ADF0004611CA /* hechos.plist in Resources */,
 				EE61A6EE1A58ABAD004611CA /* Localizable.strings in Resources */,
 				EE61A6DA1A574936004611CA /* MainInterface.storyboard in Resources */,
+				EE0E44A11A58D1720066581D /* pokeLabel.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -804,6 +810,7 @@
 				EE61A6DF1A574936004611CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
