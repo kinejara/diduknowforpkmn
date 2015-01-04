@@ -76,13 +76,13 @@
     
     NSArray *settings;
     
-    if(![[NSUserDefaults standardUserDefaults] objectForKey:@"storeTeamsArray"]) {
+    if(![DNPStoreSettings objectForKey:@"storeTeamsArray"]) {
         
         settings = [[NSArray alloc] initWithObjects:NSLocalizedString(@"all", @""), nil];
-        [[NSUserDefaults standardUserDefaults] setObject:settings forKey:@"storeTeamsArray"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
+        [DNPStoreSettings setObject:settings forKey:@"storeTeamsArray"];
+        [DNPStoreSettings synchronize];
     } else {
-        settings = [[NSUserDefaults standardUserDefaults] arrayForKey:@"storeTeamsArray"];
+        settings = [DNPStoreSettings arrayForKey:@"storeTeamsArray"];
     }
     
     return settings;

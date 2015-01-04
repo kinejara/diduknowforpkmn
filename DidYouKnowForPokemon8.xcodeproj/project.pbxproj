@@ -15,6 +15,19 @@
 		EE387E0E1A3AC571009C366B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE387E0C1A3AC571009C366B /* LaunchScreen.xib */; };
 		EE387E1A1A3AC571009C366B /* DidYouKnowForPokemon8Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE387E191A3AC571009C366B /* DidYouKnowForPokemon8Tests.m */; };
 		EE387E251A3AC695009C366B /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE387E241A3AC695009C366B /* TableViewController.m */; };
+		EE61A6D21A574936004611CA /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE61A6D11A574936004611CA /* NotificationCenter.framework */; };
+		EE61A6D81A574936004611CA /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE61A6D71A574936004611CA /* TodayViewController.m */; };
+		EE61A6DA1A574936004611CA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE61A6D91A574936004611CA /* MainInterface.storyboard */; };
+		EE61A6DD1A574936004611CA /* DidYouKnowForPokemonWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EE61A6CF1A574936004611CA /* DidYouKnowForPokemonWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EE61A6E21A5766B5004611CA /* Pharases.h in Sources */ = {isa = PBXBuildFile; fileRef = EE73AC621A415D9500F276B4 /* Pharases.h */; };
+		EE61A6E31A5766B5004611CA /* Pharases.m in Sources */ = {isa = PBXBuildFile; fileRef = EE73AC611A415D9500F276B4 /* Pharases.m */; };
+		EE61A6E41A5766BD004611CA /* NSMutableArray+Shuffling.h in Sources */ = {isa = PBXBuildFile; fileRef = EEAB5A481A53813100AC1D09 /* NSMutableArray+Shuffling.h */; };
+		EE61A6E51A5766BD004611CA /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAB5A491A53813100AC1D09 /* NSMutableArray+Shuffling.m */; };
+		EE61A6EB1A5899E9004611CA /* DNPCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = EE61A6EA1A5899E9004611CA /* DNPCommon.m */; };
+		EE61A6EC1A5899E9004611CA /* DNPCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = EE61A6EA1A5899E9004611CA /* DNPCommon.m */; };
+		EE61A6EE1A58ABAD004611CA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEC31D101A53C81B00DC857B /* Localizable.strings */; };
+		EE61A6EF1A58ADF0004611CA /* facts.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEE9005B1A43D69500BE0D47 /* facts.plist */; };
+		EE61A6F01A58ADF0004611CA /* hechos.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEE9005C1A43D69500BE0D47 /* hechos.plist */; };
 		EE73AC631A415D9500F276B4 /* Pharases.m in Sources */ = {isa = PBXBuildFile; fileRef = EE73AC611A415D9500F276B4 /* Pharases.m */; };
 		EEAB5A4A1A53813100AC1D09 /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAB5A491A53813100AC1D09 /* NSMutableArray+Shuffling.m */; };
 		EEAB5A501A538D4F00AC1D09 /* DNPSettingsTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAB5A4F1A538D4F00AC1D09 /* DNPSettingsTableTableViewController.m */; };
@@ -45,7 +58,28 @@
 			remoteGlobalIDString = EE387DF91A3AC571009C366B;
 			remoteInfo = DidYouKnowForPokemon8;
 		};
+		EE61A6DB1A574936004611CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE387DF21A3AC571009C366B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE61A6CE1A574936004611CA;
+			remoteInfo = DidYouKnowForPokemonWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EE61A6E11A574936004611CA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EE61A6DD1A574936004611CA /* DidYouKnowForPokemonWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EE387DFA1A3AC571009C366B /* DidYouKnowForPokemon8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DidYouKnowForPokemon8.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +97,17 @@
 		EE387E191A3AC571009C366B /* DidYouKnowForPokemon8Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DidYouKnowForPokemon8Tests.m; sourceTree = "<group>"; };
 		EE387E231A3AC695009C366B /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		EE387E241A3AC695009C366B /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		EE61A6CF1A574936004611CA /* DidYouKnowForPokemonWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DidYouKnowForPokemonWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE61A6D11A574936004611CA /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		EE61A6D51A574936004611CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE61A6D61A574936004611CA /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		EE61A6D71A574936004611CA /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		EE61A6D91A574936004611CA /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		EE61A6E61A576A6E004611CA /* DidYouKnowForPokemonWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DidYouKnowForPokemonWidget.entitlements; sourceTree = "<group>"; };
+		EE61A6E71A576AAD004611CA /* DidYouKnowForPokemon8.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DidYouKnowForPokemon8.entitlements; sourceTree = "<group>"; };
+		EE61A6E91A5899E9004611CA /* DNPCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPCommon.h; sourceTree = "<group>"; };
+		EE61A6EA1A5899E9004611CA /* DNPCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNPCommon.m; sourceTree = "<group>"; };
+		EE61A6ED1A589FF3004611CA /* DNPPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPPrefixHeader.pch; sourceTree = "<group>"; };
 		EE73AC611A415D9500F276B4 /* Pharases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pharases.m; sourceTree = "<group>"; };
 		EE73AC621A415D9500F276B4 /* Pharases.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pharases.h; sourceTree = "<group>"; };
 		EEAB5A481A53813100AC1D09 /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
@@ -111,6 +156,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EE61A6CC1A574936004611CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE61A6D21A574936004611CA /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -122,6 +175,8 @@
 				EEE9005C1A43D69500BE0D47 /* hechos.plist */,
 				EE387DFC1A3AC571009C366B /* DidYouKnowForPokemon8 */,
 				EE387E161A3AC571009C366B /* DidYouKnowForPokemon8Tests */,
+				EE61A6D31A574936004611CA /* DidYouKnowForPokemonWidget */,
+				EE61A6D01A574936004611CA /* Frameworks */,
 				EE387DFB1A3AC571009C366B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,6 +186,7 @@
 			children = (
 				EE387DFA1A3AC571009C366B /* DidYouKnowForPokemon8.app */,
 				EE387E131A3AC571009C366B /* DidYouKnowForPokemon8Tests.xctest */,
+				EE61A6CF1A574936004611CA /* DidYouKnowForPokemonWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,11 +194,12 @@
 		EE387DFC1A3AC571009C366B /* DidYouKnowForPokemon8 */ = {
 			isa = PBXGroup;
 			children = (
+				EE61A6E71A576AAD004611CA /* DidYouKnowForPokemon8.entitlements */,
+				EE61A6E81A589988004611CA /* Commons */,
 				EE54356F1A4FB5D5005BED14 /* ThirdParty */,
 				EE54356E1A4FB5AF005BED14 /* Views */,
 				EE54356D1A4FB5A2005BED14 /* Models */,
 				EED11F0B1A4932440020BB32 /* Categories */,
-				EED11EFF1A48F37D0020BB32 /* pokeCell */,
 				EE387E011A3AC571009C366B /* AppDelegate.h */,
 				EE387E021A3AC571009C366B /* AppDelegate.m */,
 				EE387E071A3AC571009C366B /* Main.storyboard */,
@@ -157,6 +214,7 @@
 		EE387DFD1A3AC571009C366B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EE61A6ED1A589FF3004611CA /* DNPPrefixHeader.pch */,
 				EE387E0A1A3AC571009C366B /* Images.xcassets */,
 				EEAD0FB31A3BFACF00703CC4 /* Resources */,
 				EE387DFE1A3AC571009C366B /* Info.plist */,
@@ -194,6 +252,7 @@
 		EE54356E1A4FB5AF005BED14 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EED11EFF1A48F37D0020BB32 /* pokeCell */,
 				EE387E041A3AC571009C366B /* DNPMainViewController.h */,
 				EE387E051A3AC571009C366B /* DNPMainViewController.m */,
 				EEAB5A4E1A538D4F00AC1D09 /* DNPSettingsTableTableViewController.h */,
@@ -207,6 +266,43 @@
 			children = (
 			);
 			name = ThirdParty;
+			sourceTree = "<group>";
+		};
+		EE61A6D01A574936004611CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE61A6D11A574936004611CA /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE61A6D31A574936004611CA /* DidYouKnowForPokemonWidget */ = {
+			isa = PBXGroup;
+			children = (
+				EE61A6E61A576A6E004611CA /* DidYouKnowForPokemonWidget.entitlements */,
+				EE61A6D61A574936004611CA /* TodayViewController.h */,
+				EE61A6D71A574936004611CA /* TodayViewController.m */,
+				EE61A6D91A574936004611CA /* MainInterface.storyboard */,
+				EE61A6D41A574936004611CA /* Supporting Files */,
+			);
+			path = DidYouKnowForPokemonWidget;
+			sourceTree = "<group>";
+		};
+		EE61A6D41A574936004611CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE61A6D51A574936004611CA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE61A6E81A589988004611CA /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				EE61A6E91A5899E9004611CA /* DNPCommon.h */,
+				EE61A6EA1A5899E9004611CA /* DNPCommon.m */,
+			);
+			name = Commons;
 			sourceTree = "<group>";
 		};
 		EEAD0FB31A3BFACF00703CC4 /* Resources */ = {
@@ -258,10 +354,12 @@
 				EE387DF61A3AC571009C366B /* Sources */,
 				EE387DF71A3AC571009C366B /* Frameworks */,
 				EE387DF81A3AC571009C366B /* Resources */,
+				EE61A6E11A574936004611CA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EE61A6DC1A574936004611CA /* PBXTargetDependency */,
 			);
 			name = DidYouKnowForPokemon8;
 			productName = DidYouKnowForPokemon8;
@@ -286,6 +384,23 @@
 			productReference = EE387E131A3AC571009C366B /* DidYouKnowForPokemon8Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		EE61A6CE1A574936004611CA /* DidYouKnowForPokemonWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE61A6E01A574936004611CA /* Build configuration list for PBXNativeTarget "DidYouKnowForPokemonWidget" */;
+			buildPhases = (
+				EE61A6CB1A574936004611CA /* Sources */,
+				EE61A6CC1A574936004611CA /* Frameworks */,
+				EE61A6CD1A574936004611CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DidYouKnowForPokemonWidget;
+			productName = DidYouKnowForPokemonWidget;
+			productReference = EE61A6CF1A574936004611CA /* DidYouKnowForPokemonWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -298,10 +413,24 @@
 					EE387DF91A3AC571009C366B = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = WFBNVJ2MHG;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					EE387E121A3AC571009C366B = {
 						CreatedOnToolsVersion = 6.1.1;
 						TestTargetID = EE387DF91A3AC571009C366B;
+					};
+					EE61A6CE1A574936004611CA = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = WFBNVJ2MHG;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -321,6 +450,7 @@
 			targets = (
 				EE387DF91A3AC571009C366B /* DidYouKnowForPokemon8 */,
 				EE387E121A3AC571009C366B /* DidYouKnowForPokemon8Tests */,
+				EE61A6CE1A574936004611CA /* DidYouKnowForPokemonWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -358,6 +488,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EE61A6CD1A574936004611CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE61A6EF1A58ADF0004611CA /* facts.plist in Resources */,
+				EE61A6F01A58ADF0004611CA /* hechos.plist in Resources */,
+				EE61A6EE1A58ABAD004611CA /* Localizable.strings in Resources */,
+				EE61A6DA1A574936004611CA /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -370,6 +511,7 @@
 				EED11F0E1A4932D60020BB32 /* UIColor+DidYouKnowAdditions.m in Sources */,
 				EE387E061A3AC571009C366B /* DNPMainViewController.m in Sources */,
 				EE387E031A3AC571009C366B /* AppDelegate.m in Sources */,
+				EE61A6EB1A5899E9004611CA /* DNPCommon.m in Sources */,
 				EE387E001A3AC571009C366B /* main.m in Sources */,
 				EED11F031A48F3B60020BB32 /* PokeTableViewCell.m in Sources */,
 				EEAB5A501A538D4F00AC1D09 /* DNPSettingsTableTableViewController.m in Sources */,
@@ -385,6 +527,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EE61A6CB1A574936004611CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE61A6E41A5766BD004611CA /* NSMutableArray+Shuffling.h in Sources */,
+				EE61A6E51A5766BD004611CA /* NSMutableArray+Shuffling.m in Sources */,
+				EE61A6E21A5766B5004611CA /* Pharases.h in Sources */,
+				EE61A6EC1A5899E9004611CA /* DNPCommon.m in Sources */,
+				EE61A6E31A5766B5004611CA /* Pharases.m in Sources */,
+				EE61A6D81A574936004611CA /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -392,6 +547,11 @@
 			isa = PBXTargetDependency;
 			target = EE387DF91A3AC571009C366B /* DidYouKnowForPokemon8 */;
 			targetProxy = EE387E141A3AC571009C366B /* PBXContainerItemProxy */;
+		};
+		EE61A6DC1A574936004611CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE61A6CE1A574936004611CA /* DidYouKnowForPokemonWidget */;
+			targetProxy = EE61A6DB1A574936004611CA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -511,8 +671,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DidYouKnowForPokemon8/DidYouKnowForPokemon8.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = DidYouKnowForPokemon8/DNPPrefixHeader.pch;
 				INFOPLIST_FILE = DidYouKnowForPokemon8/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -525,8 +687,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DidYouKnowForPokemon8/DidYouKnowForPokemon8.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = DidYouKnowForPokemon8/DNPPrefixHeader.pch;
 				INFOPLIST_FILE = DidYouKnowForPokemon8/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -569,6 +733,40 @@
 			};
 			name = Release;
 		};
+		EE61A6DE1A574936004611CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DidYouKnowForPokemonWidget/DidYouKnowForPokemonWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = DidYouKnowForPokemon8/DNPPrefixHeader.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DidYouKnowForPokemonWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EE61A6DF1A574936004611CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DidYouKnowForPokemonWidget/DidYouKnowForPokemonWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = DidYouKnowForPokemon8/DNPPrefixHeader.pch;
+				INFOPLIST_FILE = DidYouKnowForPokemonWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -598,6 +796,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		EE61A6E01A574936004611CA /* Build configuration list for PBXNativeTarget "DidYouKnowForPokemonWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE61A6DE1A574936004611CA /* Debug */,
+				EE61A6DF1A574936004611CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

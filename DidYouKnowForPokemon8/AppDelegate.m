@@ -83,8 +83,8 @@
     
     NSArray *storeGenerations = [NSArray array];
     
-    if ([[NSUserDefaults standardUserDefaults] arrayForKey:@"storeTeamsArray"]) {
-        storeGenerations = [[NSUserDefaults standardUserDefaults] arrayForKey:@"storeTeamsArray"];
+    if ([DNPStoreSettings arrayForKey:@"storeTeamsArray"]) {
+        storeGenerations = [DNPStoreSettings arrayForKey:@"storeTeamsArray"];
     } else {
         storeGenerations = @[NSLocalizedString(@"all", @"")];
     }

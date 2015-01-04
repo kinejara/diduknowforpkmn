@@ -33,8 +33,10 @@
                              NSLocalizedString(@"sixGen", @""),
                              nil];
     
-    if([[NSUserDefaults standardUserDefaults] objectForKey:@"storeTeamsArray"]) {
-        NSArray *storeArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"storeTeamsArray"];
+    
+    
+    if([DNPStoreSettings objectForKey:@"storeTeamsArray"]) {
+        NSArray *storeArray = [DNPStoreSettings objectForKey:@"storeTeamsArray"];
         self.selectedIndex = [[NSMutableArray alloc] initWithArray:storeArray];
     }
     else {
@@ -66,10 +68,9 @@
     
     if(self.selectedIndex.count <= 0) {
         [self showErrorAlert];
-    }
-    else {
-        [[NSUserDefaults standardUserDefaults] setObject:self.selectedIndex forKey:@"storeTeamsArray"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
+    } else {
+        [DNPStoreSettings setObject:self.selectedIndex forKey:@"storeTeamsArray"];
+        [DNPStoreSettings synchronize];
     }
     
     [self dismissViewControllerAnimated:YES completion:nil];
