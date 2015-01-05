@@ -297,7 +297,7 @@
     [footerView addSubview:footerImgView];
     
     UIButton *optionButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    optionButton.frame = CGRectMake(0 , 10, 32, 32);
+    optionButton.frame = CGRectMake(0 , 10, 36, 32);
     optionButton.center = footerView.center;
     
     CGRect optionButtonFrame = optionButton.frame;
