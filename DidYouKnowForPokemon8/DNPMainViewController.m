@@ -22,15 +22,6 @@
 
 @implementation DNPMainViewController
 
-- (instancetype)init {
-    self = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"DNPMainViewController"];
-    
-    if (self) {
-    }
-    
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor pkmn_systemRedColor];
@@ -201,15 +192,25 @@
 #pragma mark share methods
 
 - (void)didTapShare {
-    UIActivityViewController *shareViewController = [[UIActivityViewController alloc]initWithActivityItems:@[self, [UIImage imageNamed:@"icon_76"]] applicationActivities:nil];
     
-    [shareViewController setCompletionWithItemsHandler:^(NSString *activityType, BOOL completed, NSArray *returnedItems, NSError *activityError) {
-        if(activityError) {
-            [self showErrorAlert];
-        }
-    }];
+    __weak typeof(self) weakSelf = self;
+    dispatch_queue_t queue = dispatch_queue_create("openActivityIndicatorQueue", NULL);
     
-    [self presentViewController:shareViewController animated:YES completion:nil];
+    dispatch_async(queue, ^{
+    
+        UIActivityViewController *shareViewController = [[UIActivityViewController alloc]initWithActivityItems:@[weakSelf, [UIImage imageNamed:@"icon_76"]] applicationActivities:nil];
+        
+        [shareViewController setCompletionWithItemsHandler:^(NSString *activityType, BOOL completed, NSArray *returnedItems, NSError *activityError) {
+            if(activityError) {
+                [weakSelf showErrorAlert];
+            }
+        }];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [weakSelf presentViewController:shareViewController animated:YES completion:nil];
+        });
+        
+    });
 }
 
 - (void)showErrorAlert {
@@ -232,7 +233,6 @@
 {
     return @"";
 }
-
 
 - (id)activityViewController:(UIActivityViewController *)activityViewController
          itemForActivityType:(NSString *)activityType
@@ -258,7 +258,7 @@
 
 
 - (NSString *)activityViewController:(UIActivityViewController *)activityViewController
-              subjectForActivityType:(NSString *)activityType
+subjectForActivityType:(NSString *)activityType
 {
     return @"";
 }

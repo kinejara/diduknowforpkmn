@@ -137,8 +137,8 @@
 		EED11F151A493AE10020BB32 /* facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook@2x.png"; sourceTree = "<group>"; };
 		EED11F161A493AE10020BB32 /* gear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gear@2x.png"; sourceTree = "<group>"; };
 		EED11F171A493AE10020BB32 /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
-		EEE9005B1A43D69500BE0D47 /* facts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = facts.plist; sourceTree = "<group>"; };
-		EEE9005C1A43D69500BE0D47 /* hechos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hechos.plist; sourceTree = "<group>"; };
+		EEE9005B1A43D69500BE0D47 /* facts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = facts.plist; path = ../facts.plist; sourceTree = "<group>"; };
+		EEE9005C1A43D69500BE0D47 /* hechos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = hechos.plist; path = ../hechos.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,8 +170,6 @@
 		EE387DF11A3AC571009C366B = {
 			isa = PBXGroup;
 			children = (
-				EEE9005B1A43D69500BE0D47 /* facts.plist */,
-				EEE9005C1A43D69500BE0D47 /* hechos.plist */,
 				EE387DFC1A3AC571009C366B /* DidYouKnowForPokemon8 */,
 				EE387E161A3AC571009C366B /* DidYouKnowForPokemon8Tests */,
 				EE61A6D31A574936004611CA /* DidYouKnowForPokemonWidget */,
@@ -193,12 +191,10 @@
 		EE387DFC1A3AC571009C366B /* DidYouKnowForPokemon8 */ = {
 			isa = PBXGroup;
 			children = (
-				EE61A6E71A576AAD004611CA /* DidYouKnowForPokemon8.entitlements */,
-				EE61A6E81A589988004611CA /* Commons */,
+				EED11F0B1A4932440020BB32 /* Categories */,
+				EE54356D1A4FB5A2005BED14 /* Models */,
 				EE54356F1A4FB5D5005BED14 /* ThirdParty */,
 				EE54356E1A4FB5AF005BED14 /* Views */,
-				EE54356D1A4FB5A2005BED14 /* Models */,
-				EED11F0B1A4932440020BB32 /* Categories */,
 				EE387E011A3AC571009C366B /* AppDelegate.h */,
 				EE387E021A3AC571009C366B /* AppDelegate.m */,
 				EE387E071A3AC571009C366B /* Main.storyboard */,
@@ -211,11 +207,12 @@
 		EE387DFD1A3AC571009C366B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EEC31D101A53C81B00DC857B /* Localizable.strings */,
-				EE61A6ED1A589FF3004611CA /* DNPPrefixHeader.pch */,
-				EE387E0A1A3AC571009C366B /* Images.xcassets */,
 				EEAD0FB31A3BFACF00703CC4 /* Resources */,
+				EE387E0A1A3AC571009C366B /* Images.xcassets */,
+				EE61A6E71A576AAD004611CA /* DidYouKnowForPokemon8.entitlements */,
+				EEC31D101A53C81B00DC857B /* Localizable.strings */,
 				EE387DFE1A3AC571009C366B /* Info.plist */,
+				EE61A6ED1A589FF3004611CA /* DNPPrefixHeader.pch */,
 				EE387DFF1A3AC571009C366B /* main.m */,
 			);
 			name = "Supporting Files";
@@ -262,6 +259,7 @@
 		EE54356F1A4FB5D5005BED14 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				EE61A6E81A589988004611CA /* Commons */,
 			);
 			name = ThirdParty;
 			sourceTree = "<group>";
@@ -307,6 +305,8 @@
 		EEAD0FB31A3BFACF00703CC4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EEE9005B1A43D69500BE0D47 /* facts.plist */,
+				EEE9005C1A43D69500BE0D47 /* hechos.plist */,
 				EEC31CFC1A53BB5700DC857B /* icon_76.png */,
 				EED11F111A493AE10020BB32 /* action_icon@2x.png */,
 				EED11F121A493AE10020BB32 /* reload@2x.png */,

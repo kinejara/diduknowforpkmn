@@ -76,7 +76,7 @@
     [[UIApplication sharedApplication] cancelAllLocalNotifications];
     
     for (int i=0; i<31; i++) {
-     //   [self setNotificationWithDate:[[self nextNotificationDate] dateByAddingTimeInterval:30 *i]];
+        [self setNotificationWithDate:[[self nextNotificationDate] dateByAddingTimeInterval:30 *i]];
     }
 }
 
@@ -121,9 +121,8 @@
    
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     NSDateComponents *components = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:now];
-    //TODO: this is just for test
-    [components setHour:0];
-    [components setMinute:46];
+    [components setHour:12];
+    [components setMinute:30];
     NSDate *next12pm = [calendar dateFromComponents:components];
     if ([next12pm timeIntervalSinceNow] < 0) {
         // If today's 12pm already occurred, add 24hours to get to tomorrow's

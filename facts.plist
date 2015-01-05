@@ -5,6 +5,7 @@
 	<key>anime</key>
 	<array>
 		<string>In the anime, the inside of Charizard&apos;s wings are colored green, but in the games, they are colored with more of a blue tint.</string>
+		<string>Team Rocket’s Jessie and James were named after the famous outlaw Jesse James. while the other Team Rocket duo Butch and Cassidy were named after another famous outlaw Butch Cassidy.</string>
 		<string>In Super Smash Brothers Melee, Ditto can be summoned from a Pokeball via hacking, but he disappears the second he comes out.</string>
 		<string>In the anime, Seaking is the only Pokemon Ash and Misty both owned, but they were both caught and released in the same episode.</string>
 		<string>In Japanese versions of Pokemon,&apos;Save&apos; is labeled レポート (Report), and you submit a ポケモンレポート (Pokemon Report).</string>
@@ -108,7 +109,10 @@
 	<key>firstGen</key>
 	<array>
 		<string>One of Parasect&apos;s Pokedex entries says its spores are used as medicine in China, which is a rare reference to the real world.</string>
+		<string>No Ghost type move has less than a 100% accuracy.</string>
 		<string>Red and Blue only use 37 completely unique sound clips for cries. The sounds are played back in different ways for each Pokemon.</string>
+		<string>Arcanine was originally in the bird/spanish number trio.</string>
+		<string>In official artworks and sprites, Gyarados&apos; eyes are red, however in the animé, its eyes are violet.</string>
 		<string>Kabuto&apos;s name in some game prototypes is &apos;Att&apos;. This might be short for Atlantis.</string>
 		<string>Wartortle&apos;s official coloring is inconsistent; its ear color often alternates between white or blue in various official art.</string>
 		<string>In Red and Blue, you were able to use a fishing rod on the Rhydon statues. However, nothing was found unless you used an Old Rod.</string>
@@ -118,7 +122,8 @@
 		<string>In Red/Blue, Koffing&apos;s crossbones pattern was above its face, but in the Japanese Red/Green, it&apos;s below.</string>
 		<string>Rhydon is tied with Lairon in weight, with both of them weighing exactly 264.6 lbs.</string>
 		<string>Rhydon appears first in the game&apos;s Pokemon index data in Red/Blue. This is why most glitch Pokemon &apos;evolve&apos; into him.</string>
-		<string>Eevee is the only Pokemon that is given to you by an NPC in the first four generations</string>
+		<string>Even though on Red/Blue versions, even though Pokémon don&apos;t show what genders they are, that you can still tell wether a Pokémon is a male or female. First you must catch a Pokémon. If the Pokemon has a high attack rating, it&apos;s a male, but if it&apos;s defense is high, it&apos;s a female.</string>
+		<string>Eevee is the only Pokemon that is given to you by an NPC in the first four generations.</string>
 		<string>Hitmonchan and Hitmonlee are the only Pokemon that weren&apos;t previously related, then later gained a shared pre-evolution</string>
 		<string>Mew can learn Attract and Captivate despite being genderless. However, it always fails unless the opponent is also genderless.</string>
 		<string>Mew was the only Pokemon of the first 151 to be left out of the original version of the Pokerap.</string>
@@ -316,7 +321,9 @@
 	</array>
 	<key>secondGen</key>
 	<array>
+		<string> A level 100 Shuckle can potentially deal the most damage in one single attack through the use of numerous stat boosters, by using Helping Hand, Metronome held item, Power Trick, a Skill Swap to Pure Power or Huge Power, 6 Attack boosts, and the Defense Curl/Rollout combo.</string>
 		<string>Despite being Generation II Pokémon, Houndour, Murkrow, and Slugma are actually native to Kanto in Pokémon Gold, Silver, and Crystal.</string>
+		<string>The Golden Rod City Gym in G/S/C is shaped like a Clefairy.</string>
 		<string>The second generation is the only generation to have all three starters a single type when they fully evolve.</string>
 		<string>That Articuno and Zapdos were the only ones with their Type until Delibird from Generation II and Emolga from Generation V came along?</string>
 		<string>In Generation II, after catching a Pokémon, the Poké Ball&apos;s color palette changes to that of the Pokémon that was just caught. It then changes back to normal thereafter.</string>
@@ -371,15 +378,16 @@
 	<array>
 		<string>Generation VI is the only generation that did not introduce:A Water/Flying Pokémon.</string>
 		<string>Generation VI is the only generation that did not introduce:A Bug/Poison Pokémon.</string>
-		<string>Generation VI is the only generation that did not introduce:A Gym Leader or Elite Four member specializing in Ghost-type Pokémon.</string>
 		<string>Generation VI is the only generation that did not introduce:A new type of Poké Ball.</string>
 		<string>Generation VI is the only generation that did not introduce:A department store.</string>
 		<string>Generation VI is the only generation which contains games (excluding remakes) in which some Gym Leaders hand out TMs containing moves from older generations.</string>
 		<string>Generation VI leaves the most extra room in the PC if one captures exactly one of each species of Pokémon, with there being 930 spaces and 719 Pokémon.</string>
 		<string>Chesnaught has the highest base Defense of all fully evolved starter Pokémon as well as of all non-Legendary Fighting types.</string>
 		<string>Greninja shares the same species name as Ninjask. They are both known as the Ninja Pokémon.</string>
+		<string>Omega Ruby and Alpha Sapphire currently offers the greatest number of in-game Legendary Pokémon with a total of 32 between both games.</string>
 		<string>Talonflame is the first Pokémon to have more than five katakana characters in its Japanese name.</string>
 		<string>Vivillon and its evolutionary relatives are the only Bug-type Pokémon introduced in Generation VI.</string>
+		<string>Omega Ruby and Alpha Sapphire currently offers the greatest number of in-game starter Pokémon, with four (1 from Hoenn, 1 from Johto, 1 from Sinnoh and 1 from Unova), exceeding the three offered in numerous games before.</string>
 		<string>Vivillon is the only fully-evolved Pokémon to have the Ability Friend Guard.</string>
 		<string>No other Pokémon has the same type combination as Pyroar and its pre-evolution.</string>
 		<string>Gen VI introduce the fairy-type pokemon.</string>
@@ -423,6 +431,10 @@
 	<key>thirdGen</key>
 	<array>
 		<string>In Generation III, Pokemart roofs were originally going to be colored red. They were most likely changed to avoid confusion with a Pokemon Center.</string>
+		<string>Spinda has 4,294,967,295 possible spot patterns it can have.</string>
+		<string>Wonder Guard is not affected by Skill Swap. Otherwise, the Pokemon world as we know it would come to a Wondertomb end.</string>
+		<string>The Hoenn Region is the only region in which all the badges have the same English and Japanese names every other region has at least one different one</string>
+		<string>Brendan from the Ruby/Sapphire/Emerald Pokemon games does not have white hair. He is actually wearing a white hat and has black hair.</string>
 		<string>In Generation III, all Dragon-type moves were Cool moves.</string>
 		<string>In Generation III, all fifteen Fire-type moves were Beauty moves.</string>
 		<string>Generation III introduced the most Abilities to the series, with 77.</string>
