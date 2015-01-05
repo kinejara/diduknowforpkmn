@@ -54,11 +54,11 @@ typedef NS_ENUM(NSInteger, DNPSettingTableSections) {
 - (void)customizingNavigationBar {
     self.navigationController.navigationBar.barTintColor = [UIColor pkmn_systemBlueColor];
     self.navigationController.navigationBar.translucent = NO;
-    self.title = @"Settings";
+    self.title = NSLocalizedString(@"settings", @"");
     
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Cancel" style:UIBarButtonItemStylePlain target:self action:@selector(didTapCancel)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:NSLocalizedString(@"cancel", @"") style:UIBarButtonItemStylePlain target:self action:@selector(didTapCancel)];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Save" style:UIBarButtonItemStylePlain target:self action:@selector(didTapSave)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:NSLocalizedString(@"save", @"") style:UIBarButtonItemStylePlain target:self action:@selector(didTapSave)];
     
 }
 
@@ -111,6 +111,11 @@ typedef NS_ENUM(NSInteger, DNPSettingTableSections) {
     return 44;
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return NSLocalizedString(@"titleHeader", @"");
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
     UITableViewCell *cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
@@ -130,10 +135,10 @@ typedef NS_ENUM(NSInteger, DNPSettingTableSections) {
     
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     
-    if(indexPath.row == 0) {
+    if([cell.textLabel.text isEqualToString:NSLocalizedString(@"all", @"")]) {
         
         for(int i = 0; i < self.pokeFactsOptions.count; i++) {
-            NSIndexPath * indexOne = [NSIndexPath indexPathForItem:i inSection:2];
+            NSIndexPath * indexOne = [NSIndexPath indexPathForItem:i inSection:0];
             UITableViewCell *cellOne = [tableView cellForRowAtIndexPath:indexOne];
             cellOne.accessoryType = UITableViewCellAccessoryNone;
         }
@@ -143,7 +148,8 @@ typedef NS_ENUM(NSInteger, DNPSettingTableSections) {
         [self.selectedIndex addObject:[self.pokeFactsOptions objectAtIndex:0]];
         
     } else {
-            NSIndexPath * indexOne = [NSIndexPath indexPathForItem:0 inSection:2];
+        
+            NSIndexPath * indexOne = [NSIndexPath indexPathForItem:0 inSection:0];
             UITableViewCell *cellOne = [tableView cellForRowAtIndexPath:indexOne];
             
             if(cellOne.accessoryType == UITableViewCellAccessoryCheckmark) {

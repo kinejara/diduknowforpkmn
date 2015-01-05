@@ -170,7 +170,6 @@
 		EE387DF11A3AC571009C366B = {
 			isa = PBXGroup;
 			children = (
-				EEC31D101A53C81B00DC857B /* Localizable.strings */,
 				EEE9005B1A43D69500BE0D47 /* facts.plist */,
 				EEE9005C1A43D69500BE0D47 /* hechos.plist */,
 				EE387DFC1A3AC571009C366B /* DidYouKnowForPokemon8 */,
@@ -212,6 +211,7 @@
 		EE387DFD1A3AC571009C366B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EEC31D101A53C81B00DC857B /* Localizable.strings */,
 				EE61A6ED1A589FF3004611CA /* DNPPrefixHeader.pch */,
 				EE387E0A1A3AC571009C366B /* Images.xcassets */,
 				EEAD0FB31A3BFACF00703CC4 /* Resources */,
@@ -584,6 +584,7 @@
 				EEC31D161A53C83D00DC857B /* es */,
 			);
 			name = Localizable.strings;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

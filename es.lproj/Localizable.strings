@@ -1,11 +1,20 @@
 /*mainview*/
-"rate" = "Te gusto esta app ? entonces danos tu opinión.";
+"options" = "Opciones";
+"cancel" = "Cancelar";
+"refresh" = "Actualizar Trivia";
+"fb" = "Visitar FB";
+"rateApp" = "Calificar App";
+"settings" = "Ajustes";
+"save" = "aceptar";
+"rate" = "Te gusto esta app ?\n entonces danos tu opinión.";
 "downloadapp" = "Quieres saber más, entonces prueba la aplicación en su versión FULL ? .";
 "first" = "Para obtener mas Poke-Datos solo escrolea en la tabla.";
 "errorNoMoreData" = "Opps ese fue el ultimo tip, presiona en refrescar para obtener más.";
 "errorPosting" = "Opps error al compartir, verifica tu conexión.";
 "noFactToPost" = "Primero selecciona un poke-Fact para compartir.";
 "settingLeyend" = "Selecciona que tipo de poke-fact quieres leer";
+"titleHeader" = "Selecciona tu Poke-fact favorito";
+
 
 /* settings */
 "all" = "Todos";

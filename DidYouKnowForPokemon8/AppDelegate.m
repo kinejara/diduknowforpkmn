@@ -19,17 +19,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [[UIApplication sharedApplication] unregisterForRemoteNotifications];
-    [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
-    
     if ([self areNotificationsEnabled]) {
         [self setUpListOfNotifications];
     }
-    
     //Display error is there is no URL
     if (![launchOptions objectForKey:UIApplicationLaunchOptionsURLKey]) {
         NSLog(@"NO URL SCHEME");
     }
+    
+    [self askForPushNotifications];
     
     return YES;
 }
@@ -54,6 +52,14 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)askForPushNotifications {
+
+    [[UIApplication sharedApplication] unregisterForRemoteNotifications];
+    
+    [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:
+                                                                         UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
 }
 
 - (BOOL)areNotificationsEnabled {

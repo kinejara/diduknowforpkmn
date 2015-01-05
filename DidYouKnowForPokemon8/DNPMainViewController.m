@@ -33,7 +33,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.view.backgroundColor = [UIColor pkmn_systemRedColor];
     [self configureTableView];
 }
@@ -47,12 +46,16 @@
     [self loadPokeFacts];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self countRunTimes];
+}
+
 - (void)configureTableView {
     UIColor *clearColor = [UIColor clearColor];
     self.tableView.backgroundColor = clearColor;
-    self.tableView.rowHeight = 220;
     self.tableView.showsVerticalScrollIndicator = NO;
-    
+    self.tableView.bounces = NO;
 }
 
 - (void)loadPokeFacts {
@@ -88,15 +91,54 @@
     return settings;
 }
 
-- (void)didTapMenu:(UIButton *)sender {
+- (void)countRunTimes {
+    NSInteger runTimeCounter = [DNPStoreSettings integerForKey:@"runTimeCounter"];
     
-    UIAlertController *alertController = [UIAlertController
-                                          alertControllerWithTitle:@"Options"
-                                          message:@""
-                                          preferredStyle:UIAlertControllerStyleActionSheet];
+    if (runTimeCounter <= 3) {
+        runTimeCounter = runTimeCounter + 1;
+    } else {
+        runTimeCounter = 0;
+        [self askForRateThisApp];
+    }
+    
+    [DNPStoreSettings setInteger:runTimeCounter forKey:@"runTimeCounter"];
+    [DNPStoreSettings synchronize];
+}
+
+- (void)askForRateThisApp {
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"★★★★★" message:NSLocalizedString(@"rate", @"") preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction *cancel = [UIAlertAction
-                         actionWithTitle:@"Cancel"
+                             actionWithTitle:NSLocalizedString(@"cancel", @"")
+                             style:UIAlertActionStyleCancel
+                             handler:^(UIAlertAction * action)
+                             {
+                                 [alertController dismissViewControllerAnimated:YES completion:nil];
+                             }];
+    
+    UIAlertAction *ok = [UIAlertAction
+                         actionWithTitle:@"Ok"
+                         style:UIAlertActionStyleDefault
+                         handler:^(UIAlertAction * action)
+                         {
+                             [self didTapRate];
+                         }];
+    
+    [alertController addAction:ok];
+    [alertController addAction:cancel];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
+}
+
+- (void)didTapMenu:(UIButton *)sender {
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"options", @"")
+                                                                             message:@""
+                                                                      preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    UIAlertAction *cancel = [UIAlertAction
+                         actionWithTitle:NSLocalizedString(@"cancel", @"")
                          style:UIAlertActionStyleCancel
                          handler:^(UIAlertAction * action)
                          {
@@ -104,7 +146,7 @@
                          }];
     
     UIAlertAction *refresh = [UIAlertAction
-                             actionWithTitle:@"Refresh Trivia"
+                             actionWithTitle:NSLocalizedString(@"refresh", @"")
                              style:UIAlertActionStyleDefault
                              handler:^(UIAlertAction * action)
                              {
@@ -112,7 +154,7 @@
                              }];
     
     UIAlertAction *visitFB = [UIAlertAction
-                           actionWithTitle:@"Go to FB page"
+                           actionWithTitle:NSLocalizedString(@"fb", @"")
                            style:UIAlertActionStyleDefault
                            handler:^(UIAlertAction * action)
                            {
@@ -121,18 +163,15 @@
                            }];
     
     UIAlertAction *rate = [UIAlertAction
-                           actionWithTitle:@"Rate"
+                           actionWithTitle:NSLocalizedString(@"rateApp", @"")
                            style:UIAlertActionStyleDefault
                            handler:^(UIAlertAction * action)
                            {
-                               NSString * urlString = [NSString stringWithFormat:@"https://itunes.apple.com/es/app/did-you-know-for-pokemon/id608028683?mt=8"];
-                               
-                               NSURL *url = [NSURL URLWithString:urlString];
-                               [[UIApplication sharedApplication] openURL:url];
+                               [self didTapRate];
                            }];
     
     UIAlertAction *settings = [UIAlertAction
-                           actionWithTitle:@"Settings"
+                           actionWithTitle:NSLocalizedString(@"settings", @"")
                            style:UIAlertActionStyleDefault
                            handler:^(UIAlertAction * action)
                            {
@@ -150,6 +189,13 @@
 
 - (void)goToSettings {
     [self performSegueWithIdentifier:@"goSettings" sender:self];
+}
+
+- (void)didTapRate {
+    NSString * urlString = [NSString stringWithFormat:@"https://itunes.apple.com/es/app/did-you-know-for-pokemon/id608028683?mt=8"];
+    
+    NSURL *url = [NSURL URLWithString:urlString];
+    [[UIApplication sharedApplication] openURL:url];
 }
 
 #pragma mark share methods
@@ -230,7 +276,6 @@
     return 160;
 }
 
-
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     
     UIImage *headerImg = [UIImage imageNamed:@"pokedex_header"];
@@ -241,26 +286,55 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
     
-    UIImage *image = [[UIImage imageNamed:@"pokedex_footer"]
-                      stretchableImageWithLeftCapWidth:8 topCapHeight:8];
+    CGFloat tableViewWidht = self.tableView.frame.size.width;
     
-    UIView *footerView  = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 160)];
+    UIImage *footerImage = [UIImage imageNamed:@"pokedex_footer"];
+    UIImageView *footerImgView  = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, tableViewWidht, 160)];
+    footerImgView.image = footerImage;
+   
+    UIView *footerView  = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableViewWidht, 160)];
+    footerView.backgroundColor = [UIColor redColor];
+    [footerView addSubview:footerImgView];
     
-    footerView.backgroundColor = [UIColor colorWithPatternImage:image];
+    UIButton *optionButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    optionButton.frame = CGRectMake(0 , 10, 32, 32);
+    optionButton.center = footerView.center;
     
-    UIButton *optionButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    optionButton.frame = CGRectMake(94, 10, 160.0, 40.0);
+    CGRect optionButtonFrame = optionButton.frame;
+    optionButtonFrame.origin.y = 8;
+    optionButton.frame = optionButtonFrame;
     
-    [optionButton setImage:[UIImage imageNamed:@"action_icon@2x.png"] forState:UIControlStateNormal];
+    [optionButton setBackgroundImage:[UIImage imageNamed:@"action2"] forState:UIControlStateNormal];
+    [optionButton setBackgroundImage:[UIImage imageNamed:@"action_icon"] forState:UIControlStateHighlighted];
+    
     [optionButton addTarget:self action:@selector(didTapMenu:) forControlEvents:UIControlEventTouchUpInside];
     
     [footerView addSubview:optionButton];
-  
+    
     return footerView;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    NSString * cellText = [self.pokeFacts objectAtIndex:indexPath.row];
+    CGSize constrain = CGSizeMake(100, 2000);
+    
+    NSDictionary * attributes = [NSDictionary dictionaryWithObject:[UIFont systemFontOfSize:14.0] forKey:NSFontAttributeName];
+    
+    CGRect textSize = [cellText boundingRectWithSize:constrain
+                                      options:NSStringDrawingUsesLineFragmentOrigin
+                                   attributes:attributes
+                                      context:nil];
+    
+    float textHeight = textSize.size.height +20;
+    textHeight = (textHeight < 50.0) ? 50.0:textHeight;
+    
+    return textHeight;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
