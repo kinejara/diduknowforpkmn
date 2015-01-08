@@ -19,15 +19,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [self askForPushNotifications];
+    [self setUpListOfNotifications];
+    
     if ([self areNotificationsEnabled]) {
-        [self setUpListOfNotifications];
+        
     }
     //Display error is there is no URL
     if (![launchOptions objectForKey:UIApplicationLaunchOptionsURLKey]) {
         NSLog(@"NO URL SCHEME");
     }
     
-    [self askForPushNotifications];
+    [self configureDefaultSettings];
     
     return YES;
 }
@@ -54,9 +57,18 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void)configureDefaultSettings {
+    if(![DNPStoreSettings objectForKey:@"storeTeamsArray"]) {
+        NSArray *pokeFactsOptions = [[NSArray alloc] initWithObjects:
+                                     NSLocalizedString(@"all", @""),nil];
+        [DNPStoreSettings  setObject:pokeFactsOptions forKey:@"storeTeamsArray"];
+        [DNPStoreSettings synchronize];
+    }
+}
+
 - (void)askForPushNotifications {
 
-    [[UIApplication sharedApplication] unregisterForRemoteNotifications];
+    //[[UIApplication sharedApplication] unregisterForRemoteNotifications];
     
     [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:
                                                                          UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
@@ -76,7 +88,7 @@
     [[UIApplication sharedApplication] cancelAllLocalNotifications];
     
     for (int i=0; i<31; i++) {
-        [self setNotificationWithDate:[[self nextNotificationDate] dateByAddingTimeInterval:30 *i]];
+        [self setNotificationWithDate:[[self nextNotificationDate] dateByAddingTimeInterval:60*60*24*i]];
     }
 }
 
@@ -107,6 +119,7 @@
     
     UILocalNotification *localNotification = [[UILocalNotification alloc] init];
     localNotification.fireDate = notificationFireDate;
+    localNotification.timeZone = [NSTimeZone defaultTimeZone];
     localNotification.alertBody = [self getRandomFactForPushNotification];
     localNotification.soundName = UILocalNotificationDefaultSoundName;
     localNotification.repeatInterval = NSCalendarUnitDay;
@@ -117,15 +130,23 @@
 
 - (NSDate *)nextNotificationDate {
     
+    NSCalendar *calendar = [NSCalendar autoupdatingCurrentCalendar];
     NSDate *now = [NSDate date];
-   
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-    NSDateComponents *components = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:now];
-    [components setHour:12];
-    [components setMinute:30];
-    NSDate *next12pm = [calendar dateFromComponents:components];
+  
+    NSDateComponents *dateComponents = [calendar components:(NSCalendarUnitYear | NSCalendarUnitMonth |  NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute) fromDate:now];
+    
+    NSDateComponents *dateComps = [[NSDateComponents alloc] init];
+    
+    [dateComps setDay:[dateComponents day]];
+    [dateComps setMonth:[dateComponents month]];
+    [dateComps setYear:[dateComponents year]];
+    
+    [dateComps setHour:13];
+    //[dateComps setMinute:[timeComponents minute]];
+    //[dateComps setSecond:[timeComponents second]];
+    NSDate *next12pm = [calendar dateFromComponents:dateComps];
+    
     if ([next12pm timeIntervalSinceNow] < 0) {
-        // If today's 12pm already occurred, add 24hours to get to tomorrow's
         next12pm = [next12pm dateByAddingTimeInterval:60*60*24];
     }
     

@@ -27,7 +27,7 @@
                              NSLocalizedString(@"fiveGen", @""),
                              NSLocalizedString(@"sixGen", @""),
                              nil];
-   
+
     if ([generations containsObject:pokeFactsOptions[0]]) {
         [facts addObjectsFromArray:factsInPlist[@"anime"]];
         [facts addObjectsFromArray:factsInPlist[@"firstGen"]];
@@ -36,7 +36,7 @@
         [facts addObjectsFromArray:factsInPlist[@"fourthGen"]];
         [facts addObjectsFromArray:factsInPlist[@"fiveGen"]];
         [facts addObjectsFromArray:factsInPlist[@"sixGen"]];
-        
+
         return facts;
         
     } else if ([generations containsObject:pokeFactsOptions[1]]) {
