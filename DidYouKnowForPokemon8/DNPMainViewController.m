@@ -10,9 +10,16 @@
 #import "NSMutableArray+Shuffling.h"
 #import "DNPMainViewController.h"
 #import "PokeTableViewCell.h"
+#import "GADBannerView.h"
+#import "GADRequest.h"
+
+
+@class GADBannerView;
 
 @interface DNPMainViewController ()
 
+@property (weak, nonatomic) IBOutlet GADBannerView *adBottom;
+@property (weak, nonatomic) IBOutlet GADBannerView *adTop;
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) UIView *footerView;
 @property (nonatomic, strong) NSMutableArray *pokeFacts;
@@ -35,6 +42,9 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self loadPokeFacts];
+    [self configureBanner:self.adTop withID:@"ca-app-pub-5770021040900540/9153068510"];
+    [self configureBanner:self.adBottom withID:@"ca-app-pub-5770021040900540/3106534916"];
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -49,9 +59,23 @@
     self.tableView.bounces = NO;
 }
 
+- (void)configureBanner:(GADBannerView *)adMobView withID:(NSString *)adMobID {
+    
+    adMobView.adUnitID = adMobID;
+    adMobView.rootViewController = self;
+    GADRequest *request = [GADRequest request];
+    // Enable test ads on simulators.
+    //request.testDevices = @[GAD_SIMULATOR_ID];
+    [adMobView loadRequest:request];
+}
+
+- (void)configureBottompAd {
+    
+}
+
 - (void)loadPokeFacts {
     
-    NSArray *gens = [self getStoreSettings];
+    NSArray *gens = DNPStoreGenerations;
     
     if (self.pokeFacts.count > 0) {
         [self.pokeFacts removeAllObjects];
@@ -103,16 +127,14 @@
     UIAlertAction *cancel = [UIAlertAction
                              actionWithTitle:NSLocalizedString(@"cancel", @"")
                              style:UIAlertActionStyleCancel
-                             handler:^(UIAlertAction * action)
-                             {
+                             handler:^(UIAlertAction * action) {
                                  [alertController dismissViewControllerAnimated:YES completion:nil];
                              }];
     
     UIAlertAction *ok = [UIAlertAction
                          actionWithTitle:@"Ok"
                          style:UIAlertActionStyleDefault
-                         handler:^(UIAlertAction * action)
-                         {
+                         handler:^(UIAlertAction * action) {
                              [self didTapRate];
                          }];
     

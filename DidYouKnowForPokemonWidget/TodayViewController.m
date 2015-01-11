@@ -59,7 +59,7 @@
 - (NSString *)getRandomFactForWidget {
     
     Pharases *pokeFact = [Pharases new];
-    NSArray *storeGenerations = [self getStoreGenerationFromSettings];
+    NSArray *storeGenerations = DNPStoreGenerations;
     NSArray *arrayOfFacts = [pokeFact createArrayOfPokePhrasesWithGenerations:storeGenerations];
     NSMutableArray *shuffleFacts = [NSMutableArray shuffleArray:arrayOfFacts];
     
@@ -73,7 +73,7 @@
     if ([DNPStoreSettings arrayForKey:@"storeTeamsArray"]) {
         storeGenerations = [DNPStoreSettings arrayForKey:@"storeTeamsArray"];
     } else {
-        storeGenerations = @[NSLocalizedString(@"all", @"")];
+        storeGenerations = [[NSArray alloc] initWithObjects:[NSNumber numberWithInteger:0], nil];
     }
     
     return storeGenerations;

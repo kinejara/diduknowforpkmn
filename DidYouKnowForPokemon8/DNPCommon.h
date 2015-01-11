@@ -11,7 +11,10 @@
 #define DNPGroupID @"group.com.didyouknowforpokemon.kine"
 #define DNPStoreSettings [[NSUserDefaults alloc] initWithSuiteName:DNPGroupID]
 
-//#define NSUserDefaults *DNPStoreSettings = [[NSUserDefaults alloc] initWithSuiteName:DNPGroupID]; \
+#define IS_IPHONE (!IS_IPAD)
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() != UIUserInterfaceIdiomPhone)
+
+#define DNPStoreGenerations [DNPStoreSettings arrayForKey:@"storeTeamsArray"]?([DNPStoreSettings arrayForKey:@"storeTeamsArray"]):(@[[NSNumber numberWithInteger:0]])
 
 @interface DNPCommon : NSObject
 

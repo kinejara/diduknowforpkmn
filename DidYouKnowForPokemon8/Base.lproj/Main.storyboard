@@ -33,23 +33,45 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Yfp-DU-fMJ"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OV3-57-PoE" userLabel="top banner" customClass="GADBannerView">
+                                <rect key="frame" x="140" y="20" width="320" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="Aoh-BF-464"/>
+                                    <constraint firstAttribute="height" constant="50" id="iro-SP-F6R"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enX-wh-dKK" userLabel="bottom banner" customClass="GADBannerView">
+                                <rect key="frame" x="140" y="550" width="320" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="QNS-aO-Rnd"/>
+                                    <constraint firstAttribute="width" constant="320" id="qQM-ix-2Tp"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="a0Y-4a-jnL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3dz-z8-sbb"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="a0Y-4a-jnL" secondAttribute="bottom" id="RWf-pX-oxx"/>
-                            <constraint firstAttribute="trailing" secondItem="a0Y-4a-jnL" secondAttribute="trailing" id="qSo-Aq-nUR"/>
-                            <constraint firstItem="a0Y-4a-jnL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="rjv-8N-m8j"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="a0Y-4a-jnL" secondAttribute="bottom" id="4nZ-ui-6Wj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="enX-wh-dKK" secondAttribute="bottom" id="JEb-Lc-2HG"/>
+                            <constraint firstAttribute="centerX" secondItem="OV3-57-PoE" secondAttribute="centerX" id="P7x-fW-6cg"/>
+                            <constraint firstItem="OV3-57-PoE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="siU-ar-uNp"/>
+                            <constraint firstItem="a0Y-4a-jnL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="twc-nq-HJx"/>
+                            <constraint firstAttribute="centerX" secondItem="enX-wh-dKK" secondAttribute="centerX" id="ubx-B6-5A5"/>
+                            <constraint firstAttribute="trailing" secondItem="a0Y-4a-jnL" secondAttribute="trailing" id="uhi-lJ-Xme"/>
+                            <constraint firstItem="a0Y-4a-jnL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="xcC-5R-72e"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="AdTop" destination="OV3-57-PoE" id="REK-fo-TPu"/>
+                        <outlet property="adBottom" destination="enX-wh-dKK" id="Q7t-kp-vnn"/>
                         <outlet property="tableView" destination="a0Y-4a-jnL" id="MZ5-Hg-RSe"/>
                         <segue destination="4FG-uB-WYr" kind="presentation" identifier="goSettings" id="ZoW-hf-syP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="172" y="136"/>
+            <point key="canvasLocation" x="184" y="147"/>
         </scene>
         <!--Settings Table Table View Controller-->
         <scene sceneID="9Jv-Se-SKQ">
