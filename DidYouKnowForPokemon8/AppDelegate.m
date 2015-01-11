@@ -29,9 +29,6 @@
     if (![launchOptions objectForKey:UIApplicationLaunchOptionsURLKey]) {
         NSLog(@"NO URL SCHEME");
     }
-    
-    //[self configureDefaultSettings];
-    
     return YES;
 }
 
@@ -67,9 +64,7 @@
 }
 
 - (void)askForPushNotifications {
-
     //[[UIApplication sharedApplication] unregisterForRemoteNotifications];
-    
     [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:
                                                                          UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
 }
