@@ -30,7 +30,7 @@
         NSLog(@"NO URL SCHEME");
     }
     
-    [self configureDefaultSettings];
+    //[self configureDefaultSettings];
     
     return YES;
 }
@@ -92,27 +92,24 @@
     }
 }
 
+- (void)printNextNotification:(NSDate *)currentTime {
+    
+    //NSDate *currentTime = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"dd-MM-yyyy hh-mm"];
+    NSString *resultString = [dateFormatter stringFromDate: currentTime];
+    
+    NSLog(@"----> next daily notification %@",resultString);
+}
+
 - (NSString *)getRandomFactForPushNotification {
     
     Pharases *pokeFact = [Pharases new];
-    NSArray *storeGenerations = [self getStoreGenerationFromSettings];
+    NSArray *storeGenerations = DNPStoreGenerations;
     NSArray *arrayOfFacts = [pokeFact createArrayOfPokePhrasesWithGenerations:storeGenerations];
     NSMutableArray *shuffleFacts = [NSMutableArray shuffleArray:arrayOfFacts];
     
     return shuffleFacts[0];
-}
-
-- (NSArray *)getStoreGenerationFromSettings {
-    
-    NSArray *storeGenerations = [NSArray array];
-    
-    if ([DNPStoreSettings arrayForKey:@"storeTeamsArray"]) {
-        storeGenerations = [DNPStoreSettings arrayForKey:@"storeTeamsArray"];
-    } else {
-        storeGenerations = @[NSLocalizedString(@"all", @"")];
-    }
-    
-    return storeGenerations;
 }
 
 - (void)setNotificationWithDate:(NSDate *)notificationFireDate {

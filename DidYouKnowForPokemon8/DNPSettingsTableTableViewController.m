@@ -16,10 +16,15 @@
 @property (nonatomic, strong) NSMutableArray *selectedIndex;
 @property (nonatomic, weak) IBOutlet UISwitch *notificationSwitch;
 
-typedef NS_ENUM(NSInteger, DNPSettingTableSections) {
-    sectionForPush = 0,
-    sectionForWidget,
-    sectionForGeneration
+typedef NS_ENUM(NSInteger, DNPPokeGenerations) {
+    allOptions = 0,
+    animeOption,
+    firstGen,
+    secondGen,
+    thirdGen,
+    fourthGen,
+    fiveGen,
+    sixGen
 };
 
 @end
@@ -41,13 +46,7 @@ typedef NS_ENUM(NSInteger, DNPSettingTableSections) {
                              NSLocalizedString(@"sixGen", @""),
                              nil];
     
-    if([DNPStoreSettings objectForKey:@"storeTeamsArray"]) {
-        NSArray *storeArray = [DNPStoreSettings objectForKey:@"storeTeamsArray"];
-        self.selectedIndex = [[NSMutableArray alloc] initWithArray:storeArray];
-    }
-    else {
-        self.selectedIndex = [[NSMutableArray alloc] init];
-    }
+    self.selectedIndex = [NSMutableArray arrayWithArray:DNPStoreGenerations];
 }
 
 
@@ -123,11 +122,12 @@ typedef NS_ENUM(NSInteger, DNPSettingTableSections) {
     cell.textLabel.text = [NSString stringWithFormat:@"%@",[self.pokeFactsOptions objectAtIndex:indexPath.row]];
     cell.textLabel.font = [UIFont fontWithName:@"PokemonGB" size:14.0f];
     
-    for(NSString * n in self.selectedIndex) {
-        if([cell.textLabel.text isEqualToString:n]) {
+    for (NSNumber *storeIndex in self.selectedIndex) {
+        if (indexPath.row == storeIndex.intValue) {
             cell.accessoryType = UITableViewCellAccessoryCheckmark;
         }
     }
+    
     return cell;
 }
 
@@ -135,7 +135,7 @@ typedef NS_ENUM(NSInteger, DNPSettingTableSections) {
     
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     
-    if([cell.textLabel.text isEqualToString:NSLocalizedString(@"all", @"")]) {
+    if(indexPath.row == 0) {
         
         for(int i = 0; i < self.pokeFactsOptions.count; i++) {
             NSIndexPath * indexOne = [NSIndexPath indexPathForItem:i inSection:0];
@@ -145,7 +145,7 @@ typedef NS_ENUM(NSInteger, DNPSettingTableSections) {
         
         [self.selectedIndex removeAllObjects];
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
-        [self.selectedIndex addObject:[self.pokeFactsOptions objectAtIndex:0]];
+        [self.selectedIndex addObject:[NSNumber numberWithInteger:indexPath.row]];
         
     } else {
         
@@ -154,17 +154,18 @@ typedef NS_ENUM(NSInteger, DNPSettingTableSections) {
             
             if(cellOne.accessoryType == UITableViewCellAccessoryCheckmark) {
                 cellOne.accessoryType = UITableViewCellAccessoryNone;
-                [self.selectedIndex removeObject:[self.pokeFactsOptions objectAtIndex:0]];
+                [self.selectedIndex removeObject:[NSNumber numberWithInteger:0]];
             }
             //index for all section
             if(cell.accessoryType == UITableViewCellAccessoryCheckmark) {
                 cell.accessoryType = UITableViewCellAccessoryNone;
-                [self.selectedIndex removeObject:[self.pokeFactsOptions objectAtIndex:indexPath.row]];
+                [self.selectedIndex removeObject:[NSNumber numberWithInteger:indexPath.row]];
             }
             else {
                 cell.accessoryType = UITableViewCellAccessoryCheckmark;
-                [self.selectedIndex addObject:[self.pokeFactsOptions objectAtIndex:indexPath.row]];
+                [self.selectedIndex addObject:[NSNumber numberWithInteger:indexPath.row]];
             }
+        
     }
     
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];

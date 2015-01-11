@@ -17,6 +17,7 @@
 @property (nonatomic, strong) UIView *footerView;
 @property (nonatomic, strong) NSMutableArray *pokeFacts;
 @property (nonatomic, strong) NSString *sharingText;
+@property (nonatomic, strong) UIButton *menuButton;
 
 @end
 
@@ -51,7 +52,7 @@
 
 - (void)loadPokeFacts {
     
-    NSArray *gens = [self getStoreSettings];
+    NSArray *gens = DNPStoreGenerations;
     
     if (self.pokeFacts.count > 0) {
         [self.pokeFacts removeAllObjects];
@@ -72,7 +73,7 @@
     
     if(![DNPStoreSettings objectForKey:@"storeTeamsArray"]) {
         
-        settings = [[NSArray alloc] initWithObjects:NSLocalizedString(@"all", @""), nil];
+        settings = [[NSArray alloc] initWithObjects:[NSNumber numberWithInteger:0], nil];
         [DNPStoreSettings setObject:settings forKey:@"storeTeamsArray"];
         [DNPStoreSettings synchronize];
     } else {
@@ -174,6 +175,14 @@
     [alertController addAction:rate];
     [alertController addAction:settings];
     [alertController addAction:cancel];
+    
+    if (IS_IPAD) {
+        
+        UIPopoverPresentationController *popPresenter = [alertController
+                                                         popoverPresentationController];
+        popPresenter.sourceView = self.menuButton;
+        popPresenter.sourceRect = self.menuButton.bounds;
+    }
    
     [self presentViewController:alertController animated:YES completion:nil];
 }
@@ -207,6 +216,15 @@
         }];
         
         dispatch_async(dispatch_get_main_queue(), ^{
+            
+            if (IS_IPAD) {
+                
+                UIPopoverPresentationController *popPresenter = [shareViewController
+                                                                 popoverPresentationController];
+                popPresenter.sourceView = weakSelf.menuButton;
+                popPresenter.sourceRect = weakSelf.menuButton.bounds;
+            }
+            
             [weakSelf presentViewController:shareViewController animated:YES completion:nil];
         });
         
@@ -310,6 +328,8 @@ subjectForActivityType:(NSString *)activityType
     [optionButton addTarget:self action:@selector(didTapMenu:) forControlEvents:UIControlEventTouchUpInside];
     
     [footerView addSubview:optionButton];
+    
+    self.menuButton = optionButton;
     
     return footerView;
 }

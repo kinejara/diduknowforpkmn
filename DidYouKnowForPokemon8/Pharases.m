@@ -12,23 +12,11 @@
 
 -(NSArray *)createArrayOfPokePhrasesWithGenerations:(NSArray *)generations {
     
-    
     NSMutableArray *facts = [NSMutableArray new];
     
     NSDictionary *factsInPlist = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[self getPlistNameForLanguage] ofType:@"plist"]];
     
-    NSArray *pokeFactsOptions = [[NSArray alloc] initWithObjects:
-                             NSLocalizedString(@"all", @""),
-                             NSLocalizedString(@"anime", @""),
-                             NSLocalizedString(@"firstGen", @""),
-                             NSLocalizedString(@"secondGen", @""),
-                             NSLocalizedString(@"thirdGen", @""),
-                             NSLocalizedString(@"fourthGen", @""),
-                             NSLocalizedString(@"fiveGen", @""),
-                             NSLocalizedString(@"sixGen", @""),
-                             nil];
-
-    if ([generations containsObject:pokeFactsOptions[0]]) {
+    if ([generations containsObject:[NSNumber numberWithInteger:0]]) {
         [facts addObjectsFromArray:factsInPlist[@"anime"]];
         [facts addObjectsFromArray:factsInPlist[@"firstGen"]];
         [facts addObjectsFromArray:factsInPlist[@"secondGen"]];
@@ -39,19 +27,19 @@
 
         return facts;
         
-    } else if ([generations containsObject:pokeFactsOptions[1]]) {
+    } else if ([generations containsObject:[NSNumber numberWithInteger:1]]) {
         [facts addObjectsFromArray:factsInPlist[@"anime"]];
-    } else if ([generations containsObject:pokeFactsOptions[2]]) {
+    } else if ([generations containsObject:[NSNumber numberWithInteger:2]]) {
         [facts addObjectsFromArray:factsInPlist[@"firstGen"]];
-    } else if ([generations containsObject:pokeFactsOptions[3]]) {
+    } else if ([generations containsObject:[NSNumber numberWithInteger:3]]) {
         [facts addObjectsFromArray:factsInPlist[@"secondGen"]];
-    } else if ([generations containsObject:pokeFactsOptions[4]]) {
+    } else if ([generations containsObject:[NSNumber numberWithInteger:4]]) {
         [facts addObjectsFromArray:factsInPlist[@"thirdGen"]];
-    } else if ([generations containsObject:pokeFactsOptions[5]]) {
+    } else if ([generations containsObject:[NSNumber numberWithInteger:5]]) {
         [facts addObjectsFromArray:factsInPlist[@"fourthGen"]];
-    } else if ([generations containsObject:pokeFactsOptions[6]]) {
+    } else if ([generations containsObject:[NSNumber numberWithInteger:6]]) {
         [facts addObjectsFromArray:factsInPlist[@"fiveGen"]];
-    } else if ([generations containsObject:pokeFactsOptions[7]]) {
+    } else if ([generations containsObject:[NSNumber numberWithInteger:7]]) {
         [facts addObjectsFromArray:factsInPlist[@"sixGen"]];
     }
     
