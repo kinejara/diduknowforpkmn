@@ -199,7 +199,6 @@
 }
 
 #pragma mark share methods
-
 - (void)didTapShare {
     
     __weak typeof(self) weakSelf = self;
