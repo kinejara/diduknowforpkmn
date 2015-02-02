@@ -22,6 +22,7 @@
     [self askForPushNotifications];
     //all in  purpouse
     [self setUpListOfNotifications]
+    //
     
     if ([self areNotificationsEnabled]) {
         
