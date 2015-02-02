@@ -20,9 +20,7 @@
 		EE61A6D81A574936004611CA /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE61A6D71A574936004611CA /* TodayViewController.m */; };
 		EE61A6DA1A574936004611CA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE61A6D91A574936004611CA /* MainInterface.storyboard */; };
 		EE61A6DD1A574936004611CA /* DidYouKnowForPokemonWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EE61A6CF1A574936004611CA /* DidYouKnowForPokemonWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		EE61A6E21A5766B5004611CA /* Pharases.h in Sources */ = {isa = PBXBuildFile; fileRef = EE73AC621A415D9500F276B4 /* Pharases.h */; };
 		EE61A6E31A5766B5004611CA /* Pharases.m in Sources */ = {isa = PBXBuildFile; fileRef = EE73AC611A415D9500F276B4 /* Pharases.m */; };
-		EE61A6E41A5766BD004611CA /* NSMutableArray+Shuffling.h in Sources */ = {isa = PBXBuildFile; fileRef = EEAB5A481A53813100AC1D09 /* NSMutableArray+Shuffling.h */; };
 		EE61A6E51A5766BD004611CA /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAB5A491A53813100AC1D09 /* NSMutableArray+Shuffling.m */; };
 		EE61A6EB1A5899E9004611CA /* DNPCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = EE61A6EA1A5899E9004611CA /* DNPCommon.m */; };
 		EE61A6EC1A5899E9004611CA /* DNPCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = EE61A6EA1A5899E9004611CA /* DNPCommon.m */; };
@@ -531,9 +529,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE61A6E41A5766BD004611CA /* NSMutableArray+Shuffling.h in Sources */,
 				EE61A6E51A5766BD004611CA /* NSMutableArray+Shuffling.m in Sources */,
-				EE61A6E21A5766B5004611CA /* Pharases.h in Sources */,
 				EE61A6EC1A5899E9004611CA /* DNPCommon.m in Sources */,
 				EE61A6E31A5766B5004611CA /* Pharases.m in Sources */,
 				EE61A6D81A574936004611CA /* TodayViewController.m in Sources */,
