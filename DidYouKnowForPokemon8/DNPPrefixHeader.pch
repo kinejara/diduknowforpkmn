@@ -9,6 +9,5 @@
 #ifndef DidYouKnowForPokemon8_DNPPrefixHeader_h
 #define DidYouKnowForPokemon8_DNPPrefixHeader_h
 
-#import "DNPCommon.h"
 
 #endif

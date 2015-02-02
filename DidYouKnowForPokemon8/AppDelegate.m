@@ -86,7 +86,7 @@
 - (void)setUpListOfNotifications {
     
     [[UIApplication sharedApplication] cancelAllLocalNotifications];
-    
+    NSLog(@"number of notifications %lu",(unsigned long)[[UIApplication sharedApplication] scheduledLocalNotifications].count);
     for (int i=0; i<31; i++) {
         [self setNotificationWithDate:[[self nextNotificationDate] dateByAddingTimeInterval:60*60*24*i]];
     }
@@ -119,10 +119,8 @@
     localNotification.timeZone = [NSTimeZone defaultTimeZone];
     localNotification.alertBody = [self getRandomFactForPushNotification];
     localNotification.soundName = UILocalNotificationDefaultSoundName;
-    localNotification.repeatInterval = NSCalendarUnitDay;
     localNotification.applicationIconBadgeNumber = 0;
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
-    
 }
 
 - (NSDate *)nextNotificationDate {
