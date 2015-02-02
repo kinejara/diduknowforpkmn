@@ -20,7 +20,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [self askForPushNotifications];
-    [self setUpListOfNotifications];
+    //all in  purpouse
+    [self setUpListOfNotifications]
     
     if ([self areNotificationsEnabled]) {
         
