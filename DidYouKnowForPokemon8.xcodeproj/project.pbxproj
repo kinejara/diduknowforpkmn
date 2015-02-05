@@ -23,7 +23,7 @@
 		EE61A6E31A5766B5004611CA /* Pharases.m in Sources */ = {isa = PBXBuildFile; fileRef = EE73AC611A415D9500F276B4 /* Pharases.m */; };
 		EE61A6E51A5766BD004611CA /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAB5A491A53813100AC1D09 /* NSMutableArray+Shuffling.m */; };
 		EE61A6EB1A5899E9004611CA /* DNPCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = EE61A6EA1A5899E9004611CA /* DNPCommon.m */; };
-		EE61A6EC1A5899E9004611CA /* DNPCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = EE61A6EA1A5899E9004611CA /* DNPCommon.m */; };
+		EE61A6EC1A5899E9004611CA /* DNPCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = EE61A6EA1A5899E9004611CA /* DNPCommon.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		EE61A6EE1A58ABAD004611CA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEC31D101A53C81B00DC857B /* Localizable.strings */; };
 		EE61A6EF1A58ADF0004611CA /* facts.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEE9005B1A43D69500BE0D47 /* facts.plist */; };
 		EE61A6F01A58ADF0004611CA /* hechos.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEE9005C1A43D69500BE0D47 /* hechos.plist */; };
@@ -714,6 +714,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DidYouKnowForPokemon8.app/DidYouKnowForPokemon8";
+				WARNING_CFLAGS = "";
 			};
 			name = Debug;
 		};
@@ -729,6 +730,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DidYouKnowForPokemon8.app/DidYouKnowForPokemon8";
+				WARNING_CFLAGS = "";
 			};
 			name = Release;
 		};
