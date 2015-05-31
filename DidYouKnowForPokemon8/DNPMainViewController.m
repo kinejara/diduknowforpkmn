@@ -227,6 +227,8 @@
     
         UIActivityViewController *shareViewController = [[UIActivityViewController alloc]initWithActivityItems:@[weakSelf, [UIImage imageNamed:@"icon_76"]] applicationActivities:nil];
         
+        shareViewController.popoverPresentationController.sourceView = self.view;
+        
         [shareViewController setCompletionWithItemsHandler:^(NSString *activityType, BOOL completed, NSArray *returnedItems, NSError *activityError) {
             if(activityError) {
                 [weakSelf showErrorAlert];
