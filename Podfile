@@ -2,7 +2,8 @@
 # platform :ios, '6.0'
 
 target 'DidYouKnowForPokemon8' do
-pod 'Google-Mobile-Ads-SDK', '~> 6.12.2'
+#pod 'Google-Mobile-Ads-SDK', '~> 6.12.2'
+pod 'Google-Mobile-Ads-SDK'
 end
 
 target 'DidYouKnowForPokemon8Tests' do

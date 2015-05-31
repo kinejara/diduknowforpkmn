@@ -114,7 +114,6 @@
     localNotification.timeZone = [NSTimeZone defaultTimeZone];
     localNotification.alertBody = [self getRandomFactForPushNotification];
     localNotification.soundName = UILocalNotificationDefaultSoundName;
-    localNotification.repeatInterval = NSCalendarUnitDay;
     localNotification.applicationIconBadgeNumber = 0;
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
     

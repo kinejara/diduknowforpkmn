@@ -10,8 +10,8 @@
 #import "NSMutableArray+Shuffling.h"
 #import "DNPMainViewController.h"
 #import "PokeTableViewCell.h"
-#import "GADBannerView.h"
-#import "GADRequest.h"
+//#import "GADRequest.h"
+//#import "GADBannerView.h"
 
 
 @class GADBannerView;
@@ -33,6 +33,14 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor pkmn_systemRedColor];
     [self configureTableView];
+    
+    self.adBottom.adUnitID = @"ca-app-pub-5770021040900540/9153068510";
+    self.adBottom.rootViewController = self;
+    [self.adBottom loadRequest:[GADRequest request]];
+    
+    self.adTop.adUnitID = @"ca-app-pub-5770021040900540/3106534916";
+    self.adTop.rootViewController = self;
+    [self.adTop loadRequest:[GADRequest request]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,8 +50,8 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self loadPokeFacts];
-    [self configureBanner:self.adTop withID:@"ca-app-pub-5770021040900540/9153068510"];
-    [self configureBanner:self.adBottom withID:@"ca-app-pub-5770021040900540/3106534916"];
+    //[self configureBanner:self.adTop withID:@"ca-app-pub-5770021040900540/9153068510"];
+    //[self configureBanner:self.adBottom withID:@"ca-app-pub-5770021040900540/3106534916"];
     
 }
 
@@ -60,7 +68,6 @@
 }
 
 - (void)configureBanner:(GADBannerView *)adMobView withID:(NSString *)adMobID {
-    
     adMobView.adUnitID = adMobID;
     adMobView.rootViewController = self;
     GADRequest *request = [GADRequest request];
@@ -74,7 +81,6 @@
 }
 
 - (void)loadPokeFacts {
-    
     NSArray *gens = DNPStoreGenerations;
     
     if (self.pokeFacts.count > 0) {
@@ -91,7 +97,6 @@
 }
 
 - (NSArray *)getStoreSettings {
-    
     NSArray *settings;
     
     if(![DNPStoreSettings objectForKey:@"storeTeamsArray"]) {
